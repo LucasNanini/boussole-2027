@@ -18,7 +18,8 @@ const editions = () => EDITIONS.filter((h) => h.statut === 'publie' || window.lo
 // Compte Instagram de MOVO, sans le @. Laisser vide tant que le compte n'existe pas : rien ne s'affiche.
 export const INSTAGRAM = ''
 const IG_URL = INSTAGRAM ? `https://instagram.com/${INSTAGRAM}` : ''
-const SITE = typeof location !== 'undefined' && location.host ? location.host : 'movo-2027.vercel.app'
+// Adresse affichée dans tous les partages, quelle que soit l'adresse sur laquelle on joue
+const SITE = 'movo-2027.vercel.app'
 
 function useRoute() {
   const get = () => (window.location.hash.replace(/^#\/?/, '') || 'accueil')
