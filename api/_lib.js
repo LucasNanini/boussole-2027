@@ -22,6 +22,8 @@ export const K = {
   distrib: (n) => `b27:d:${n}`,
   user: (j) => `b27:u:${j}`,
   lb: 'b27:classement',
+  jour: (n) => `b27:jour:${n}`,  // score = clues (7 = raté) × 1e13 + horodatage : à égalité, le plus rapide devant
+  moy: 'b27:moyenne',            // moyenne d'indices, minimum 5 parties
   code: (c) => `b27:code:${c}`,
 }
 
@@ -54,28 +56,36 @@ export function pseudoValide(p) {
 }
 
 /* ---------- Statistiques publiques ---------- */
+async function avecPseudos(r, raw, champs = ['pseudo']) {
+  const ids = []; for (let i = 0; i < raw.length; i += 2) ids.push([raw[i], Number(raw[i + 1])])
+  if (!ids.length) return []
+  const q = r.pipeline(); ids.forEach(([id]) => q.hmget(K.user(id), ...champs))
+  const users = await q.exec()
+  return ids.map(([, score], i) => ({ ...(users[i] || {}), score })).filter((u) => u.pseudo)
+}
+
 export async function stats(r, numero) {
   const d = jourParis()
   const p = r.pipeline()
   p.get(K.total); p.pfcount(K.joueursJour(d)); p.pfcount(K.joueurs); p.pfcount(K.visiteurs)
-  if (numero) p.hgetall(K.distrib(numero))
-  p.zrange(K.lb, 0, 49, { rev: true, withScores: true })
-  const out = await p.exec()
-  const [parties, joueursJour, joueurs, visiteurs] = out
-  const distrib = numero ? out[4] || {} : null
-  const lbRaw = out[numero ? 5 : 4] || []
-  // classement : on ne garde que les séries encore actives (jouées hier ou aujourd'hui)
-  const ids = []; for (let i = 0; i < lbRaw.length; i += 2) ids.push([lbRaw[i], Number(lbRaw[i + 1])])
-  let classement = []
-  if (ids.length) {
-    const q = r.pipeline(); ids.forEach(([id]) => q.hmget(K.user(id), 'pseudo', 'jour'))
-    const users = await q.exec()
-    const hier = jourParis(new Date(Date.now() - 86400000))
-    classement = ids.map(([, serie], i) => ({ pseudo: users[i]?.pseudo, jour: users[i]?.jour, serie }))
-      .filter((u) => u.pseudo && u.serie > 0 && (u.jour === d || u.jour === hier))
-      .slice(0, 20).map(({ pseudo, serie }) => ({ pseudo, serie }))
+  p.hgetall(K.distrib(numero || 0))
+  p.zrange(K.lb, 0, 59, { rev: true, withScores: true })
+  p.zrange(K.jour(numero || 0), 0, 59, { withScores: true })
+  p.zrange(K.moy, 0, 59, { withScores: true })
+  const [parties, joueursJour, joueurs, visiteurs, distribRaw, lbRaw, jourRaw, moyRaw] = await p.exec()
+  const hier = jourParis(new Date(Date.now() - 86400000))
+  // séries : seulement celles encore actives (jouées hier ou aujourd'hui)
+  const classement = (await avecPseudos(r, lbRaw || [], ['pseudo', 'jour']))
+    .filter((u) => u.score > 0 && (u.jour === d || u.jour === hier))
+    .slice(0, 20).map((u) => ({ pseudo: u.pseudo, serie: u.score }))
+  const classementJour = numero ? (await avecPseudos(r, jourRaw || []))
+    .slice(0, 20).map((u) => { const e = Math.floor(u.score / 1e13); return { pseudo: u.pseudo, essais: e === 7 ? null : e } }) : []
+  const classementMoyenne = (await avecPseudos(r, moyRaw || [], ['pseudo', 'nb']))
+    .slice(0, 20).map((u) => ({ pseudo: u.pseudo, moyenne: Math.round(u.score * 10) / 10, parties: Number(u.nb) || 0 }))
+  return {
+    parties: Number(parties) || 0, joueursJour: joueursJour || 0, joueurs: joueurs || 0, visiteurs: visiteurs || 0,
+    distrib: numero ? distribRaw || {} : null, classement, classementJour, classementMoyenne,
   }
-  return { parties: Number(parties) || 0, joueursJour: joueursJour || 0, joueurs: joueurs || 0, visiteurs: visiteurs || 0, distrib, classement }
 }
 
 /* ---------- Enregistrer une partie terminée ---------- */
@@ -93,6 +103,8 @@ export async function enregistrer(r, { joueur, numero, essais, gagne }) {
     joues: (Number(u.joues) || 0) + 1, gagnes: (Number(u.gagnes) || 0) + (gagne ? 1 : 0),
     meilleur: gagne ? Math.min(Number(u.meilleur) || 7, e) : Number(u.meilleur) || 0,
     record: Math.max(Number(u.record) || 0, serie),
+    somme: (Number(u.somme) || 0) + (gagne ? e : 7), // un raté compte 7 indices
+    nb: (Number(u.nb) || 0) + 1, // parties comptées dans la moyenne (depuis son lancement)
   }
   const p = r.pipeline()
   p.incr(K.total)
@@ -101,6 +113,8 @@ export async function enregistrer(r, { joueur, numero, essais, gagne }) {
   p.pfadd(K.joueurs, joueur)
   p.hset(K.user(joueur), next)
   if (u.pseudo) p.zadd(K.lb, { score: serie, member: joueur })
+  p.zadd(K.jour(n), { score: (gagne ? e : 7) * 1e13 + Date.now(), member: joueur }); p.expire(K.jour(n), 60 * 60 * 24 * 40)
+  if (next.nb >= 5) p.zadd(K.moy, { score: next.somme / next.nb, member: joueur })
   await p.exec()
   return { ok: true, user: publicUser({ ...u, ...next }) }
 }

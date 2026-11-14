@@ -96,7 +96,7 @@ function Accueil() {
   const n = numeroDuJour()
   const etat = store.get(`qec-${n}`, null)
   const stats = store.get('qec-stats', { serie: 0 })
-  const st = useStats()
+  const st = useStats(numeroDuJour())
   return (
     <main className="screen">
       <header className="home-head">
@@ -126,7 +126,7 @@ function Accueil() {
       </section>
 
       <a className="lb-link" href="#classement">
-        <span className="col"><b>Le classement des séries</b><span className="muted small">{st?.classement?.[0] ? `En tête : ${st.classement[0].pseudo}, ${st.classement[0].serie} jour${st.classement[0].serie > 1 ? 's' : ''} d'affilée` : 'Qui tiendra la plus longue série ?'}</span></span>
+        <span className="col"><b>Les classements</b><span className="muted small">{st?.classementJour?.[0]?.essais ? `Aujourd'hui en tête : ${st.classementJour[0].pseudo}, en ${st.classementJour[0].essais} indice${st.classementJour[0].essais > 1 ? 's' : ''}` : "Aujourd'hui · Moyenne · Séries"}</span></span>
         <Icon d={I.next} />
       </a>
 
@@ -664,8 +664,15 @@ function Methodo() {
 }
 
 /* ---------------- Classement + code de sauvegarde ---------------- */
+const ONGLETS = {
+  jour: { label: "Aujourd'hui", titre: 'Le mystère du jour', unite: 'indices', vide: "Personne n'a encore trouvé aujourd'hui avec un pseudo.", note: "Moins d'indices = mieux. À égalité, le premier à avoir trouvé passe devant." },
+  moyenne: { label: 'Moyenne', titre: 'Les plus réguliers', unite: 'indices en moyenne', vide: 'Il faut au moins 5 parties pour entrer dans ce classement.', note: 'Moyenne d\'indices sur toutes vos parties (un raté compte 7), dès 5 parties.' },
+  series: { label: 'Séries', titre: 'Les plus longues séries en cours', unite: "jours d'affilée", vide: 'Personne encore. Jouez le mystère du jour pour ouvrir le bal.', note: 'Nombre de jours trouvés d\'affilée, sans en rater un.' },
+}
+
 function Classement() {
-  const st = useStats()
+  const st = useStats(numeroDuJour())
+  const [onglet, setOnglet] = useState('jour')
   const [moi, setMoi] = useState(() => store.get('qec-stats', {}))
   const [pseudo, setPseudo] = useState(moi.pseudo || '')
   const [code, setCode] = useState('')
@@ -674,7 +681,7 @@ function Classement() {
   const enregistrerPseudo = async (e) => {
     e.preventDefault()
     const j = await api('/api/compte', { action: 'pseudo', joueur: joueurId(), pseudo })
-    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît au classement dès que votre série est en cours.') }
+    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît dans les classements dès votre prochaine partie.') }
     else setMsg(j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
   }
   const monCode = async () => {
@@ -690,13 +697,22 @@ function Classement() {
   return (
     <main className="screen">
       <Header title="Classement" />
+      <div className="seg">
+        {Object.entries(ONGLETS).map(([k, o]) => <button key={k} className={onglet === k ? 'on' : ''} onClick={() => setOnglet(k)}>{o.label}</button>)}
+      </div>
       <section className="chart">
-        <div className="row-between"><b>Les plus longues séries en cours</b><span className="muted tiny">jours d'affilée</span></div>
+        <div className="row-between"><b>{ONGLETS[onglet].titre}</b><span className="muted tiny">{ONGLETS[onglet].unite}</span></div>
         {!st && <span className="muted small">Classement indisponible pour le moment.</span>}
-        {st && !st.classement.length && <span className="muted small">Personne encore. Jouez le mystère du jour et choisissez un pseudo pour ouvrir le bal.</span>}
-        {st?.classement.map((u, i) => (
-          <div key={i} className={u.pseudo === moi.pseudo ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col b">{u.pseudo}</span><span className="b">{u.serie}</span></div>
-        ))}
+        {st && (() => {
+          const rows = onglet === 'jour' ? (st.classementJour || []).map((u) => ({ pseudo: u.pseudo, v: u.essais ?? 'Raté' }))
+            : onglet === 'moyenne' ? (st.classementMoyenne || []).map((u) => ({ pseudo: u.pseudo, v: String(u.moyenne).replace('.', ','), sub: `${u.parties} parties` }))
+            : (st.classement || []).map((u) => ({ pseudo: u.pseudo, v: u.serie }))
+          if (!rows.length) return <span className="muted small">{ONGLETS[onglet].vide}</span>
+          return rows.map((u, i) => (
+            <div key={i} className={u.pseudo === moi.pseudo ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col"><b>{u.pseudo}</b>{u.sub && <span className="muted tiny">{u.sub}</span>}</span><span className="b">{u.v}</span></div>
+          ))
+        })()}
+        <span className="muted tiny">{ONGLETS[onglet].note}</span>
       </section>
 
       <form className="card-form" onSubmit={enregistrerPseudo}>
