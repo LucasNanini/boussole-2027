@@ -237,7 +237,7 @@ function grille(etat) {
 }
 function texteGrille(n, etat) {
   const sq = grille(etat).map((g) => (g === 'win' ? '✅' : g === 'used' ? '⬛' : '⬜')).join('')
-  return `Boussole 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? boussole.vote`
+  return `Boussole 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? boussole-vote-2027.vercel.app`
 }
 
 function Resultat({ n, rep, etat, clues }) {
@@ -255,7 +255,7 @@ function Resultat({ n, rep, etat, clues }) {
     const blob = await story(n, etat)
     const file = new File([blob], `boussole-qui-est-ce-${n}.png`, { type: 'image/png' })
     try {
-      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], text: 'boussole.vote' }); return }
+      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], text: 'boussole-vote-2027.vercel.app' }); return }
     } catch { return }
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; a.click()
   }
@@ -291,7 +291,7 @@ function Resultat({ n, rep, etat, clues }) {
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
         <Grille etat={etat} />
-        <span className="mono small">Qui est-ce ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · boussole.vote</span>
+        <span className="mono small">Qui est-ce ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · boussole-vote-2027.vercel.app</span>
         <div className="grid2 w100">
           <button className="btn btn-light" onClick={partagerStory}><Icon d={I.share} size={18} /> Story</button>
           <button className="btn btn-outline-light" onClick={partagerTexte}>Défier un ami</button>
@@ -330,7 +330,7 @@ async function story(n, etat) {
   x.font = '700 68px "Space Grotesk", sans-serif'
   ;['Et toi, tu le/la', 'reconnais en combien ?'].forEach((l, i) => x.fillText(l, 220, 1400 + i * 84))
   x.fillStyle = '#D9D9E3'; x.font = '400 40px Inter, sans-serif'; x.fillText('Joue au mystère du jour', 220, 1720)
-  x.fillStyle = '#fff'; x.font = '700 64px "Space Grotesk", sans-serif'; x.fillText('boussole.vote', 220, 1800)
+  x.fillStyle = '#fff'; x.font = '700 46px "Space Grotesk", sans-serif'; x.fillText('boussole-vote-2027.vercel.app', 220, 1800)
   return new Promise((r) => cv.toBlob(r, 'image/png'))
 }
 
@@ -455,7 +455,7 @@ function Hebdo() {
           </article>
         ))}
       </div>
-      <p className="muted tiny center">Mot pour mot, vérifié dans son contexte · <a href="mailto:contact@boussole.vote">Signaler une erreur</a></p>
+      <p className="muted tiny center">Mot pour mot, vérifié dans son contexte · <a href="https://github.com/LucasNanini/boussole-2027/issues" target="_blank" rel="noreferrer">Signaler une erreur</a></p>
     </main>
   )
 }
