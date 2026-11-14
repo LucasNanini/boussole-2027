@@ -1,7 +1,7 @@
 {
  "_meta": {
   "regle": "Comptes OFFICIELS uniquement (vérifiés ou liés depuis le site de campagne). Chaque compte doit être validé par un humain (\"valide\": true) avant d'être utilisé par le job hebdo.",
-  "perimetre": "Le job hebdo ne tourne que pour les candidats listés ici, en commençant par les 11 principaux, pour limiter les crédits Oriane (1 recherche par candidat et par semaine)."
+  "perimetre": "Les 11 candidats principaux, plus Natacha Polony et Teddy Riner (ajoutés le 14/11/2026 à la demande de Lucas). 1 recherche Oriane par candidat et par semaine."
  },
  "comptes": {
   "attal": [
@@ -101,6 +101,36 @@
     "handle": "ericzemmour_",
     "oriane_id": "prf_2e9f5b0fc0621f74f8e221309cf6",
     "valide": true
+   }
+  ],
+  "riner": [
+   {
+    "plateforme": "instagram",
+    "handle": "teddyriner",
+    "oriane_id": "prf_67cd412ae8bedd494039fadbe513",
+    "valide": true
+   },
+   {
+    "plateforme": "tiktok",
+    "handle": "teddyriner",
+    "oriane_id": "prf_320d52882b08872950217abf828b",
+    "valide": true
+   }
+  ],
+  "polony": [
+   {
+    "plateforme": "tiktok",
+    "handle": "natachapolony",
+    "oriane_id": "prf_dba046a6fa70b15328ecf8608f1f",
+    "valide": false,
+    "note": "à confirmer"
+   },
+   {
+    "plateforme": "instagram",
+    "handle": "polony.info",
+    "oriane_id": "prf_1d6441faa7234ea37313869bc051",
+    "valide": false,
+    "note": "compte d'info ? à confirmer"
    }
   ]
  }

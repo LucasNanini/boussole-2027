@@ -31,7 +31,8 @@ const erreurs = []
 const candidats = {}
 
 for (const [id, c] of Object.entries(raw.candidats)) {
-  const videos = c.videos || []
+  // seules comptent les vidéos qui contiennent au moins un passage politique (avec thème)
+  const videos = (c.videos || []).filter((v) => (v.segments || []).length)
   if (!videos.length) continue
   const poids = Object.fromEntries(THEMES.map((t) => [t, 0]))
   let total = 0

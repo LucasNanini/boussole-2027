@@ -5,6 +5,7 @@ import {
   joueurId, api, syncStats, fmt,
 } from './lib.js'
 import THEMES from './data/themes.json'
+import COMPTES from './data/comptes.json'
 import RAW from './data/candidats.json'
 const DATA_EXTRA = RAW.a_verifier_hors_liste
 
@@ -477,10 +478,23 @@ function SansEdition({ titre }) {
   )
 }
 
+// Ordre des candidats tiré au hasard à chaque visite (comme le Trombino) : aucun ordre fixe ne favorise personne.
+const ORDRE_VISITE = Math.floor(Math.random() * 1e9)
 function useHebdoCandidat(h) {
-  const ids = Object.keys(h?.candidats ?? {})
+  const ids = useMemo(() => shuffle(Object.keys(h?.candidats ?? {}), ORDRE_VISITE), [h])
   const [id, setId] = useState(ids[0])
   return [id, setId, ids]
+}
+// Candidats suivis par l'hebdo mais absents de cette édition
+function Absents({ h }) {
+  const suivis = Object.keys(COMPTES.comptes)
+  const absents = suivis.filter((k) => !h.candidats[k]).map((k) => {
+    const c = CANDIDATS.find((x) => x.id === k)
+    const raison = COMPTES.comptes[k].some((a) => a.valide) ? 'aucune vidéo politique cette semaine' : 'pas encore de compte officiel validé'
+    return c ? `${c.nom} (${raison})` : null
+  }).filter(Boolean)
+  if (!absents.length) return null
+  return <p className="muted tiny">Absents de cette édition : {absents.join(', ')}.</p>
 }
 
 function Hebdo() {
@@ -517,6 +531,7 @@ function Hebdo() {
           </article>
         ))}
       </div>
+      <Absents h={h} />
       <p className="muted tiny center">Mot pour mot, vérifié dans son contexte · <a href="https://github.com/LucasNanini/boussole-2027/issues" target="_blank" rel="noreferrer">Signaler une erreur</a></p>
     </main>
   )
@@ -559,6 +574,9 @@ function Themes() {
           {ids.map((k) => { const x = CANDIDATS.find((y) => y.id === k); return <button key={k} className={k === id ? 'fchip on' : 'fchip'} style={k === id ? { background: blocOf(x).color, borderColor: blocOf(x).color } : {}} onClick={() => setId(k)}>{x.nom}</button> })}
         </div>
       )}
+      {cid && (() => { const n = h.candidats[cid].nb_videos; const x = CANDIDATS.find((y) => y.id === cid); return (
+        <p className={n < 3 ? 'warn-soft' : 'muted small'}><b>{x.nom}</b> · {n} vidéo{n > 1 ? 's' : ''} cette semaine{n < 3 ? ' : trop peu pour en tirer une tendance, à lire avec prudence.' : ''}</p>
+      ) })()}
       <div className="legend"><span><i style={{ background: color }} />Cette semaine</span>{prev && <span><i style={{ background: '#C9CAD6' }} />Semaine d'avant</span>}</div>
       <section className="chart">
         {(tout ? rows : rows.slice(0, 6)).map((r) => {
@@ -576,7 +594,8 @@ function Themes() {
       {top && top.v - top.p > 0 && (
         <div className="callout"><span className="eyebrow light">Le chiffre de la semaine</span><b>{top.court} : +{Math.round(top.v - top.p)} points en une semaine.</b></div>
       )}
-      <p className="muted tiny">Source : vidéos des comptes officiels Instagram, TikTok et YouTube (via Oriane). Thèmes classés automatiquement puis vérifiés. <a href="#methodo">Méthodologie</a></p>
+      <Absents h={h} />
+      <p className="muted tiny">Ordre des candidats tiré au hasard. Source : vidéos des comptes officiels Instagram, TikTok et YouTube (via Oriane). Thèmes classés automatiquement puis vérifiés. <a href="#methodo">Méthodologie</a></p>
     </main>
   )
 }

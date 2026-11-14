@@ -24,6 +24,10 @@ Pour chaque vidéo :
 - Découper la transcription en passages (≈ phrases). Donner à chaque passage UN thème parmi les 12
   de `src/data/themes.json` (exemples à l'appui), avec sa durée en secondes si disponible, sinon son nombre de mots.
 - Écrire `segments: [{ theme, poids }]` dans le fichier brut.
+- Passages SANS contenu politique (sport, vie privée, promotion, coulisses sans propos de campagne) : ne leur
+  donner aucun thème et ne pas les compter. Une vidéo entièrement hors politique est ignorée (ni thèmes ni citation),
+  et ne compte pas dans `nb_videos`. Si un candidat n'a aucune vidéo politique dans la semaine, ne pas le mettre
+  dans l'édition.
 
 Choisir **5 citations** par candidat :
 - tirées des vidéos les plus vues, une seule par vidéo autant que possible ;
