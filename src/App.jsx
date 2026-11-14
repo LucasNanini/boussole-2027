@@ -126,6 +126,18 @@ const ModeCard = ({ on, title, sub, to, tag }) => (
 )
 
 /* ---------------- Qui est-ce ? ---------------- */
+// Mettre à true pour afficher les couleurs de parti dès le début (rend l'indice 4 inutile).
+const COULEURS_TOUJOURS = false
+
+function TileFace({ c }) {
+  const [ok, setOk] = useState(true)
+  return (
+    <span className="tile-face">
+      {ok ? <img src={`${import.meta.env.BASE_URL}candidats/${c.id}.jpg`} alt="" loading="lazy" onError={() => setOk(false)} />
+        : <span>{initiales(c.nom)}</span>}
+    </span>
+  )
+}
 function Jeu() {
   const n = numeroDuJour()
   const rep = useMemo(() => mystere(n), [n])
@@ -137,6 +149,7 @@ function Jeu() {
   const [msg, setMsg] = useState('')
   const vus = Math.min(6, etat.essais.length + 1)
   const points = 100 - 15 * (vus - 1)
+  const couleursVisibles = COULEURS_TOUJOURS || vus >= 4
 
   const proposer = (c) => {
     if (etat.fini || !c || etat.essais.includes(c.id)) return
@@ -193,15 +206,17 @@ function Jeu() {
       <div className="board">
         {board.map((c) => {
           const out = etat.essais.includes(c.id)
+          const color = couleursVisibles ? blocOf(c).color : '#C9CAD6'
           return (
             <button key={c.id} className={out ? 'tile out' : 'tile'} disabled={out} onClick={() => proposer(c)} aria-label={`Proposer ${c.nom}${out ? ' (déjà proposé)' : ''}`}>
-              <Icon d={I.user} size={16} />
-              <span>{c.nom.split(' ').slice(-1)[0]}</span>
+              <TileFace c={c} />
+              <span className="tile-name">{c.nom.split(' ').slice(-1)[0]}</span>
+              <span className="tile-bar" style={{ background: color }} />
             </button>
           )
         })}
       </div>
-      <span className="muted small">Plateau sans couleurs de parti : elles trahiraient la réponse.</span>
+      <span className="muted small">{couleursVisibles ? 'Couleurs des familles politiques débloquées (indice 4).' : 'Les couleurs des familles s\'affichent avec l\'indice 4.'}</span>
 
       <form className="guess" onSubmit={valider}>
         <label className="sr" htmlFor="g">Votre réponse</label>
