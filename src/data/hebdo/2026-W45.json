@@ -1,0 +1,550 @@
+{
+ "semaine": "2026-W45",
+ "du": "2026-11-02",
+ "au": "2026-11-08",
+ "statut": "publie",
+ "genere_le": "2026-11-14T17:22:17.145Z",
+ "candidats": {
+  "attal": {
+   "nb_videos": 10,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 13,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 49,
+    "logement": 0,
+    "finances": 3.6,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 34.5
+   },
+   "citations": [
+    {
+     "texte": "Alors plutôt que taxer l'héritage, je préfère aider les petits-enfants à hériter.",
+     "url": "https://www.instagram.com/reel/DfX9RT4IAFb/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfX9RT4IAFb/thumbnail.webp"
+    },
+    {
+     "texte": "Avant, quand un élève était harcelé, c'était souvent lui qui devait changer d'école. C'est plus le cas aujourd'hui. Parce que j'ai changé la règle, c'est le harceleur qui doit partir.",
+     "url": "https://www.instagram.com/reel/DfWyHOuIjx_/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfWyHOuIjx_/thumbnail.webp"
+    },
+    {
+     "texte": "Parfois on m'a dit que je me déplaçais trop, mais je pense qu'on ne se déplace jamais assez quand on est en politique.",
+     "url": "https://www.instagram.com/reel/DfaNhfxjn-X/",
+     "plateforme": "instagram",
+     "date": "2026-11-06",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfaNhfxjn-X/thumbnail.webp"
+    },
+    {
+     "texte": "Et donc si ce n'est pas la force qui fait l'union, c'est l'union qui doit faire la force.",
+     "url": "https://www.instagram.com/reel/Dfc2Pqeoak1/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfc2Pqeoak1/thumbnail.webp"
+    },
+    {
+     "texte": "J'ai dit que je voulais réformer le système d'assurance chômage pour réduire la durée d'indemnisation pour nous mettre dans la moyenne des pays européens.",
+     "url": "https://www.instagram.com/reel/DfW5EQOIKYi/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfW5EQOIKYi/thumbnail.webp"
+    }
+   ]
+  },
+  "glucksmann": {
+   "nb_videos": 7,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 11.5,
+    "ecologie": 0,
+    "education": 13.2,
+    "logement": 0,
+    "finances": 0,
+    "international": 27.9,
+    "democratie": 13.7,
+    "campagne": 33.7
+   },
+   "citations": [
+    {
+     "texte": "Les stages de plus de deux mois passeront à 1000 euros minimum par mois, dès que je suis élu président.",
+     "url": "https://www.instagram.com/reel/DfQCY3rIkK_/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfQCY3rIkK_/thumbnail.webp"
+    },
+    {
+     "texte": "Pourquoi ne suis-je pas moi décrits comme Français issus de l'immigration? Pourquoi? Parce que je ne suis pas noir et que je ne suis pas arabe.",
+     "url": "https://www.instagram.com/reel/Dffj5HZIopo/",
+     "plateforme": "instagram",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dffj5HZIopo/thumbnail.webp"
+    },
+    {
+     "texte": "C'est pas condamner la Chine, c'est condamner le régime chinois.",
+     "url": "https://www.instagram.com/reel/DfcyLPLo4Gy/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfcyLPLo4Gy/thumbnail.webp"
+    },
+    {
+     "texte": "J'ai envie de vous faire vivre cette campagne au plus près. Que vous veniez chez moi, chez nous, dans notre QG.",
+     "url": "https://www.instagram.com/reel/DfVPV-Qof-A/",
+     "plateforme": "instagram",
+     "date": "2026-11-04",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfVPV-Qof-A/thumbnail.webp"
+    },
+    {
+     "texte": "Il fallait qu'on soit tous là pour réaffirmer la République une et indivisible et antiraciste.",
+     "url": "https://www.instagram.com/reel/DfPBvKxIxWq/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPBvKxIxWq/thumbnail.webp"
+    }
+   ]
+  },
+  "le-pen": {
+   "nb_videos": 8,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 38.8,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 10.5,
+    "international": 0,
+    "democratie": 34.2,
+    "campagne": 16.5
+   },
+   "citations": [
+    {
+     "texte": "Donc toutes les discriminations qui sont avérées et qui sont liées à la couleur de la peau, à la religion, au prénom, me trouveront sur leur chemin.",
+     "url": "https://www.tiktok.com/@mlp.officiel/video/7703990652849163552",
+     "plateforme": "tiktok",
+     "date": "2026-11-03",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7703990652849163552/thumbnail.webp"
+    },
+    {
+     "texte": "Ça arrive parce qu'en réalité, ceux qui s'attaquent à nos policiers le font avec un sentiment d'impunité totale.",
+     "url": "https://www.instagram.com/reel/DfRuPkDO7WI/",
+     "plateforme": "instagram",
+     "date": "2026-11-03",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfRuPkDO7WI/thumbnail.webp"
+    },
+    {
+     "texte": "Et si vous touchez à un policier, les conséquences et la dureté de la loi vont tomber sur vous.",
+     "url": "https://www.tiktok.com/@mlp.officiel/video/7703898589491252513",
+     "plateforme": "tiktok",
+     "date": "2026-11-03",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7703898589491252513/thumbnail.webp"
+    },
+    {
+     "texte": "Emmanuel Macron, il aura vraiment enregistré tous les records, y compris le record de voir un budget rejeté sans une seule voix pour quand même.",
+     "url": "https://www.instagram.com/reel/DfZfqyxO11X/",
+     "plateforme": "instagram",
+     "date": "2026-11-06",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfZfqyxO11X/thumbnail.webp"
+    },
+    {
+     "texte": "c'est quand même une fin de règne qui est un peu pathétique.",
+     "url": "https://www.tiktok.com/@mlp.officiel/video/7705018028802460960",
+     "plateforme": "tiktok",
+     "date": "2026-11-06",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705018028802460960/thumbnail.webp"
+    }
+   ]
+  },
+  "melenchon": {
+   "nb_videos": 6,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 6.5,
+    "ecologie": 15,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 27,
+    "democratie": 14.9,
+    "campagne": 36.7
+   },
+   "citations": [
+    {
+     "texte": "Nous n'acceptons pas l'annexion progressive de la Cisjordanie, ni du Sud-Liban, ni du plateau du Golan",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7705827590623317281",
+     "plateforme": "tiktok",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705827590623317281/thumbnail.webp"
+    },
+    {
+     "texte": "Les navires français, comme ceux de l'Italie et de l'Espagne, s'il le fallait, escorteront les flottilles de citoyens mobilisés pour faire valoir les droits du peuple.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7705827590623317281",
+     "plateforme": "tiktok",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705827590623317281/thumbnail.webp"
+    },
+    {
+     "texte": "Nous sommes en train d'ouvrir le chemin d'un grand changement politique en France.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7705708104423410977",
+     "plateforme": "tiktok",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705708104423410977/thumbnail.webp"
+    },
+    {
+     "texte": "Nous allons réussir la nouvelle France, celle de tous nos enfants, sans exception, quels que soient leurs ancêtres, leurs religions ou leurs couleurs de peau.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7705528635385466145",
+     "plateforme": "tiktok",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705528635385466145/thumbnail.webp"
+    },
+    {
+     "texte": "quel honneur vous me faites en me confiant la responsabilité, si je suis élu, de prendre tous les moyens immédiats pour assurer l'indépendance de la Kanaki.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7705753989291281697",
+     "plateforme": "tiktok",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705753989291281697/thumbnail.webp"
+    }
+   ]
+  },
+  "philippe": {
+   "nb_videos": 8,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 6.6,
+    "securite": 0,
+    "immigration": 8.1,
+    "ecologie": 0,
+    "education": 14.9,
+    "logement": 0,
+    "finances": 5.7,
+    "international": 29.8,
+    "democratie": 1.5,
+    "campagne": 33.3
+   },
+   "citations": [
+    {
+     "texte": "Oui, il y a des Français issus de l'immigration, ils sont Français à part entière, ils ont les mêmes droits, les mêmes devoirs.",
+     "url": "https://www.instagram.com/reel/DfUpUpJOdOp/",
+     "plateforme": "instagram",
+     "date": "2026-11-04",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfUpUpJOdOp/thumbnail.webp"
+    },
+    {
+     "texte": "On doit interdire les réseaux sociaux avant 15 ans.",
+     "url": "https://www.instagram.com/reel/DfWjXEJTjvr/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfWjXEJTjvr/thumbnail.webp"
+    },
+    {
+     "texte": "Augmenter notre présence à la mer, je milite pour un modèle à au moins 18 frégates.",
+     "url": "https://www.instagram.com/reel/DfX9apHulko/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfX9apHulko/thumbnail.webp"
+    },
+    {
+     "texte": "Donc je veux une France plus forte, plus libre, plus confiante, plus influente.",
+     "url": "https://www.instagram.com/reel/DfeYP4YO_4A/",
+     "plateforme": "instagram",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfeYP4YO_4A/thumbnail.webp"
+    },
+    {
+     "texte": "La démocratie, ce n'est pas simplement la culture du clash. Ce n'est pas simplement la culture de la formule.",
+     "url": "https://www.instagram.com/reel/DfbzTHVOlys/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfbzTHVOlys/thumbnail.webp"
+    }
+   ]
+  },
+  "retailleau": {
+   "nb_videos": 15,
+   "themes": {
+    "pouvoir-achat": 1.5,
+    "sante": 0,
+    "travail": 14.7,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 1.7,
+    "education": 0,
+    "logement": 7.7,
+    "finances": 0.7,
+    "international": 6.9,
+    "democratie": 0,
+    "campagne": 66.7
+   },
+   "citations": [
+    {
+     "texte": "Moi quand je suis né, il y avait 4 cotisants pour un retraité. Et aujourd'hui, on a 1,6.",
+     "url": "https://www.instagram.com/reel/DfP6UeSN6-2/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfP6UeSN6-2/thumbnail.webp"
+    },
+    {
+     "texte": "Ce que je propose d'ici la fin de l'année déjà, c'est qu'il y ait une confrontation, il y ait trois grands débats.",
+     "url": "https://www.instagram.com/reel/DfVMQMztR7e/",
+     "plateforme": "instagram",
+     "date": "2026-11-04",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfVMQMztR7e/thumbnail.webp"
+    },
+    {
+     "texte": "C'est dommage parce qu'à un moment donné, quand on est candidat, on doit pouvoir accepter une forme de confrontation civique.",
+     "url": "https://www.instagram.com/reel/DfabPcgtYv1/",
+     "plateforme": "instagram",
+     "date": "2026-11-06",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfabPcgtYv1/thumbnail.webp"
+    },
+    {
+     "texte": "Eh bien, ce que je crois, c'est que de mauvaises décisions politiques ont mis la France à terre. De bonnes décisions politiques la remettront à l'endroit.",
+     "url": "https://www.instagram.com/reel/DfdNHQ4Nln4/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfdNHQ4Nln4/thumbnail.webp"
+    },
+    {
+     "texte": "Et pour vouloir la paix, il faut préparer la guerre.",
+     "url": "https://www.instagram.com/reel/DfX_evFNMXx/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfX_evFNMXx/thumbnail.webp"
+    }
+   ]
+  },
+  "roussel": {
+   "nb_videos": 3,
+   "themes": {
+    "pouvoir-achat": 13.9,
+    "sante": 0,
+    "travail": 3.5,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 15.2,
+    "logement": 22.7,
+    "finances": 37.1,
+    "international": 1,
+    "democratie": 0,
+    "campagne": 6.5
+   },
+   "citations": [
+    {
+     "texte": "Il n'y a pas de problème d'argent dans notre pays.",
+     "url": "https://www.instagram.com/reel/DfSYfqpOuGp/",
+     "plateforme": "instagram",
+     "date": "2026-11-03",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfSYfqpOuGp/thumbnail.webp"
+    },
+    {
+     "texte": "Je préfère qu'on investisse dans l'éducation plutôt que dans la guerre.",
+     "url": "https://www.instagram.com/reel/DfSYfqpOuGp/",
+     "plateforme": "instagram",
+     "date": "2026-11-03",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfSYfqpOuGp/thumbnail.webp"
+    },
+    {
+     "texte": "Et puis pour des meilleurs salaires, des meilleures pensions, on veut que le travail nous permette de vivre.",
+     "url": "https://www.instagram.com/reel/DfXZGdwOVMR/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXZGdwOVMR/thumbnail.webp"
+    },
+    {
+     "texte": "Eh ben voilà, se loger ça devient l'enfer en France.",
+     "url": "https://www.instagram.com/reel/DfXJgsHOxw1/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXJgsHOxw1/thumbnail.webp"
+    },
+    {
+     "texte": "On perd des dizaines de milliers d'emplois dans le bâtiment parce qu'on ne construit plus en France.",
+     "url": "https://www.instagram.com/reel/DfXJgsHOxw1/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXJgsHOxw1/thumbnail.webp"
+    }
+   ]
+  },
+  "tondelier": {
+   "nb_videos": 5,
+   "themes": {
+    "pouvoir-achat": 2.2,
+    "sante": 0,
+    "travail": 0,
+    "securite": 31.4,
+    "immigration": 0,
+    "ecologie": 34.3,
+    "education": 0,
+    "logement": 0,
+    "finances": 2.9,
+    "international": 0,
+    "democratie": 10.5,
+    "campagne": 18.6
+   },
+   "citations": [
+    {
+     "texte": "En fait, ce que je vous dis, c'est qu'on ne réglera pas les fins de mois sans mener une politique de transition écolo.",
+     "url": "https://www.instagram.com/reel/Dfc1bMQz8OO/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfc1bMQz8OO/thumbnail.webp"
+    },
+    {
+     "texte": "Et en fait, quand on parle du pouvoir d'achat, la plupart des problèmes de pouvoir d'achat sont dus aussi au surendettement climatique.",
+     "url": "https://www.instagram.com/reel/Dfc1bMQz8OO/",
+     "plateforme": "instagram",
+     "date": "2026-11-07",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfc1bMQz8OO/thumbnail.webp"
+    },
+    {
+     "texte": "Je dois hacker les interviews pour le faire et je vais continuer.",
+     "url": "https://www.instagram.com/reel/DfZ9w6svczu/",
+     "plateforme": "instagram",
+     "date": "2026-11-06",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfZ9w6svczu/thumbnail.webp"
+    },
+    {
+     "texte": "Alors je commence par remercier votre reporter de terrain pour ce qu'il dit, parce que j'ai entendu peu de journalistes et peu de contenus éditoriaux le souligner.",
+     "url": "https://www.instagram.com/reel/DfPfsu4TP4L/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPfsu4TP4L/thumbnail.webp"
+    },
+    {
+     "texte": "je ne sais pas ce qui s'est passé dans ce pays pour que même organiser une simple manifestation, on ne sache plus le faire",
+     "url": "https://www.instagram.com/reel/DfViHszz2j0/",
+     "plateforme": "instagram",
+     "date": "2026-11-04",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfViHszz2j0/thumbnail.webp"
+    }
+   ]
+  },
+  "zemmour": {
+   "nb_videos": 7,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 35.5,
+    "logement": 0,
+    "finances": 0,
+    "international": 31.8,
+    "democratie": 0,
+    "campagne": 32.7
+   },
+   "citations": [
+    {
+     "texte": "Robespierre, c'est la terreur, c'est la guillotine, c'est la violence, c'est la mort de milliers de personnes",
+     "url": "https://www.instagram.com/reel/DfPWZf7OUkY/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPWZf7OUkY/thumbnail.webp"
+    },
+    {
+     "texte": "Je n'aime pas me victimiser, je suis un combattant. Je suis un combattant et un dissident.",
+     "url": "https://www.instagram.com/reel/DfPAag1ug01/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPAag1ug01/thumbnail.webp"
+    },
+    {
+     "texte": "C'est une chance historique pour l'industrie de défense française et pour la France. Nous ne devons absolument pas la manquer.",
+     "url": "https://www.instagram.com/reel/DfXlhjwOJ1C/",
+     "plateforme": "instagram",
+     "date": "2026-11-05",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXlhjwOJ1C/thumbnail.webp"
+    },
+    {
+     "texte": "On a édifié le culte du diplôme sans chercher à savoir ce qu'il y avait dedans.",
+     "url": "https://www.instagram.com/reel/Dfew9BNus9g/",
+     "plateforme": "instagram",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfew9BNus9g/thumbnail.webp"
+    },
+    {
+     "texte": "Et nous nous étonnons que la jeunesse à qui l'on n'a rien transmis n'ait plus rien à quoi s'accrocher.",
+     "url": "https://www.instagram.com/reel/DffcXCIuLxu/",
+     "plateforme": "instagram",
+     "date": "2026-11-08",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DffcXCIuLxu/thumbnail.webp"
+    }
+   ]
+  },
+  "lisnard": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 46.4,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 43.8,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 9.7
+   },
+   "citations": [
+    {
+     "texte": "Tu commences ta semaine en lisant la presse très tôt et tu constates ce que tu sais déjà finalement, c'est-à-dire l'effondrement de l'économie française.",
+     "url": "https://www.instagram.com/reel/DfO3tagI976/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+    },
+    {
+     "texte": "Une inflation très élevée et qui porte atteinte au pouvoir d'achat des Français et notamment des plus modestes.",
+     "url": "https://www.instagram.com/reel/DfO3tagI976/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+    },
+    {
+     "texte": "Il faut produire plus pour gagner plus, évidemment.",
+     "url": "https://www.instagram.com/reel/DfO3tagI976/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+    },
+    {
+     "texte": "Trop d'impôts tuent l'impôt, ils augmentent les prélèvements, ils s'étonnent ensuite qu'il y ait moins de recettes.",
+     "url": "https://www.instagram.com/reel/DfO3tagI976/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+    },
+    {
+     "texte": "Ce changement profond, il faut le mener et c'est pourquoi il faut gagner l'élection présidentielle.",
+     "url": "https://www.instagram.com/reel/DfO3tagI976/",
+     "plateforme": "instagram",
+     "date": "2026-11-02",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+    }
+   ]
+  }
+ },
+ "publie_le": "2026-11-14"
+}
