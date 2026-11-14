@@ -4,7 +4,9 @@ Lancé chaque lundi à 7h (heure de Paris) par une tâche planifiée Claude. Il 
 jamais une publication directe : rien n'apparaît dans l'app tant que Lucas n'a pas validé.
 
 ## 0. Pré-requis (première exécution seulement)
-Pour chaque candidat de `src/data/comptes.json` dont la liste est vide :
+Pour les candidats de `src/data/comptes.json` dont la liste est vide — UNIQUEMENT si
+`_meta.derniere_recherche_comptes` date de plus de 28 jours (sinon passer), en UN seul appel groupé
+(`displayName.includesFuzzy` avec `operator: "or"` et tous les noms sans accents), puis mettre la date à jour :
 - `search_profiles` (Oriane, projection `basic`, limit 5) sur le nom affiché + `isVerified: true`.
 - Ajouter les comptes trouvés avec `"valide": false`, `plateforme`, `handle`, `oriane_id`.
 - Ne PAS lancer la suite pour un candidat dont aucun compte n'est `"valide": true`.

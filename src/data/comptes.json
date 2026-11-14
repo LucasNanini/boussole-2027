@@ -1,7 +1,8 @@
 {
  "_meta": {
   "regle": "Comptes OFFICIELS uniquement (vérifiés ou liés depuis le site de campagne). Chaque compte doit être validé par un humain (\"valide\": true) avant d'être utilisé par le job hebdo.",
-  "perimetre": "Les 11 candidats principaux, plus Natacha Polony et Teddy Riner (ajoutés le 14/11/2026 à la demande de Lucas). 1 recherche Oriane par candidat et par semaine."
+  "perimetre": "Tous les candidats déclarés ayant un compte officiel actif (règle adoptée le 14/11/2026). 1 recherche Oriane par candidat et par semaine.",
+  "derniere_recherche_comptes": "2026-11-14"
  },
  "comptes": {
   "attal": [
@@ -125,6 +126,95 @@
     "valide": true,
     "note": "Compte de campagne confirmé par Lucas le 14/11/2026 ; pas encore indexé par Oriane (plateforme à confirmer)."
    }
-  ]
+  ],
+  "arthaud": [
+   {
+    "plateforme": "tiktok",
+    "handle": "nathaliearthaud",
+    "oriane_id": "prf_bd8b6bc029896ec1d3e36a5e4420",
+    "valide": true
+   }
+  ],
+  "asselineau": [],
+  "batho": [
+   {
+    "plateforme": "instagram",
+    "handle": "delphine_batho",
+    "oriane_id": "prf_b9ccf9ddac1b329df81fff4f0248",
+    "valide": true
+   }
+  ],
+  "becht": [],
+  "bonnal": [],
+  "bouamrane": [
+   {
+    "plateforme": "instagram",
+    "handle": "karimbouamrane",
+    "oriane_id": "prf_0cd9aa32aff714a4185c4fc7d24a",
+    "valide": true
+   }
+  ],
+  "branco": [
+   {
+    "plateforme": "tiktok",
+    "handle": "brancojuan",
+    "oriane_id": "prf_70cfb23925cae75dc06d53a754a4",
+    "valide": true
+   },
+   {
+    "plateforme": "instagram",
+    "handle": "brancojuan",
+    "oriane_id": "prf_fccbffb766d29723386226b7d839",
+    "valide": true
+   }
+  ],
+  "delmur": [],
+  "dubuisson": [],
+  "dupont-aignan": [],
+  "durif": [
+   {
+    "plateforme": "tiktok",
+    "handle": "sylvainpierredurif369",
+    "oriane_id": "prf_c74149d5ced085e93ce373d0bc28",
+    "valide": true,
+    "note": "se présente comme « Le Grand Monarque »"
+   },
+   {
+    "plateforme": "instagram",
+    "handle": "sylvainpierredurif369",
+    "oriane_id": "prf_cb79d2a9770894df93be37199398",
+    "valide": true,
+    "note": "se présente comme « Le Grand Monarque »"
+   }
+  ],
+  "egger": [],
+  "herlin": [],
+  "kazib": [
+   {
+    "plateforme": "instagram",
+    "handle": "anassekazib",
+    "oriane_id": "prf_1a72f61e25f6ba2ccc6e5a896f2f",
+    "valide": true
+   }
+  ],
+  "labib": [],
+  "lalanne": [],
+  "legendre": [],
+  "markovic": [],
+  "mathieu": [],
+  "mikolajczak": [],
+  "mlekuz": [],
+  "philippot": [
+   {
+    "plateforme": "tiktok",
+    "handle": "florianphilippot",
+    "oriane_id": "prf_9fe0f99ec0badc036a8566ef3eed",
+    "valide": true
+   }
+  ],
+  "platret": [],
+  "revillon-dapreval": [],
+  "rohou": [],
+  "saforcada": []
  }
 }

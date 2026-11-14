@@ -487,15 +487,21 @@ function useHebdoCandidat(h) {
 }
 // Candidats suivis par l'hebdo mais absents de cette édition
 function Absents({ h }) {
-  const suivis = Object.keys(COMPTES.comptes)
-  const absents = suivis.filter((k) => !h.candidats[k]).map((k) => {
-    const c = CANDIDATS.find((x) => x.id === k)
-    const cs = COMPTES.comptes[k]
-    const raison = cs.some((a) => a.valide && a.oriane_id) ? 'aucune vidéo politique cette semaine' : cs.some((a) => a.valide) ? 'compte de campagne pas encore indexé' : 'pas encore de compte officiel validé'
-    return c ? `${c.nom} (${raison})` : null
-  }).filter(Boolean)
-  if (!absents.length) return null
-  return <p className="muted tiny">Absents de cette édition : {absents.join(', ')}.</p>
+  const nom = (k) => CANDIDATS.find((x) => x.id === k)?.nom
+  const ids = Object.keys(COMPTES.comptes).filter((k) => !h.candidats[k] && nom(k))
+  const grp = (f) => ids.filter((k) => f(COMPTES.comptes[k])).map(nom)
+  const sansVideo = grp((cs) => cs.some((a) => a.valide && a.oriane_id))
+  const nonIndexe = grp((cs) => !cs.some((a) => a.valide && a.oriane_id) && cs.some((a) => a.valide))
+  const sansCompte = grp((cs) => !cs.some((a) => a.valide))
+  if (!ids.length) return null
+  return (
+    <details className="absents">
+      <summary>Pas dans cette édition : {ids.length} candidat·es</summary>
+      {sansVideo.length > 0 && <p><b>Aucune vidéo politique cette semaine :</b> {sansVideo.join(', ')}.</p>}
+      {nonIndexe.length > 0 && <p><b>Compte de campagne pas encore indexé :</b> {nonIndexe.join(', ')}.</p>}
+      {sansCompte.length > 0 && <p><b>Pas de compte officiel trouvé pour l'instant :</b> {sansCompte.join(', ')}. Vous connaissez le leur ? <a href="https://github.com/LucasNanini/boussole-2027/issues" target="_blank" rel="noreferrer">Signalez-le</a>.</p>}
+    </details>
+  )
 }
 
 function Hebdo() {
