@@ -15,6 +15,9 @@ const editions = () => EDITIONS.filter((h) => h.statut === 'publie' || window.lo
 
 /* ---------------- routing ---------------- */
 // Adresse affichée dans les partages : celle où l'app est réellement servie.
+// Compte Instagram de MOVO, sans le @. Laisser vide tant que le compte n'existe pas : rien ne s'affiche.
+export const INSTAGRAM = ''
+const IG_URL = INSTAGRAM ? `https://instagram.com/${INSTAGRAM}` : ''
 const SITE = typeof location !== 'undefined' && location.host ? location.host : 'movo-2027.vercel.app'
 
 function useRoute() {
@@ -136,7 +139,7 @@ function Accueil() {
         <ModeCard title="Mon cap" sub="Le comparateur, liste officielle" to="cap" tag="MARS 2027" />
       </div>
 
-      <footer className="foot"><span>Neutre · sourcé · sans compte</span><a href="#methodo">Méthodologie</a></footer>
+      <footer className="foot"><span>Neutre · sourcé · sans compte</span>{INSTAGRAM && <a href={IG_URL} target="_blank" rel="noreferrer">@{INSTAGRAM}</a>}<a href="#methodo">Méthodologie</a></footer>
     </main>
   )
 }
@@ -274,7 +277,8 @@ function grille(etat) {
 }
 function texteGrille(n, etat) {
   const sq = grille(etat).map((g) => (g === 'win' ? '🟩' : g === 'rate' ? '🟥' : '⬜')).join('')
-  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? ${SITE}`
+  const ig = INSTAGRAM ? `\nSuis @${INSTAGRAM} sur Instagram : instagram.com/${INSTAGRAM}` : ''
+  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? ${SITE}${ig}`
 }
 
 function Resultat({ n, rep, etat, clues }) {
@@ -341,6 +345,7 @@ function Resultat({ n, rep, etat, clues }) {
         </div>
         {copie && <span className="small">{copie}</span>}
       </section>
+      {INSTAGRAM && <a className="ig-btn" href={IG_URL} target="_blank" rel="noreferrer">Suivre @{INSTAGRAM} sur Instagram</a>}
       <p className="muted small center">Prochain mystère demain · <a href="#trombino">Réviser le Trombino</a></p>
     </main>
   )
@@ -394,6 +399,7 @@ async function story(n, etat) {
   ;['Et toi, tu le/la', 'reconnais en combien ?'].forEach((l, i) => x.fillText(l, 220, 1400 + i * 84))
   x.fillStyle = '#D9D9E3'; x.font = '400 40px Inter, sans-serif'; x.fillText('Joue au mystère du jour', 220, 1720)
   x.fillStyle = '#fff'; x.font = '700 46px "Space Grotesk", sans-serif'; x.fillText(SITE, 220, 1800)
+  if (INSTAGRAM) { x.fillStyle = '#D9D9E3'; x.font = '600 40px Inter, sans-serif'; x.fillText(`@${INSTAGRAM}`, 220, 1860) }
   return new Promise((r) => cv.toBlob(r, 'image/png'))
 }
 
