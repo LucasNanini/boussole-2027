@@ -682,7 +682,7 @@ function Classement() {
     e.preventDefault()
     const j = await api('/api/compte', { action: 'pseudo', joueur: joueurId(), pseudo })
     if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo, nom: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît dans les classements dès votre prochaine partie.') }
-    else setMsg(j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
+    else setMsg(j?.erreur === 'pris' ? 'Ce pseudo est déjà pris. Choisissez-en un autre.' : j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
   }
   const monCode = async () => {
     const j = await api('/api/compte', { action: 'code', joueur: joueurId() })

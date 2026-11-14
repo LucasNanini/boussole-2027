@@ -24,7 +24,9 @@ export const K = {
   lb: 'b27:classement',
   jour: (n) => `b27:jour:${n}`,  // score = clues (7 = raté) × 1e13 + horodatage : à égalité, le plus rapide devant
   moy: 'b27:moyenne',
-  num: (n) => `b27:num:${n}`,     // numéro public aléatoire (5 chiffres) des joueurs sans pseudo            // moyenne d'indices, minimum 5 parties
+  num: (n) => `b27:num:${n}`,
+  pseudo: (cle) => `b27:pseudo:${cle}`, // pseudo normalisé → joueur (unicité)
+  migr: 'b27:migration:2',     // numéro public aléatoire (5 chiffres) des joueurs sans pseudo            // moyenne d'indices, minimum 5 parties
   code: (c) => `b27:code:${c}`,
 }
 
@@ -50,6 +52,7 @@ export function pseudoValide(p) {
   const s = p.trim().replace(/\s+/g, ' ')
   if (s.length < 2 || s.length > 15) return null
   if (!/^[\p{L}\p{N} _.-]+$/u.test(s)) return null
+  if (/^joueur[\s_.-]*\d+$/i.test(norm(s))) return null // réservé aux joueurs sans pseudo
   const mots = norm(s).split(/[\s_.-]+/)
   const colle = norm(s).replace(/[\s_.-]+/g, '')
   if (INTERDITS.some((w) => mots.includes(norm(w)) || (norm(w).length > 4 && colle.includes(norm(w))))) return null
@@ -82,7 +85,38 @@ async function avecPseudos(r, raw, champs = []) {
   return out.filter((u) => u.nom)
 }
 
+export function numeroServeur(date = new Date()) {
+  const [y, m, d] = jourParis(date).split('-').map(Number)
+  return Math.max(1, Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(2026, 10, 16)) / 86400000) + 1)
+}
+// Migration unique : remet dans les classements les parties jouées avant leur création,
+// donne un numéro aux joueurs anonymes et réserve les pseudos déjà pris.
+async function migrer(r) {
+  if (await r.get(K.migr)) return
+  if (!(await r.set(K.migr + ':verrou', 1, { nx: true, ex: 120 }))) return
+  const auj = jourParis(), n = numeroServeur()
+  let curseur = '0'
+  do {
+    const [suivant, cles] = await r.scan(curseur, { match: 'b27:u:*', count: 500 })
+    curseur = String(suivant)
+    for (const k of cles) {
+      const joueur = k.slice('b27:u:'.length)
+      const u = (await r.hgetall(k)) || {}
+      if (!Number(u.joues)) continue
+      if (!u.num) u.num = await numeroPublic(r, joueur, u)
+      if (u.pseudo) await r.set(K.pseudo(clePseudo(u.pseudo)), joueur, { nx: true })
+      await r.zadd(K.lb, { score: Number(u.serie) || 0, member: joueur })
+      if (u.jour === auj) {
+        const e = Number(u.dernier) === n && Number(u.meilleur) ? Number(u.meilleur) : 7
+        await r.zadd(K.jour(n), { score: e * 1e13 + Date.now(), member: joueur })
+      }
+    }
+  } while (curseur !== '0')
+  await r.set(K.migr, Date.now())
+}
+
 export async function stats(r, numero) {
+  try { await migrer(r) } catch { /* sans gravité : réessayé à la prochaine lecture, après 2 min */ }
   const d = jourParis()
   const p = r.pipeline()
   p.get(K.total); p.pfcount(K.joueursJour(d)); p.pfcount(K.joueurs); p.pfcount(K.visiteurs)
@@ -169,10 +203,19 @@ export async function choisirPseudo(r, joueur, pseudo) {
   const p = pseudoValide(pseudo)
   if (!p) return { erreur: 'pseudo' }
   const u = (await r.hgetall(K.user(joueur))) || {}
+  const cle = clePseudo(p)
+  if (u.pseudo && clePseudo(u.pseudo) === cle) {
+    await r.hset(K.user(joueur), { pseudo: p }) // même pseudo, autre casse
+    return { ok: true, pseudo: p }
+  }
+  const pris = await r.set(K.pseudo(cle), joueur, { nx: true })
+  if (!pris && (await r.get(K.pseudo(cle))) !== joueur) return { erreur: 'pris' }
+  if (u.pseudo) await r.del(K.pseudo(clePseudo(u.pseudo))) // libère l'ancien
   await r.hset(K.user(joueur), { pseudo: p })
   await r.zadd(K.lb, { score: Number(u.serie) || 0, member: joueur })
   return { ok: true, pseudo: p }
 }
+export const clePseudo = (p) => norm(p).replace(/[\s_.-]+/g, '')
 export async function visite(r, id) {
   if (!ID_RE.test(id || '')) return { erreur: 'invalide' }
   const d = jourParis()
