@@ -95,11 +95,11 @@ function Accueil() {
         <div className="brand"><Icon d={I.compass} size={28} /><b>Boussole</b><span className="pill-dark">2027</span></div>
         <span className="muted small b">J-{joursAvant(PREMIER_TOUR)} avant le 1er tour</span>
       </header>
-      {st && st.parties > 0 && (
+      {st && (st.visiteurs > 0 || st.parties > 0) && (
         <div className="counter" aria-label="Compteurs publics">
-          <span><b>{fmt(st.parties)}</b> parties jouées</span>
-          <span><b>{fmt(st.joueursJour)}</b> joueurs aujourd'hui</span>
-          <span><b>{fmt(st.visiteurs)}</b> visiteurs</span>
+          {st.visiteurs > 0 && <span><b>{fmt(st.visiteurs)}</b> visiteurs</span>}
+          {st.parties > 0 && <span><b>{fmt(st.parties)}</b> parties jouées</span>}
+          {st.joueursJour > 0 && <span><b>{fmt(st.joueursJour)}</b> joueurs aujourd'hui</span>}
         </div>
       )}
 
@@ -178,18 +178,7 @@ function Jeu() {
     const next = { essais, fini, gagne }
     setEtat(next); store.set(key, next); setSaisie('')
     setMsg(gagne ? '' : fini ? '' : `Non, ce n'est pas ${c.nom}. Nouvel indice !`)
-    if (fini) {
-      const s = store.get('qec-stats', { serie: 0, dernier: 0, joues: 0, gagnes: 0, meilleur: null })
-      s.joues++
-      if (gagne) {
-        s.gagnes++
-        s.serie = s.dernier === n - 1 ? s.serie + 1 : 1
-        s.dernier = n
-        s.meilleur = s.meilleur ? Math.min(s.meilleur, essais.length) : essais.length
-      } else s.serie = 0
-      store.set('qec-stats', s)
-      api('/api/partie', { joueur: joueurId(), numero: n, essais: essais.length, gagne }).then((j) => j?.user && syncStats(j.user))
-    }
+    if (fini) finirPartie(n, next)
   }
   const valider = (e) => {
     e.preventDefault()
@@ -248,21 +237,49 @@ function Jeu() {
   )
 }
 
+// Compte une partie terminée, une seule fois en local et une seule fois côté serveur.
+// Rejouable sans risque : rattrape une partie finie dont la série ou l'envoi n'ont pas été enregistrés.
+function finirPartie(n, { essais, gagne }, apres) {
+  const s = store.get('qec-stats', { serie: 0, dernier: 0, joues: 0, gagnes: 0, meilleur: null })
+  const dejaCompte = s.fin === n || (gagne && s.dernier === n)
+  if (!dejaCompte) {
+    s.joues = (s.joues || 0) + 1
+    if (gagne) {
+      s.gagnes = (s.gagnes || 0) + 1
+      s.serie = s.dernier === n - 1 ? (s.serie || 0) + 1 : 1
+      s.dernier = n
+      s.meilleur = s.meilleur ? Math.min(s.meilleur, essais.length) : essais.length
+    } else s.serie = 0
+  }
+  s.fin = n
+  store.set('qec-stats', s)
+  if (store.get(`qec-envoye-${n}`, false)) return
+  api('/api/partie', { joueur: joueurId(), numero: n, essais: essais.length, gagne }).then((j) => {
+    if (j?.ok || j?.deja) store.set(`qec-envoye-${n}`, true)
+    if (j?.user) syncStats(j.user)
+    apres?.()
+  })
+}
+
 function grille(etat) {
   return Array.from({ length: 6 }, (_, i) => {
-    if (i < etat.essais.length - 1) return 'used'
-    if (i === etat.essais.length - 1) return etat.gagne ? 'win' : 'used'
-    return 'empty'
+    if (i < etat.essais.length - 1) return 'rate'
+    if (i === etat.essais.length - 1) return etat.gagne ? 'win' : 'rate'
+    return 'vide'
   })
 }
 function texteGrille(n, etat) {
-  const sq = grille(etat).map((g) => (g === 'win' ? '✅' : g === 'used' ? '⬛' : '⬜')).join('')
+  const sq = grille(etat).map((g) => (g === 'win' ? '🟩' : g === 'rate' ? '🟥' : '⬜')).join('')
   return `Boussole 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? boussole-vote-2027.vercel.app`
 }
 
 function Resultat({ n, rep, etat, clues }) {
   const [copie, setCopie] = useState('')
-  const stats = store.get('qec-stats', { serie: 0, meilleur: null })
+  const [stats, setStats] = useState(() => store.get('qec-stats', { serie: 0, meilleur: null }))
+  useEffect(() => {
+    const maj = () => setStats(store.get('qec-stats', { serie: 0, meilleur: null }))
+    finirPartie(n, etat, maj); maj()
+  }, [n])
   const pts = etat.gagne ? 100 - 15 * (etat.essais.length - 1) : 0
   const partagerTexte = async () => {
     const t = texteGrille(n, etat)
@@ -366,8 +383,8 @@ async function story(n, etat) {
   grille(etat).forEach((g, i) => {
     const X = 220 + i * 128, Y = 1130, S = 108
     x.beginPath(); x.roundRect(X, Y, S, S, 24)
-    if (g === 'empty') { x.strokeStyle = '#4A4E60'; x.lineWidth = 6; x.stroke() } else { x.fillStyle = '#fff'; x.fill() }
-    if (g === 'win') { x.strokeStyle = '#15172B'; x.lineWidth = 12; x.beginPath(); x.moveTo(X + 28, Y + 56); x.lineTo(X + 48, Y + 78); x.lineTo(X + 82, Y + 34); x.stroke() }
+    if (g === 'vide') { x.strokeStyle = '#4A4E60'; x.lineWidth = 6; x.stroke() } else { x.fillStyle = g === 'win' ? '#18A058' : '#E1000F'; x.fill() }
+    if (g === 'win') { x.strokeStyle = '#fff'; x.lineWidth = 12; x.beginPath(); x.moveTo(X + 28, Y + 56); x.lineTo(X + 48, Y + 78); x.lineTo(X + 82, Y + 34); x.stroke() }
   })
   x.font = '700 68px "Space Grotesk", sans-serif'
   ;['Et toi, tu le/la', 'reconnais en combien ?'].forEach((l, i) => x.fillText(l, 220, 1400 + i * 84))
