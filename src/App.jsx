@@ -665,7 +665,7 @@ function Methodo() {
 
 /* ---------------- Classement + code de sauvegarde ---------------- */
 const ONGLETS = {
-  jour: { label: "Aujourd'hui", titre: 'Le mystère du jour', unite: 'indices', vide: "Personne n'a encore trouvé aujourd'hui avec un pseudo.", note: "Moins d'indices = mieux. À égalité, le premier à avoir trouvé passe devant." },
+  jour: { label: "Aujourd'hui", titre: 'Le mystère du jour', unite: 'indices', vide: "Personne n'a encore joué le mystère du jour.", note: "Moins d'indices = mieux. À égalité, le premier à avoir trouvé passe devant." },
   moyenne: { label: 'Moyenne', titre: 'Les plus réguliers', unite: 'indices en moyenne', vide: 'Il faut au moins 5 parties pour entrer dans ce classement.', note: 'Moyenne d\'indices sur toutes vos parties (un raté compte 7), dès 5 parties.' },
   series: { label: 'Séries', titre: 'Les plus longues séries en cours', unite: "jours d'affilée", vide: 'Personne encore. Jouez le mystère du jour pour ouvrir le bal.', note: 'Nombre de jours trouvés d\'affilée, sans en rater un.' },
 }
@@ -681,7 +681,7 @@ function Classement() {
   const enregistrerPseudo = async (e) => {
     e.preventDefault()
     const j = await api('/api/compte', { action: 'pseudo', joueur: joueurId(), pseudo })
-    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît dans les classements dès votre prochaine partie.') }
+    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo, nom: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît dans les classements dès votre prochaine partie.') }
     else setMsg(j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
   }
   const monCode = async () => {
@@ -709,7 +709,7 @@ function Classement() {
             : (st.classement || []).map((u) => ({ pseudo: u.pseudo, v: u.serie }))
           if (!rows.length) return <span className="muted small">{ONGLETS[onglet].vide}</span>
           return rows.map((u, i) => (
-            <div key={i} className={u.pseudo === moi.pseudo ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col"><b>{u.pseudo}</b>{u.sub && <span className="muted tiny">{u.sub}</span>}</span><span className="b">{u.v}</span></div>
+            <div key={i} className={u.pseudo === (moi.nom || moi.pseudo) ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col"><b>{u.pseudo}</b>{u.sub && <span className="muted tiny">{u.sub}</span>}</span><span className="b">{u.v}</span></div>
           ))
         })()}
         <span className="muted tiny">{ONGLETS[onglet].note}</span>
@@ -717,7 +717,7 @@ function Classement() {
 
       <form className="card-form" onSubmit={enregistrerPseudo}>
         <label htmlFor="pseudo" className="b">Votre pseudo (facultatif)</label>
-        <span className="muted tiny">Pas d'email, pas de compte. Votre série actuelle : {moi.serie || 0}.</span>
+        <span className="muted tiny">Pas d'email, pas de compte. {moi.num && !moi.pseudo ? `Sans pseudo, vous apparaissez comme « Joueur ${moi.num} ». ` : ''}Votre série actuelle : {moi.serie || 0}.</span>
         <div className="row6"><input id="pseudo" maxLength={15} value={pseudo} onChange={(e) => setPseudo(e.target.value)} placeholder="ex. Marianne75" /><button className="btn btn-dark" type="submit">OK</button></div>
       </form>
 

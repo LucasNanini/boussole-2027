@@ -23,7 +23,8 @@ export const K = {
   user: (j) => `b27:u:${j}`,
   lb: 'b27:classement',
   jour: (n) => `b27:jour:${n}`,  // score = clues (7 = raté) × 1e13 + horodatage : à égalité, le plus rapide devant
-  moy: 'b27:moyenne',            // moyenne d'indices, minimum 5 parties
+  moy: 'b27:moyenne',
+  num: (n) => `b27:num:${n}`,     // numéro public aléatoire (5 chiffres) des joueurs sans pseudo            // moyenne d'indices, minimum 5 parties
   code: (c) => `b27:code:${c}`,
 }
 
@@ -56,12 +57,29 @@ export function pseudoValide(p) {
 }
 
 /* ---------- Statistiques publiques ---------- */
-async function avecPseudos(r, raw, champs = ['pseudo']) {
+// Numéro public aléatoire à 5 chiffres : il n'indique pas combien de joueurs il y a.
+export async function numeroPublic(r, joueur, u) {
+  if (u?.num) return u.num
+  for (let t = 0; t < 10; t++) {
+    const n = String(10000 + Math.floor(Math.random() * 90000))
+    if (await r.set(K.num(n), joueur, { nx: true })) { await r.hset(K.user(joueur), { num: n }); return n }
+  }
+  return null
+}
+const nomPublic = (u) => u.pseudo || (u.num ? `Joueur ${u.num}` : null)
+
+async function avecPseudos(r, raw, champs = []) {
   const ids = []; for (let i = 0; i < raw.length; i += 2) ids.push([raw[i], Number(raw[i + 1])])
   if (!ids.length) return []
-  const q = r.pipeline(); ids.forEach(([id]) => q.hmget(K.user(id), ...champs))
+  const q = r.pipeline(); ids.forEach(([id]) => q.hmget(K.user(id), 'pseudo', 'num', ...champs))
   const users = await q.exec()
-  return ids.map(([, score], i) => ({ ...(users[i] || {}), score })).filter((u) => u.pseudo)
+  const out = []
+  for (let i = 0; i < ids.length; i++) {
+    const u = { ...(users[i] || {}) }
+    if (!u.pseudo && !u.num) u.num = await numeroPublic(r, ids[i][0], u) // joueurs d'avant les numéros
+    out.push({ ...u, nom: nomPublic(u), score: ids[i][1] })
+  }
+  return out.filter((u) => u.nom)
 }
 
 export async function stats(r, numero) {
@@ -75,13 +93,13 @@ export async function stats(r, numero) {
   const [parties, joueursJour, joueurs, visiteurs, distribRaw, lbRaw, jourRaw, moyRaw] = await p.exec()
   const hier = jourParis(new Date(Date.now() - 86400000))
   // séries : seulement celles encore actives (jouées hier ou aujourd'hui)
-  const classement = (await avecPseudos(r, lbRaw || [], ['pseudo', 'jour']))
+  const classement = (await avecPseudos(r, lbRaw || [], ['jour']))
     .filter((u) => u.score > 0 && (u.jour === d || u.jour === hier))
-    .slice(0, 20).map((u) => ({ pseudo: u.pseudo, serie: u.score }))
+    .slice(0, 20).map((u) => ({ pseudo: u.nom, serie: u.score }))
   const classementJour = numero ? (await avecPseudos(r, jourRaw || []))
-    .slice(0, 20).map((u) => { const e = Math.floor(u.score / 1e13); return { pseudo: u.pseudo, essais: e === 7 ? null : e } }) : []
-  const classementMoyenne = (await avecPseudos(r, moyRaw || [], ['pseudo', 'nb']))
-    .slice(0, 20).map((u) => ({ pseudo: u.pseudo, moyenne: Math.round(u.score * 10) / 10, parties: Number(u.nb) || 0 }))
+    .slice(0, 20).map((u) => { const e = Math.floor(u.score / 1e13); return { pseudo: u.nom, essais: e === 7 ? null : e } }) : []
+  const classementMoyenne = (await avecPseudos(r, moyRaw || [], ['nb']))
+    .slice(0, 20).map((u) => ({ pseudo: u.nom, moyenne: Math.round(u.score * 10) / 10, parties: Number(u.nb) || 0 }))
   return {
     parties: Number(parties) || 0, joueursJour: joueursJour || 0, joueurs: joueurs || 0, visiteurs: visiteurs || 0,
     distrib: numero ? distribRaw || {} : null, classement, classementJour, classementMoyenne,
@@ -95,6 +113,7 @@ export async function enregistrer(r, { joueur, numero, essais, gagne }) {
   const nouveau = await r.set(K.partie(n, joueur), 1, { nx: true, ex: 60 * 60 * 24 * 400 })
   const u = (await r.hgetall(K.user(joueur))) || {}
   if (!nouveau) return { deja: true, user: publicUser(u) }
+  u.num = await numeroPublic(r, joueur, u)
   const d = jourParis()
   const dernier = Number(u.dernier) || 0
   const serie = gagne ? (dernier === n - 1 ? (Number(u.serie) || 0) + 1 : 1) : 0
@@ -112,7 +131,7 @@ export async function enregistrer(r, { joueur, numero, essais, gagne }) {
   p.pfadd(K.joueursJour(d), joueur); p.expire(K.joueursJour(d), 60 * 60 * 24 * 8)
   p.pfadd(K.joueurs, joueur)
   p.hset(K.user(joueur), next)
-  if (u.pseudo) p.zadd(K.lb, { score: serie, member: joueur })
+  p.zadd(K.lb, { score: serie, member: joueur })
   p.zadd(K.jour(n), { score: (gagne ? e : 7) * 1e13 + Date.now(), member: joueur }); p.expire(K.jour(n), 60 * 60 * 24 * 40)
   if (next.nb >= 5) p.zadd(K.moy, { score: next.somme / next.nb, member: joueur })
   await p.exec()
@@ -120,7 +139,7 @@ export async function enregistrer(r, { joueur, numero, essais, gagne }) {
 }
 
 export const publicUser = (u) => ({
-  pseudo: u.pseudo || null, serie: Number(u.serie) || 0, dernier: Number(u.dernier) || 0,
+  pseudo: u.pseudo || null, num: u.num || null, nom: u.pseudo || (u.num ? `Joueur ${u.num}` : null), serie: Number(u.serie) || 0, dernier: Number(u.dernier) || 0,
   joues: Number(u.joues) || 0, gagnes: Number(u.gagnes) || 0, meilleur: Number(u.meilleur) || null,
   record: Number(u.record) || 0, code: u.code || null,
 })
