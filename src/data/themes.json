@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "regle": "Liste figée jusqu'à l'élection. Inspirée des enjeux testés par l'Enquête électorale Ipsos bva / CEVIPOF / Le Monde / Fondation Jean-Jaurès. Chaque segment de vidéo reçoit UN thème principal. Toute modification est notée dans le journal des changements.",
+    "journal": [{ "date": "2026-11-14", "changement": "Création de la liste (12 thèmes)." }]
+  },
+  "themes": [
+    { "id": "pouvoir-achat", "label": "Pouvoir d'achat & coût de la vie", "court": "Pouvoir d'achat", "exemples": ["salaires", "prix", "factures d'énergie", "inflation", "SMIC"] },
+    { "id": "sante", "label": "Santé & hôpital", "court": "Santé", "exemples": ["hôpital", "déserts médicaux", "urgences", "médecins"] },
+    { "id": "travail", "label": "Travail, emploi & retraites", "court": "Travail & retraites", "exemples": ["chômage", "âge de départ", "pensions", "conditions de travail"] },
+    { "id": "securite", "label": "Sécurité & justice", "court": "Sécurité", "exemples": ["délinquance", "police", "prisons", "narcotrafic"] },
+    { "id": "immigration", "label": "Immigration & intégration", "court": "Immigration", "exemples": ["frontières", "titres de séjour", "asile", "intégration"] },
+    { "id": "ecologie", "label": "Écologie & énergie", "court": "Écologie & énergie", "exemples": ["climat", "nucléaire", "renouvelables", "canicules", "biodiversité"] },
+    { "id": "education", "label": "Éducation & jeunesse", "court": "Éducation", "exemples": ["école", "enseignants", "université", "jeunes"] },
+    { "id": "logement", "label": "Logement", "court": "Logement", "exemples": ["loyers", "construction", "accès à la propriété", "logement social"] },
+    { "id": "finances", "label": "Dette, impôts & finances publiques", "court": "Dette & impôts", "exemples": ["déficit", "dette", "fiscalité", "dépenses publiques"] },
+    { "id": "international", "label": "Europe, défense & international", "court": "Europe & défense", "exemples": ["Union européenne", "armée", "Ukraine", "diplomatie"] },
+    { "id": "democratie", "label": "Démocratie & institutions", "court": "Institutions", "exemples": ["RIC", "proportionnelle", "VIe République", "décentralisation"] },
+    { "id": "campagne", "label": "La campagne elle-même", "court": "La campagne", "exemples": ["alliances", "sondages", "primaires", "réponses aux adversaires"] }
+  ]
+}

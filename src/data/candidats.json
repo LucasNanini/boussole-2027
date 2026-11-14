@@ -1,0 +1,842 @@
+{
+ "_meta": {
+  "verifie_le": "2026-11-14",
+  "regle_liste": "Liste fournie par l'équipe (14/11/2026, d'après presitracker2027.fr), croisée avec republique2027.fr et candidator.fr. Aucune candidature n'est officielle avant la liste du Conseil constitutionnel (attendue le 16 mars 2027).",
+  "regle_couleur": "Famille politique telle que classée par la source ; remplacée par la nuance du ministère de l'Intérieur dès publication. Bleu = droite et extrême droite, rouge = gauche et extrême gauche, vert = écologistes, gris = centre et divers.",
+  "regle_principaux": "BROUILLON À VALIDER : candidats testés dans les intentions de vote nationales récentes.",
+  "statut_donnees": "brouillon — chaque fiche doit être relue avant mise en ligne"
+ },
+ "sources": {
+  "R": {
+   "titre": "République 2027 – Les candidats",
+   "url": "https://republique2027.fr/candidats",
+   "date": "2026-11-10"
+  },
+  "C": {
+   "titre": "Candidator – Liste des candidats 2027",
+   "url": "https://www.candidator.fr/presidentielle2027/candidats.html",
+   "date": "2026-11-14"
+  },
+  "F": {
+   "titre": "franceinfo – Qui sont les candidats déclarés ?",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+   "date": "2026-11-11"
+  },
+  "P": {
+   "titre": "Présidentielle-2027.com – Fiches repères",
+   "url": "https://www.presidentielle-2027.com/candidats-a-la-presidentielle-2027/",
+   "date": "2026-11-06"
+  },
+  "T": {
+   "titre": "Touteleurope – Principaux candidats déclarés",
+   "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-qui-sont-les-candidats-deja-declares/",
+   "date": "2026-11-14"
+  },
+  "E": {
+   "titre": "electionpresidentielle2027.com – Statuts",
+   "url": "https://electionpresidentielle2027.com/candidats-presidentielle-2027/",
+   "date": "2026-11-09"
+  },
+  "H": {
+   "titre": "Résultats des présidentielles précédentes (Conseil constitutionnel)",
+   "url": "https://www.conseil-constitutionnel.fr/",
+   "date": "à vérifier"
+  },
+  "S": {
+   "titre": "Présitracker 2027 – fiches candidats",
+   "url": "https://presitracker2027.fr/candidats",
+   "date": "2026-11-14"
+  }
+ },
+ "candidats": [
+  {
+   "id": "arthaud",
+   "nom": "Nathalie Arthaud",
+   "parti": "Lutte ouvrière",
+   "famille": "exg",
+   "fonction": "Porte-parole de Lutte ouvrière",
+   "annonce": "2025-12-08",
+   "candidatures": [
+    2012,
+    2017,
+    2022
+   ],
+   "ligne": "Veut interdire les licenciements et augmenter tous les salaires.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/arthaud",
+   "portrait_ia": true
+  },
+  {
+   "id": "asselineau",
+   "nom": "François Asselineau",
+   "parti": "Union populaire républicaine",
+   "famille": "div",
+   "fonction": "Président de l'UPR",
+   "annonce": "2026-07-07",
+   "candidatures": [
+    2017
+   ],
+   "ligne": "Veut sortir de l'UE, de l'euro et de l'OTAN.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "conflit": "Date d'annonce : 2026-07-07 selon presitracker, 2023-08-31 selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/asselineau",
+   "portrait_ia": true
+  },
+  {
+   "id": "attal",
+   "nom": "Gabriel Attal",
+   "parti": "Renaissance",
+   "famille": "c",
+   "fonction": "Secrétaire général de Renaissance, président du groupe EPR à l'Assemblée",
+   "annonce": "2026-05-22",
+   "candidatures": [],
+   "ligne": "Mise sur l'autorité, l'école et le travail ; propose une primaire du centre et de la droite.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/attal",
+   "portrait_ia": true
+  },
+  {
+   "id": "batho",
+   "nom": "Delphine Batho",
+   "parti": "Génération écologie",
+   "famille": "eco",
+   "fonction": "Présidente de Génération écologie, députée des Deux-Sèvres",
+   "annonce": "2025-11-25",
+   "candidatures": [],
+   "ligne": "Ancienne ministre, défend une écologie de la décroissance.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "T"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/batho",
+   "portrait_ia": true
+  },
+  {
+   "id": "becht",
+   "nom": "Olivier Becht",
+   "parti": "Sans étiquette (« extrême centre »)",
+   "famille": "c",
+   "fonction": "Député du Haut-Rhin",
+   "annonce": "2026-09-24",
+   "candidatures": [],
+   "ligne": "Ancien ministre, centré sur la diplomatie économique et l'Europe.",
+   "programme": true,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "F",
+    "P"
+   ],
+   "conflit": "Étiquette : « Sans étiquette (« extrême centre ») » selon presitracker, « Apparenté Renaissance » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/becht",
+   "portrait_ia": true
+  },
+  {
+   "id": "bonnal",
+   "nom": "Sébastien Bonnal",
+   "parti": "Sans étiquette",
+   "famille": "div",
+   "fonction": "Candidat indépendant",
+   "annonce": "2026-09-15",
+   "candidatures": [],
+   "ligne": "Candidature indépendante, en rupture avec les partis.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/bonnal",
+   "portrait_ia": true
+  },
+  {
+   "id": "bouamrane",
+   "nom": "Karim Bouamrane",
+   "parti": "La France humaine et forte",
+   "famille": "g",
+   "fonction": "Maire de Saint-Ouen-sur-Seine",
+   "annonce": "2026-06-09",
+   "candidatures": [],
+   "ligne": "Revendique une gauche républicaine qui refuse le face-à-face RN–LFI.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "conflit": "Étiquette : « La France humaine et forte » selon presitracker, « Parti socialiste » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/bouamrane",
+   "portrait_ia": true
+  },
+  {
+   "id": "branco",
+   "nom": "Juan Branco",
+   "parti": "Les Ruches",
+   "famille": "div",
+   "fonction": "Avocat, fondateur du mouvement Les Ruches",
+   "annonce": "2025-12-19",
+   "candidatures": [],
+   "ligne": "Défend la démocratie directe.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/branco",
+   "portrait_ia": true
+  },
+  {
+   "id": "delmur",
+   "nom": "Mélody Delmur",
+   "parti": "As de Cœur",
+   "famille": "div",
+   "fonction": "Fondatrice et présidente d'As de Cœur",
+   "annonce": "2026-10-13",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/delmur",
+   "portrait_ia": true
+  },
+  {
+   "id": "dubuisson",
+   "nom": "Emmanuel Dubuisson",
+   "parti": "Sans étiquette",
+   "famille": "div",
+   "fonction": "Candidat indépendant",
+   "annonce": "2026-10-19",
+   "candidatures": [],
+   "ligne": "Fait campagne sur le thème de la paix.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/dubuisson",
+   "portrait_ia": true
+  },
+  {
+   "id": "dupont-aignan",
+   "nom": "Nicolas Dupont-Aignan",
+   "parti": "Debout la France",
+   "famille": "d",
+   "fonction": "Maire d'Yerres, président de Debout la France",
+   "annonce": "2025-03-08",
+   "candidatures": [
+    2012,
+    2017,
+    2022
+   ],
+   "ligne": "Gaulliste social, veut sortir de l'OTAN et une Europe des nations.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "conflit": "Date d'annonce : 2025-03-08 selon presitracker, 2026-09-19 selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/dupontaignan",
+   "portrait_ia": true
+  },
+  {
+   "id": "durif",
+   "nom": "Sylvain Durif",
+   "parti": "Sans étiquette",
+   "famille": "div",
+   "fonction": "Vidéaste",
+   "annonce": "2026-08-23",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "conflit": "Étiquette : « Sans étiquette » selon presitracker, « Elvita » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/durif",
+   "portrait_ia": true
+  },
+  {
+   "id": "egger",
+   "nom": "Clara Egger",
+   "parti": "Solution démocratique",
+   "famille": "div",
+   "fonction": "Politologue, enseignante-chercheuse",
+   "annonce": "2026-04-20",
+   "candidatures": [],
+   "ligne": "Défend le référendum d'initiative citoyenne constituant.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/egger",
+   "portrait_ia": true
+  },
+  {
+   "id": "glucksmann",
+   "nom": "Raphaël Glucksmann",
+   "parti": "Place publique, avec le PS et la GRS",
+   "famille": "g",
+   "fonction": "Député européen, coprésident de Place publique",
+   "annonce": "2026-08-23",
+   "candidatures": [],
+   "ligne": "Social-démocrate et pro-européen, désigné par la primaire du 11 octobre 2026.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "T",
+    "P"
+   ],
+   "conflit": "Étiquette : « Place publique, avec le PS et la GRS » selon presitracker, « Place publique » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/glucksmann",
+   "portrait_ia": true
+  },
+  {
+   "id": "herlin",
+   "nom": "Philippe Herlin",
+   "parti": "Sans étiquette",
+   "famille": "div",
+   "fonction": "Économiste, candidat indépendant",
+   "annonce": "2026-10-19",
+   "candidatures": [],
+   "ligne": "Propose d'abroger des lois et de baisser fortement les prélèvements.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/herlin",
+   "portrait_ia": true
+  },
+  {
+   "id": "kazib",
+   "nom": "Anasse Kazib",
+   "parti": "Révolution permanente",
+   "famille": "exg",
+   "fonction": "Cheminot et porte-parole de Révolution permanente",
+   "annonce": "2026-06-01",
+   "candidatures": [],
+   "ligne": "Défend une candidature ouvrière et révolutionnaire, avec l'expropriation des grands groupes.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/kazib",
+   "portrait_ia": true
+  },
+  {
+   "id": "labib",
+   "nom": "Selma Labib",
+   "parti": "NPA-Révolutionnaires",
+   "famille": "exg",
+   "fonction": "Conductrice de bus et porte-parole du NPA-Révolutionnaires",
+   "annonce": "2026-06-17",
+   "candidatures": [],
+   "ligne": "Porte une ligne anticapitaliste et internationaliste.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/labib",
+   "portrait_ia": true
+  },
+  {
+   "id": "lalanne",
+   "nom": "Francis Lalanne",
+   "parti": "France libre",
+   "famille": "div",
+   "fonction": "Chanteur",
+   "annonce": "2026-08-19",
+   "candidatures": [],
+   "ligne": "Défend le RIC et une écologie radicale.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/lalanne",
+   "portrait_ia": true
+  },
+  {
+   "id": "le-pen",
+   "nom": "Marine Le Pen",
+   "parti": "Rassemblement national",
+   "famille": "exd",
+   "fonction": "Présidente du groupe RN à l'Assemblée nationale",
+   "annonce": "2026-07-07",
+   "candidatures": [
+    2012,
+    2017,
+    2022
+   ],
+   "ligne": "Met en avant le pouvoir d'achat et la sécurité.",
+   "programme": false,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "conflit": "Éligibilité suspendue à une décision de justice ; Jordan Bardella cité comme possible remplaçant (C).",
+   "fiche": "https://presitracker2027.fr/candidats/lepen",
+   "portrait_ia": true
+  },
+  {
+   "id": "legendre",
+   "nom": "Jean-François Legendre",
+   "parti": "À nous maintenant",
+   "famille": "div",
+   "fonction": "Ancien chef d'entreprise",
+   "annonce": "2026-10-14",
+   "candidatures": [],
+   "ligne": "Démocratie directe, équilibre budgétaire, revitalisation rurale.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/legendre",
+   "portrait_ia": true
+  },
+  {
+   "id": "lisnard",
+   "nom": "David Lisnard",
+   "parti": "Nouvelle Énergie",
+   "famille": "d",
+   "fonction": "Maire de Cannes, président de l'Association des maires de France",
+   "annonce": "2026-03-31",
+   "candidatures": [],
+   "ligne": "Libéral et décentralisateur.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/lisnard",
+   "portrait_ia": true
+  },
+  {
+   "id": "markovic",
+   "nom": "Mira Markovic",
+   "parti": "Parti animaliste",
+   "famille": "div",
+   "fonction": "Cofondatrice du Parti animaliste",
+   "annonce": "2026-10-02",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "F"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/markovic",
+   "portrait_ia": true
+  },
+  {
+   "id": "mathieu",
+   "nom": "Benoît Mathieu",
+   "parti": "Sans étiquette",
+   "famille": "div",
+   "fonction": "Ingénieur, candidat citoyen",
+   "annonce": "2026-03-30",
+   "candidatures": [],
+   "ligne": "Candidature citoyenne pour la démocratie participative.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/mathieu",
+   "portrait_ia": true
+  },
+  {
+   "id": "melenchon",
+   "nom": "Jean-Luc Mélenchon",
+   "parti": "La France insoumise",
+   "famille": "g",
+   "fonction": "Fondateur de La France insoumise",
+   "annonce": "2026-05-03",
+   "candidatures": [
+    2012,
+    2017,
+    2022
+   ],
+   "ligne": "Programme « L'Avenir en commun » : VIe République et retraite à 60 ans.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P",
+    "H"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/melenchon",
+   "portrait_ia": true
+  },
+  {
+   "id": "mikolajczak",
+   "nom": "Antoine Mikolajczak",
+   "parti": "Équinoxe",
+   "famille": "div",
+   "fonction": "Ingénieur originaire de l'Oise",
+   "annonce": "2026-06-27",
+   "candidatures": [],
+   "ligne": "Planification écologique et assemblées citoyennes tirées au sort.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/mikolajczak",
+   "portrait_ia": true
+  },
+  {
+   "id": "mlekuz",
+   "nom": "Manolo Mlekuz",
+   "parti": "Trajectoire",
+   "famille": "div",
+   "fonction": "Candidat citoyen",
+   "annonce": "2026-05-27",
+   "candidatures": [],
+   "ligne": "Mise sur le renouveau et l'engagement de la jeunesse.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/mlekuz",
+   "portrait_ia": true
+  },
+  {
+   "id": "philippe",
+   "nom": "Édouard Philippe",
+   "parti": "Horizons",
+   "famille": "c",
+   "fonction": "Maire du Havre, président d'Horizons",
+   "annonce": "2024-09-03",
+   "candidatures": [],
+   "ligne": "Ancien Premier ministre, met en avant l'ordre, la croissance et les comptes publics.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/philippe",
+   "portrait_ia": true
+  },
+  {
+   "id": "philippot",
+   "nom": "Florian Philippot",
+   "parti": "Les Patriotes",
+   "famille": "exd",
+   "fonction": "Président des Patriotes",
+   "annonce": "2026-05-09",
+   "candidatures": [],
+   "ligne": "Défend la sortie de l'Union européenne (Frexit).",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/philippot",
+   "portrait_ia": true
+  },
+  {
+   "id": "platret",
+   "nom": "Gilles Platret",
+   "parti": "Sans étiquette",
+   "famille": "d",
+   "fonction": "Maire de Chalon-sur-Saône",
+   "annonce": "2026-10-08",
+   "candidatures": [],
+   "ligne": "Veut abroger les 35 heures, rétablir les frontières et interdire le voile dans l'espace public.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "F"
+   ],
+   "conflit": "Étiquette : « Sans étiquette » selon presitracker, « Divers droite » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/platret",
+   "portrait_ia": true
+  },
+  {
+   "id": "polony",
+   "nom": "Natacha Polony",
+   "parti": "Nous sommes la France",
+   "famille": "div",
+   "fonction": "Essayiste, directrice de la revue L'Audace !",
+   "annonce": "2026-10-14",
+   "candidatures": [],
+   "ligne": "Souverainisme républicain et social, réindustrialisation.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/polony",
+   "portrait_ia": true
+  },
+  {
+   "id": "retailleau",
+   "nom": "Bruno Retailleau",
+   "parti": "Les Républicains",
+   "famille": "d",
+   "fonction": "Président des Républicains, sénateur de la Vendée",
+   "annonce": "2026-02-12",
+   "candidatures": [],
+   "ligne": "Droite conservatrice : autorité, identité, souveraineté.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P"
+   ],
+   "conflit": "Date d'annonce : 2026-02-12 selon presitracker, 2026-04-19 selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/retailleau",
+   "portrait_ia": true
+  },
+  {
+   "id": "revillon-dapreval",
+   "nom": "Rémi Revillon d’Apreval",
+   "parti": "Sans étiquette (initiative soutenue par le collectif citoyen REVODEMO)",
+   "famille": "div",
+   "fonction": "Entrepreneur, soutenu par le collectif citoyen REVODEMO",
+   "annonce": "2026-11-08",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/revillondapreval",
+   "portrait_ia": true
+  },
+  {
+   "id": "riner",
+   "nom": "Teddy Riner",
+   "parti": "Sans étiquette (« La France qu'on veut »)",
+   "famille": "div",
+   "fonction": "Judoka, quintuple champion olympique",
+   "annonce": "2026-11-09",
+   "candidatures": [],
+   "ligne": "Se dit « ni de droite ni de gauche » ; pas de programme publié.",
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "F"
+   ],
+   "conflit": "Étiquette : « Sans étiquette (« La France qu'on veut ») » selon presitracker, « Sans étiquette » selon republique2027.",
+   "fiche": "https://presitracker2027.fr/candidats/riner",
+   "portrait_ia": true
+  },
+  {
+   "id": "rohou",
+   "nom": "Erwan Rohou",
+   "parti": "Mouvement écologiste indépendant",
+   "famille": "eco",
+   "fonction": "Ingénieur, membre du bureau national du MEI",
+   "annonce": "2026-08-29",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S",
+    "R"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/rohou",
+   "portrait_ia": true
+  },
+  {
+   "id": "roussel",
+   "nom": "Fabien Roussel",
+   "parti": "Parti communiste français",
+   "famille": "g",
+   "fonction": "Secrétaire national du PCF, maire de Saint-Amand-les-Eaux",
+   "annonce": "2026-09-06",
+   "candidatures": [
+    2022
+   ],
+   "ligne": "Met en avant le pouvoir d'achat, le travail et le nucléaire.",
+   "programme": false,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/roussel",
+   "portrait_ia": true
+  },
+  {
+   "id": "ruffin",
+   "nom": "François Ruffin",
+   "parti": "Debout !",
+   "famille": "g",
+   "fonction": "Député de la Somme, fondateur de Debout !",
+   "annonce": "2026-01-26",
+   "candidatures": [],
+   "ligne": "Gauche sociale et protectionniste, à distance de LFI.",
+   "programme": true,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "P"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/ruffin",
+   "portrait_ia": true
+  },
+  {
+   "id": "saforcada",
+   "nom": "David Saforcada",
+   "parti": "L'Appel au Peuple",
+   "famille": "div",
+   "fonction": "Ancien militaire, cofondateur de L'Appel au Peuple (bonapartiste)",
+   "annonce": "2026-06-29",
+   "candidatures": [],
+   "ligne": null,
+   "programme": false,
+   "principal": false,
+   "sources": [
+    "S"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/saforcada",
+   "portrait_ia": true
+  },
+  {
+   "id": "tondelier",
+   "nom": "Marine Tondelier",
+   "parti": "Les Écologistes",
+   "famille": "eco",
+   "fonction": "Secrétaire nationale des Écologistes",
+   "annonce": "2025-10-22",
+   "candidatures": [],
+   "ligne": "Défend une écologie sociale et combative.",
+   "programme": false,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "E"
+   ],
+   "conflit": "Candidature soumise à un référendum interne du 10 au 13 décembre 2026 (source E).",
+   "fiche": "https://presitracker2027.fr/candidats/tondelier",
+   "portrait_ia": true
+  },
+  {
+   "id": "zemmour",
+   "nom": "Éric Zemmour",
+   "parti": "Reconquête",
+   "famille": "exd",
+   "fonction": "Président de Reconquête",
+   "annonce": "2026-09-17",
+   "candidatures": [
+    2022
+   ],
+   "ligne": "Place l'identité française au centre de son discours.",
+   "programme": false,
+   "principal": true,
+   "sources": [
+    "S",
+    "R",
+    "C",
+    "H"
+   ],
+   "fiche": "https://presitracker2027.fr/candidats/zemmour",
+   "portrait_ia": true
+  }
+ ],
+ "a_verifier_hors_liste": [
+  "Présents sur republique2027.fr mais absents de la liste de l'équipe : Bernard Cazeneuve, Xavier Bertrand, Augustin Billetdoux, Jean Lassalle. Xavier Bertrand en particulier est présenté comme candidat déclaré par plusieurs sources.",
+  "Cités comme candidats par candidator.fr mais absents de republique2027.fr : Jordan Bardella, Michel Barnier, Sébastien Bonnal, Joël Chevé, Pierre Couchon, Emmanuel Dubuisson, Philippe Herlin, François Hollande, Philippe Juvin, Jean-Christophe Lagarde, Pierre Larrouturou, Alain Mourguy, Jean-Frédéric Poisson, Patrick Sébastien.",
+  "Pressentis non déclarés (republique2027.fr) : François Hollande, Sandrine Rousseau, Jean-Noël Barrot, Aurore Bergé, Bruno Le Maire, Manuel Valls, Thierry Breton, Dominique de Villepin, Philippe de Villiers, Matthieu Pigasse."
+ ]
+}

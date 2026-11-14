@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "regle": "Comptes OFFICIELS uniquement (vérifiés ou liés depuis le site de campagne). Chaque compte doit être validé par un humain (\"valide\": true) avant d'être utilisé par le job hebdo.",
+    "perimetre": "Le job hebdo ne tourne que pour les candidats listés ici, en commençant par les 11 principaux, pour limiter les crédits Oriane (1 recherche par candidat et par semaine)."
+  },
+  "comptes": {
+    "attal": [], "glucksmann": [], "le-pen": [], "lisnard": [], "melenchon": [], "philippe": [],
+    "retailleau": [], "roussel": [], "ruffin": [], "tondelier": [], "zemmour": []
+  }
+}
