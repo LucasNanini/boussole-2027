@@ -96,8 +96,8 @@ h2 { font-size: 20px; }
 .sources a { font-weight: 600; }
 .share { background: var(--ink); color: #fff; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
 .grille { display: flex; gap: 6px; }
-.sq { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--ink); }
-.sq.used, .sq.win { background: #fff; } .sq.empty { border: 2px solid #4A4E60; }
+.sq { width: 36px; height: 36px; flex: none; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; }
+.sq.rate { background: var(--rouge); } .sq.win { background: #18A058; } .sq.vide { border: 2px solid #4A4E60; }
 
 .seg { display: flex; background: var(--soft); border-radius: 12px; padding: 4px; }
 .seg button { flex: 1; height: 40px; border: none; border-radius: 9px; background: transparent; font-weight: 600; font-size: 14px; color: var(--muted); }

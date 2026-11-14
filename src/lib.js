@@ -138,6 +138,13 @@ export async function api(path, body) {
 export function syncStats(user) {
   if (!user) return
   const s = store.get('qec-stats', {})
-  store.set('qec-stats', { ...s, serie: user.serie, dernier: user.dernier, joues: user.joues, gagnes: user.gagnes, meilleur: user.meilleur, pseudo: user.pseudo, code: user.code })
+  // Le serveur ne remplace la série locale que s'il connaît au moins autant de parties :
+  // un compte serveur vide (partie non enregistrée) ne doit pas remettre la série à 0.
+  const serveurAJour = (user.joues || 0) >= (s.joues || 0)
+  store.set('qec-stats', {
+    ...s,
+    ...(serveurAJour ? { serie: user.serie, dernier: user.dernier, joues: user.joues, gagnes: user.gagnes, meilleur: user.meilleur } : {}),
+    pseudo: user.pseudo || s.pseudo || null, code: user.code || s.code || null,
+  })
 }
 export const fmt = (n) => new Intl.NumberFormat('fr-FR').format(n || 0)
