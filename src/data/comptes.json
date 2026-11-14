@@ -1,10 +1,107 @@
 {
-  "_meta": {
-    "regle": "Comptes OFFICIELS uniquement (vérifiés ou liés depuis le site de campagne). Chaque compte doit être validé par un humain (\"valide\": true) avant d'être utilisé par le job hebdo.",
-    "perimetre": "Le job hebdo ne tourne que pour les candidats listés ici, en commençant par les 11 principaux, pour limiter les crédits Oriane (1 recherche par candidat et par semaine)."
-  },
-  "comptes": {
-    "attal": [], "glucksmann": [], "le-pen": [], "lisnard": [], "melenchon": [], "philippe": [],
-    "retailleau": [], "roussel": [], "ruffin": [], "tondelier": [], "zemmour": []
-  }
+ "_meta": {
+  "regle": "Comptes OFFICIELS uniquement (vérifiés ou liés depuis le site de campagne). Chaque compte doit être validé par un humain (\"valide\": true) avant d'être utilisé par le job hebdo.",
+  "perimetre": "Le job hebdo ne tourne que pour les candidats listés ici, en commençant par les 11 principaux, pour limiter les crédits Oriane (1 recherche par candidat et par semaine)."
+ },
+ "comptes": {
+  "attal": [
+   {
+    "plateforme": "instagram",
+    "handle": "gabrielattal",
+    "oriane_id": "prf_f4ece965c693778098f264e995ec",
+    "valide": true
+   },
+   {
+    "plateforme": "tiktok",
+    "handle": "gabriel_attal",
+    "oriane_id": "prf_fb0ab5ec985f5c810456ccaa01b0",
+    "valide": true
+   }
+  ],
+  "glucksmann": [
+   {
+    "plateforme": "instagram",
+    "handle": "raphaelglucksmann",
+    "oriane_id": "prf_6cb0e2756739464473e692d59a39",
+    "valide": true
+   }
+  ],
+  "le-pen": [
+   {
+    "plateforme": "instagram",
+    "handle": "marine_lepen",
+    "oriane_id": "prf_2aafe6a9d9aecab28e59ba308380",
+    "valide": true
+   },
+   {
+    "plateforme": "tiktok",
+    "handle": "mlp.officiel",
+    "oriane_id": "prf_673a4473ad821c4a8e76fceb3c7f",
+    "valide": true
+   }
+  ],
+  "lisnard": [
+   {
+    "plateforme": "instagram",
+    "handle": "davidlisnard",
+    "oriane_id": "prf_67abedf7c462c92ea6ab0707afac",
+    "valide": true
+   }
+  ],
+  "melenchon": [
+   {
+    "plateforme": "tiktok",
+    "handle": "jlmelenchon",
+    "oriane_id": "prf_79ee4369eda2e681a05667353f57",
+    "valide": true
+   }
+  ],
+  "philippe": [
+   {
+    "plateforme": "instagram",
+    "handle": "edouardphilippelh",
+    "oriane_id": "prf_bf0313652be2eb89e1e3c8a6123c",
+    "valide": true
+   }
+  ],
+  "retailleau": [
+   {
+    "plateforme": "tiktok",
+    "handle": "brunoretailleauoff",
+    "oriane_id": "prf_7274bb0598a03bc7a063e1a834fc",
+    "valide": true
+   },
+   {
+    "plateforme": "instagram",
+    "handle": "bruno_retailleau",
+    "oriane_id": "prf_9376c5f7b6046940c904de39de26",
+    "valide": true
+   }
+  ],
+  "roussel": [
+   {
+    "plateforme": "instagram",
+    "handle": "fabien_roussel",
+    "oriane_id": "prf_2a9412273fe89702ab437c093c3e",
+    "valide": true
+   }
+  ],
+  "ruffin": [],
+  "tondelier": [
+   {
+    "plateforme": "instagram",
+    "handle": "marinetondelier",
+    "oriane_id": "prf_b8b24a9a1821fe91a5e7bb37fc4a",
+    "valide": true
+   }
+  ],
+  "zemmour": [
+   {
+    "plateforme": "instagram",
+    "handle": "ericzemmour_",
+    "oriane_id": "prf_2e9f5b0fc0621f74f8e221309cf6",
+    "valide": true
+   }
+  ]
+ }
 }
