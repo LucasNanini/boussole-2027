@@ -7,13 +7,13 @@ import THEMES from './data/themes.json'
 import RAW from './data/candidats.json'
 const DATA_EXTRA = RAW.a_verifier_hors_liste
 
-const HEBDO = Object.values(import.meta.glob('./data/hebdo/*.json', { eager: true, import: 'default' }))
-  .filter((h) => h.statut === 'publie' || window.location.hash.includes('apercu'))
+const EDITIONS = Object.values(import.meta.glob('./data/hebdo/*.json', { eager: true, import: 'default' }))
   .sort((a, b) => b.semaine.localeCompare(a.semaine))
+const editions = () => EDITIONS.filter((h) => h.statut === 'publie' || window.location.hash.includes('apercu'))
 
 /* ---------------- routing ---------------- */
 function useRoute() {
-  const get = () => (window.location.hash.replace(/^#\/?/, '').split('?')[0] || 'accueil')
+  const get = () => (window.location.hash.replace(/^#\/?/, '') || 'accueil')
   const [r, setR] = useState(get)
   useEffect(() => {
     const on = () => { setR(get()); window.scrollTo(0, 0) }
@@ -22,7 +22,7 @@ function useRoute() {
   }, [])
   return r
 }
-const go = (r) => { window.location.hash = '/' + r }
+const go = (r) => { window.location.hash = r === 'accueil' ? '' : r }
 
 /* ---------------- petits composants ---------------- */
 const Tricolore = ({ vertical }) => (
@@ -113,12 +113,12 @@ function Accueil() {
         <ModeCard title="Ma Boussole" sub="Le comparateur, liste officielle" to="boussole" tag="MARS 2027" />
       </div>
 
-      <footer className="foot"><span>Neutre · sourcé · sans compte</span><a href="#/methodo">Méthodologie</a></footer>
+      <footer className="foot"><span>Neutre · sourcé · sans compte</span><a href="#methodo">Méthodologie</a></footer>
     </main>
   )
 }
 const ModeCard = ({ on, title, sub, to, tag }) => (
-  <a className={on ? 'mode' : 'mode mode-soon'} href={`#/${to}`}>
+  <a className={on ? 'mode' : 'mode mode-soon'} href={`#${to}`}>
     <span className={on ? 'tag tag-on' : 'tag'}>{on ? 'EN LIGNE' : tag}</span>
     <b>{title}</b>
     <span className="muted small">{sub}</span>
@@ -269,7 +269,7 @@ function Resultat({ n, rep, etat, clues }) {
             {clues.map((c, i) => <span key={i} className="small">{i + 1} · {c.texte}</span>)}
             <span className="small muted">Sources : <SourceLinks ids={rep.sources} /></span>
           </div>
-          <a className="b" href={`#/trombino/${rep.id}`}>Voir sa fiche</a>
+          <a className="b" href={`#fiche-${rep.id}`}>Voir sa fiche</a>
         </div>
       </section>
 
@@ -283,7 +283,7 @@ function Resultat({ n, rep, etat, clues }) {
         </div>
         {copie && <span className="small">{copie}</span>}
       </section>
-      <p className="muted small center">Prochain mystère demain · <a href="#/trombino">Réviser le Trombino</a></p>
+      <p className="muted small center">Prochain mystère demain · <a href="#trombino">Réviser le Trombino</a></p>
     </main>
   )
 }
@@ -349,7 +349,7 @@ function Trombino({ id }) {
       <div className="row-between">
         <button className="round" aria-label="Fiche précédente" onClick={() => setI((i - 1 + liste.length) % liste.length)}><Icon d={I.back} /></button>
         <span className="b">{liste.length ? (i % liste.length) + 1 : 0} / {liste.length}</span>
-        <a className="btn btn-dark pillbtn" href="#/jeu">Tester ma mémoire</a>
+        <a className="btn btn-dark pillbtn" href="#jeu">Tester ma mémoire</a>
         <button className="round" aria-label="Fiche suivante" onClick={() => setI((i + 1) % liste.length)}><Icon d={I.next} /></button>
       </div>
       <p className="muted tiny">Ordre aléatoire à chaque visite. Couleur = famille politique selon la source, en attendant la nuance officielle du ministère de l'Intérieur.</p>
@@ -394,7 +394,7 @@ function SansEdition({ titre }) {
         <h2>Première édition lundi</h2>
         <p className="muted">Chaque lundi, on relève les vidéos publiées la semaine précédente sur les comptes officiels des candidat·es (Instagram, TikTok, YouTube). On en tire leurs 5 phrases les plus vues, mot pour mot avec le lien, et la part de leur temps de parole par thème.</p>
         <p className="muted small">Tout est relu par un humain avant publication.</p>
-        <a className="btn btn-dark" href="#/methodo">Comment c'est fait</a>
+        <a className="btn btn-dark" href="#methodo">Comment c'est fait</a>
       </section>
     </main>
   )
@@ -407,14 +407,14 @@ function useHebdoCandidat(h) {
 }
 
 function Hebdo() {
-  const h = HEBDO[0]
+  const h = editions()[0]
   const [id, setId, ids] = useHebdoCandidat(h)
   if (!h || !ids.length) return <SansEdition titre="L'hebdo" />
   const c = CANDIDATS.find((x) => x.id === id)
   const d = h.candidats[id]
   return (
     <main className="screen">
-      <Header title="L'hebdo" right={<a className="icon-btn" href="#/themes" aria-label="Thèmes de la semaine"><Icon d={I.chart} /></a>} />
+      <Header title="L'hebdo" right={<a className="icon-btn" href="#themes" aria-label="Thèmes de la semaine"><Icon d={I.chart} /></a>} />
       <span className="muted small center">Semaine du {dateFr(h.du)} au {dateFr(h.au)}</span>
       <div className="chips scroll">
         {ids.map((k) => {
@@ -447,7 +447,7 @@ function Hebdo() {
 
 /* ---------------- De quoi parlent-ils ? ---------------- */
 function Themes() {
-  const h = HEBDO[0], prev = HEBDO[1]
+  const [h, prev] = editions()
   const [id, setId, ids] = useHebdoCandidat(h)
   const [vue, setVue] = useState('campagne')
   const [tout, setTout] = useState(false)
@@ -499,7 +499,7 @@ function Themes() {
       {top && top.v - top.p > 0 && (
         <div className="callout"><span className="eyebrow light">Le chiffre de la semaine</span><b>{top.court} : +{Math.round(top.v - top.p)} points en une semaine.</b></div>
       )}
-      <p className="muted tiny">Source : vidéos des comptes officiels Instagram, TikTok et YouTube (via Oriane). Thèmes classés automatiquement puis vérifiés. <a href="#/methodo">Méthodologie</a></p>
+      <p className="muted tiny">Source : vidéos des comptes officiels Instagram, TikTok et YouTube (via Oriane). Thèmes classés automatiquement puis vérifiés. <a href="#methodo">Méthodologie</a></p>
     </main>
   )
 }
@@ -567,7 +567,8 @@ function Revue() {
 /* ---------------- App ---------------- */
 export default function App() {
   const r = useRoute()
-  const [page, arg] = r.split('/')
+  const page = r.startsWith('fiche-') ? 'trombino' : r.startsWith('apercu-') ? r.slice(7) : r
+  const arg = r.startsWith('fiche-') ? r.slice(6) : undefined
   return (
     <div className="app">
       <Tricolore />

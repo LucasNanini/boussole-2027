@@ -7,7 +7,7 @@ des candidatures, L'hebdo (5 citations par candidat) et « De quoi parlent-ils ?
 - `npm run build` → `dist/` (site statique ; Vercel le détecte tout seul : framework Vite)
 
 ## Données
-- `src/data/candidats.json` : liste, familles, sources. **Brouillon : à relire avant lancement** (voir `/#/revue`).
+- `src/data/candidats.json` : liste, familles, sources. **Brouillon : à relire avant lancement** (voir `/#revue`).
 - `public/candidats/<id>.jpg` : portraits illustrés (IA), 512 px.
 - `src/data/themes.json` : les 12 thèmes, figés jusqu'à l'élection.
 - `src/data/comptes.json` : comptes officiels utilisés par le job hebdo (à valider).

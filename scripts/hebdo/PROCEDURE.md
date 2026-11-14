@@ -38,7 +38,7 @@ Le script refuse toute citation qui ne figure pas mot pour mot dans la transcrip
 ## 4. Revue humaine
 Ouvrir une pull request « L'hebdo <semaine> — brouillon à valider » avec, dans la description :
 les 5 citations de chaque candidat + lien, le top 3 des thèmes par candidat, les passages au thème douteux.
-Lucas relit, corrige si besoin, l'aperçoit sur `/#/hebdo?apercu` (brouillons visibles), puis lance
+Lucas relit, corrige si besoin, l'aperçoit sur `/#apercu-hebdo` (brouillons visibles), puis lance
 `npm run hebdo -- <AAAA-Www> --publier` (passe le statut à `publie`) et fusionne. Vercel redéploie automatiquement.
 
 ## Garde-fous
