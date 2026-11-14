@@ -40,7 +40,7 @@ export function json(res, status, data, cacheSeconds = 0) {
 }
 
 /* ---------- Pseudos ---------- */
-const INTERDITS = ['con', 'conne', 'connard', 'connasse', 'pute', 'salope', 'encule', 'enculé', 'merde', 'nazi', 'hitler', 'pd', 'negre', 'nègre', 'bougnoule', 'youpin', 'fdp', 'ntm', 'tafiole', 'admin', 'boussole', 'moderateur', 'modérateur']
+const INTERDITS = ['con', 'conne', 'connard', 'connasse', 'pute', 'salope', 'encule', 'enculé', 'merde', 'nazi', 'hitler', 'pd', 'negre', 'nègre', 'bougnoule', 'youpin', 'fdp', 'ntm', 'tafiole', 'admin', 'boussole', 'movo', 'moderateur', 'modérateur']
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 export function pseudoValide(p) {
   if (typeof p !== 'string') return null

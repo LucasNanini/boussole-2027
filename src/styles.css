@@ -44,6 +44,8 @@ h2 { font-size: 20px; }
 
 .home-head { display: flex; justify-content: space-between; align-items: center; }
 .brand { display: flex; align-items: center; gap: 8px; } .brand b { font-size: 22px; }
+.brand-col { display: flex; flex-direction: column; gap: 2px; }
+.logo { letter-spacing: -0.5px; font-size: 26px !important; } .logo span { color: var(--rouge); }
 .pill-dark { background: var(--ink); color: #fff; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; }
 .pill-ghost { font-size: 12px; font-weight: 600; background: #2A2D45; padding: 4px 9px; border-radius: 999px; align-self: flex-start; }
 .pill-white { font-size: 12px; font-weight: 700; color: var(--ink); background: #fff; padding: 4px 10px; border-radius: 999px; }

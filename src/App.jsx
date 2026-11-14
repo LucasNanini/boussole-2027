@@ -13,6 +13,9 @@ const EDITIONS = Object.values(import.meta.glob('./data/hebdo/*.json', { eager: 
 const editions = () => EDITIONS.filter((h) => h.statut === 'publie' || window.location.hash.includes('apercu'))
 
 /* ---------------- routing ---------------- */
+// Adresse affichée dans les partages : celle où l'app est réellement servie.
+const SITE = typeof location !== 'undefined' && location.host ? location.host : 'movo-2027.vercel.app'
+
 function useRoute() {
   const get = () => (window.location.hash.replace(/^#\/?/, '') || 'accueil')
   const [r, setR] = useState(get)
@@ -92,7 +95,7 @@ function Accueil() {
   return (
     <main className="screen">
       <header className="home-head">
-        <div className="brand"><Icon d={I.compass} size={28} /><b>Boussole</b><span className="pill-dark">2027</span></div>
+        <div className="brand-col"><div className="brand"><b className="logo">MO<span>V</span>O</b><span className="pill-dark">2027</span></div><span className="muted tiny b">Mais où va-t-on ?</span></div>
         <span className="muted small b">J-{joursAvant(PREMIER_TOUR)} avant le 1er tour</span>
       </header>
       {st && (st.visiteurs > 0 || st.parties > 0) && (
@@ -129,7 +132,7 @@ function Accueil() {
         <ModeCard on title="L'hebdo" sub="Leurs 5 phrases de la semaine" to="hebdo" />
         <ModeCard on title="De quoi parlent-ils ?" sub="Les thèmes, semaine après semaine" to="themes" />
         <ModeCard title="À l'aveugle" sub="Des idées sans les noms" to="aveugle" tag="JANVIER" />
-        <ModeCard title="Ma Boussole" sub="Le comparateur, liste officielle" to="boussole" tag="MARS 2027" />
+        <ModeCard title="Mon cap" sub="Le comparateur, liste officielle" to="cap" tag="MARS 2027" />
       </div>
 
       <footer className="foot"><span>Neutre · sourcé · sans compte</span><a href="#methodo">Méthodologie</a></footer>
@@ -270,7 +273,7 @@ function grille(etat) {
 }
 function texteGrille(n, etat) {
   const sq = grille(etat).map((g) => (g === 'win' ? '🟩' : g === 'rate' ? '🟥' : '⬜')).join('')
-  return `Boussole 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? boussole-vote-2027.vercel.app`
+  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? ${SITE}`
 }
 
 function Resultat({ n, rep, etat, clues }) {
@@ -290,9 +293,9 @@ function Resultat({ n, rep, etat, clues }) {
   }
   const partagerStory = async () => {
     const blob = await story(n, etat)
-    const file = new File([blob], `boussole-qui-est-ce-${n}.png`, { type: 'image/png' })
+    const file = new File([blob], `movo-qui-est-ce-${n}.png`, { type: 'image/png' })
     try {
-      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], text: 'boussole-vote-2027.vercel.app' }); return }
+      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], text: SITE }); return }
     } catch { return }
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; a.click()
   }
@@ -330,7 +333,7 @@ function Resultat({ n, rep, etat, clues }) {
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
         <Grille etat={etat} />
-        <span className="mono small">Qui est-ce ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · boussole-vote-2027.vercel.app</span>
+        <span className="mono small">Qui est-ce ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · {SITE}</span>
         <div className="grid2 w100">
           <button className="btn btn-light" onClick={partagerStory}><Icon d={I.share} size={18} /> Story</button>
           <button className="btn btn-outline-light" onClick={partagerTexte}>Défier un ami</button>
@@ -375,7 +378,7 @@ async function story(n, etat) {
   ;['#000091', '#FFFFFF', '#E1000F'].forEach((c, i) => { x.fillStyle = c; x.fillRect(0, i * H / 3, 140, H / 3) })
   await document.fonts?.ready
   x.fillStyle = '#fff'
-  x.font = '700 56px "Space Grotesk", sans-serif'; x.fillText('Boussole 2027', 220, 200)
+  x.font = '700 56px "Space Grotesk", sans-serif'; x.fillText('MOVO 2027', 220, 200); x.fillStyle = '#D9D9E3'; x.font = '400 40px Inter, sans-serif'; x.fillText('Mais où va-t-on ?', 220, 260); x.fillStyle = '#fff'
   x.fillStyle = '#D9D9E3'; x.font = '700 40px Inter, sans-serif'; x.fillText(`QUI EST-CE ? #${n}`, 220, 700)
   x.fillStyle = '#fff'; x.font = '700 170px "Space Grotesk", sans-serif'
   x.fillText(etat.gagne ? 'Trouvé' : 'Raté', 220, 900)
@@ -389,7 +392,7 @@ async function story(n, etat) {
   x.font = '700 68px "Space Grotesk", sans-serif'
   ;['Et toi, tu le/la', 'reconnais en combien ?'].forEach((l, i) => x.fillText(l, 220, 1400 + i * 84))
   x.fillStyle = '#D9D9E3'; x.font = '400 40px Inter, sans-serif'; x.fillText('Joue au mystère du jour', 220, 1720)
-  x.fillStyle = '#fff'; x.font = '700 46px "Space Grotesk", sans-serif'; x.fillText('boussole-vote-2027.vercel.app', 220, 1800)
+  x.fillStyle = '#fff'; x.font = '700 46px "Space Grotesk", sans-serif'; x.fillText(SITE, 220, 1800)
   return new Promise((r) => cv.toBlob(r, 'image/png'))
 }
 
@@ -611,7 +614,7 @@ function Methodo() {
         <h2>« Principaux »</h2>
         <p>Candidats testés dans les intentions de vote nationales récentes. Les autres sont tous dans l'onglet « Tous les déclarés ».</p>
         <h2>Le mystère du jour</h2>
-        <p>Un tirage fixé à l'avance, le même pour tout le monde. Seules les candidatures avec une ligne politique sourcée y entrent. Les modes fondés sur les programmes (À l'aveugle, Ma Boussole) n'incluront que les candidats ayant publié un programme.</p>
+        <p>Un tirage fixé à l'avance, le même pour tout le monde. Seules les candidatures avec une ligne politique sourcée y entrent. Les modes fondés sur les programmes (À l'aveugle, Mon cap) n'incluront que les candidats ayant publié un programme.</p>
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
@@ -714,7 +717,7 @@ export default function App() {
         : page === 'hebdo' ? <Hebdo />
         : page === 'themes' ? <Themes />
         : page === 'aveugle' ? <Bientot titre="À l'aveugle" quand="JANVIER" texte="Réagissez à de vraies propositions, sans nom, sans parti, sans couleur. À la fin, on révèle qui les porte. Réservé aux candidat·es ayant publié un programme." />
-        : page === 'boussole' ? <Bientot titre="Ma Boussole" quand="MARS 2027" texte="Le comparateur complet, sur la liste officielle publiée par le Conseil constitutionnel. Vous verrez vos accords… et vos désaccords." />
+        : page === 'cap' ? <Bientot titre="Mon cap" quand="MARS 2027" texte="Le comparateur complet, sur la liste officielle publiée par le Conseil constitutionnel. Vous verrez vos accords… et vos désaccords." />
         : page === 'methodo' ? <Methodo />
         : page === 'revue' ? <Revue />
         : page === 'classement' ? <Classement />

@@ -1,4 +1,4 @@
-# Boussole 2027
+# MOVO 2027 · Mais où va-t-on ?
 
 Jeu et guide neutre pour la présidentielle 2027 : le mystère du jour « Qui est-ce ? », le Trombino
 des candidatures, L'hebdo (5 citations par candidat) et « De quoi parlent-ils ? » (thèmes semaine après semaine).
