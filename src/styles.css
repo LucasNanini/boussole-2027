@@ -130,3 +130,19 @@ h2 { font-size: 20px; }
 .prose { display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 1.5; }
 .prose h2 { font-size: 17px; margin-top: 8px; } .prose ul { margin: 0; padding-left: 18px; }
 .hero > .btn, .hero > span { margin-right: 64px; }
+.counter { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); background: #fff; border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.counter b { color: var(--ink); font-size: 15px; }
+.lb-link { display: flex; align-items: center; gap: 10px; background: #fff; border: 1.5px solid var(--line); border-radius: 16px; padding: 12px 14px; text-decoration: none; }
+.distrib { background: #fff; border: 1.5px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.drow { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.dk { width: 36px; font-weight: 700; text-align: right; }
+.dbar { flex: 1; } .dbar div { background: #C9CAD6; border-radius: 5px; min-height: 22px; display: flex; align-items: center; justify-content: flex-end; padding: 0 6px; box-sizing: border-box; }
+.dbar span { font-size: 11px; font-weight: 700; white-space: nowrap; }
+.drow.me .dbar div { background: var(--ink); color: #fff; }
+.lbrow { display: flex; align-items: center; gap: 10px; padding: 8px 4px; border-top: 1px solid var(--soft); font-size: 15px; }
+.lbrow.me { background: var(--soft); border-radius: 8px; }
+.rank { width: 26px; text-align: center; font-weight: 700; color: var(--muted); }
+.card-form { background: #fff; border: 1.5px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.card-form input { flex: 1; min-width: 0; height: 48px; border-radius: 12px; border: 1.5px solid var(--ink); padding: 0 12px; font: inherit; }
+.code { font-family: ui-monospace, monospace; font-size: 28px; font-weight: 700; letter-spacing: .2em; background: var(--soft); border-radius: 12px; padding: 10px; text-align: center; }
+.btn-outline { background: #fff; color: var(--ink); border: 2px solid var(--ink); }

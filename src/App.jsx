@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   CANDIDATS, SOURCES, META, FAMILLES, BLOCS, blocOf, blocId, dateFr, initiales,
   numeroDuJour, joursAvant, PREMIER_TOUR, mystere, plateau, indices, shuffle, store,
+  joueurId, api, syncStats, fmt,
 } from './lib.js'
 import THEMES from './data/themes.json'
 import RAW from './data/candidats.json'
@@ -21,6 +22,11 @@ function useRoute() {
     return () => window.removeEventListener('hashchange', on)
   }, [])
   return r
+}
+function useStats(n) {
+  const [st, setSt] = useState(null)
+  useEffect(() => { let on = true; api(`/api/stats${n ? `?n=${n}` : ''}`).then((j) => { if (on && j && !j.erreur) setSt(j) }); return () => { on = false } }, [n])
+  return st
 }
 const go = (r) => { window.location.hash = r === 'accueil' ? '' : r }
 
@@ -82,12 +88,20 @@ function Accueil() {
   const n = numeroDuJour()
   const etat = store.get(`qec-${n}`, null)
   const stats = store.get('qec-stats', { serie: 0 })
+  const st = useStats()
   return (
     <main className="screen">
       <header className="home-head">
         <div className="brand"><Icon d={I.compass} size={28} /><b>Boussole</b><span className="pill-dark">2027</span></div>
         <span className="muted small b">J-{joursAvant(PREMIER_TOUR)} avant le 1er tour</span>
       </header>
+      {st && st.parties > 0 && (
+        <div className="counter" aria-label="Compteurs publics">
+          <span><b>{fmt(st.parties)}</b> parties jouées</span>
+          <span><b>{fmt(st.joueursJour)}</b> joueurs aujourd'hui</span>
+          <span><b>{fmt(st.visiteurs)}</b> visiteurs</span>
+        </div>
+      )}
 
       <section className="hero">
         <div className="hero-flag"><Tricolore vertical /></div>
@@ -102,6 +116,11 @@ function Accueil() {
         </button>
         <span className="small center light-muted">Nouveau mystère chaque jour à minuit</span>
       </section>
+
+      <a className="lb-link" href="#classement">
+        <span className="col"><b>Le classement des séries</b><span className="muted small">{st?.classement?.[0] ? `En tête : ${st.classement[0].pseudo}, ${st.classement[0].serie} jour${st.classement[0].serie > 1 ? 's' : ''} d'affilée` : 'Qui tiendra la plus longue série ?'}</span></span>
+        <Icon d={I.next} />
+      </a>
 
       <div className="row-between"><h2>Les modes</h2><span className="muted small">4 ouverts · 2 bientôt</span></div>
       <div className="grid2">
@@ -169,6 +188,7 @@ function Jeu() {
         s.meilleur = s.meilleur ? Math.min(s.meilleur, essais.length) : essais.length
       } else s.serie = 0
       store.set('qec-stats', s)
+      api('/api/partie', { joueur: joueurId(), numero: n, essais: essais.length, gagne }).then((j) => j?.user && syncStats(j.user))
     }
   }
   const valider = (e) => {
@@ -288,6 +308,8 @@ function Resultat({ n, rep, etat, clues }) {
         </div>
       </section>
 
+      <Distribution n={n} etat={etat} />
+
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
         <Grille etat={etat} />
@@ -300,6 +322,26 @@ function Resultat({ n, rep, etat, clues }) {
       </section>
       <p className="muted small center">Prochain mystère demain · <a href="#trombino">Réviser le Trombino</a></p>
     </main>
+  )
+}
+function Distribution({ n, etat }) {
+  const st = useStats(n)
+  const d = st?.distrib
+  const total = d ? Object.values(d).reduce((a, b) => a + Number(b), 0) : 0
+  if (!total) return null
+  const mien = etat.gagne ? String(etat.essais.length) : 'X'
+  const rows = ['1', '2', '3', '4', '5', '6', 'X'].map((k) => ({ k, v: Number(d[k] || 0) }))
+  const max = Math.max(...rows.map((r) => r.v), 1)
+  return (
+    <section className="distrib" aria-label="Résultats des joueurs aujourd'hui">
+      <div className="row-between"><b>Aujourd'hui, les {fmt(total)} joueurs</b><span className="muted tiny">en nombre d'indices</span></div>
+      {rows.map((r) => (
+        <div key={r.k} className={r.k === mien ? 'drow me' : 'drow'}>
+          <span className="dk">{r.k === 'X' ? 'Raté' : r.k}</span>
+          <div className="dbar"><div style={{ width: `${Math.max(4, (r.v / max) * 100)}%` }}><span>{Math.round((r.v / total) * 100)} %</span></div></div>
+        </div>
+      ))}
+    </section>
   )
 }
 const Grille = ({ etat, big }) => (
@@ -558,8 +600,67 @@ function Methodo() {
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
         <h2>Sources</h2>
         <ul>{Object.values(SOURCES).map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.titre}</a> ({s.date})</li>)}</ul>
-        <p className="muted small">Aucun compte, aucune donnée personnelle collectée : votre série est enregistrée uniquement dans votre navigateur.</p>
+        <h2>Compteurs et classement</h2>
+        <p>Chaque navigateur reçoit un identifiant anonyme et aléatoire. Il sert à compter les parties et les joueurs, et à tenir votre série. Le pseudo est facultatif. Pas d'email, pas de compte, pas de cookie publicitaire. Les compteurs portent sur les joueurs, jamais sur les candidats : ce n'est pas un sondage.</p>
       </article>
+    </main>
+  )
+}
+
+/* ---------------- Classement + code de sauvegarde ---------------- */
+function Classement() {
+  const st = useStats()
+  const [moi, setMoi] = useState(() => store.get('qec-stats', {}))
+  const [pseudo, setPseudo] = useState(moi.pseudo || '')
+  const [code, setCode] = useState('')
+  const [msg, setMsg] = useState('')
+  useEffect(() => { api('/api/compte', { action: 'moi', joueur: joueurId() }).then((j) => { if (j?.user) { syncStats(j.user); setMoi(store.get('qec-stats', {})); if (j.user.pseudo) setPseudo(j.user.pseudo) } }) }, [])
+  const enregistrerPseudo = async (e) => {
+    e.preventDefault()
+    const j = await api('/api/compte', { action: 'pseudo', joueur: joueurId(), pseudo })
+    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît au classement dès que votre série est en cours.') }
+    else setMsg(j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
+  }
+  const monCode = async () => {
+    const j = await api('/api/compte', { action: 'code', joueur: joueurId() })
+    if (j?.code) { syncStats({ ...moi, code: j.code }); setMoi(store.get('qec-stats', {})) } else setMsg('Connexion impossible, réessayez.')
+  }
+  const recup = async (e) => {
+    e.preventDefault()
+    const j = await api('/api/compte', { action: 'recuperer', code })
+    if (j?.joueur) { store.set('b27-joueur', j.joueur); syncStats(j.user); setMoi(store.get('qec-stats', {})); setPseudo(j.user.pseudo || ''); setMsg(`Série récupérée : ${j.user.serie} jour${j.user.serie > 1 ? 's' : ''}.`) }
+    else setMsg('Code inconnu. Vérifiez les 6 caractères.')
+  }
+  return (
+    <main className="screen">
+      <Header title="Classement" />
+      <section className="chart">
+        <div className="row-between"><b>Les plus longues séries en cours</b><span className="muted tiny">jours d'affilée</span></div>
+        {!st && <span className="muted small">Classement indisponible pour le moment.</span>}
+        {st && !st.classement.length && <span className="muted small">Personne encore. Jouez le mystère du jour et choisissez un pseudo pour ouvrir le bal.</span>}
+        {st?.classement.map((u, i) => (
+          <div key={i} className={u.pseudo === moi.pseudo ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col b">{u.pseudo}</span><span className="b">{u.serie}</span></div>
+        ))}
+      </section>
+
+      <form className="card-form" onSubmit={enregistrerPseudo}>
+        <label htmlFor="pseudo" className="b">Votre pseudo (facultatif)</label>
+        <span className="muted tiny">Pas d'email, pas de compte. Votre série actuelle : {moi.serie || 0}.</span>
+        <div className="row6"><input id="pseudo" maxLength={15} value={pseudo} onChange={(e) => setPseudo(e.target.value)} placeholder="ex. Marianne75" /><button className="btn btn-dark" type="submit">OK</button></div>
+      </form>
+
+      <section className="card-form">
+        <b>Garder ma série sur un autre appareil</b>
+        <span className="muted tiny">Ouvert depuis Instagram ou TikTok, ou changement de téléphone ? Notez ce code et entrez-le sur l'autre appareil.</span>
+        {moi.code ? <span className="code">{moi.code}</span> : <button className="btn btn-dark" onClick={monCode}>Afficher mon code</button>}
+        <form className="row6" onSubmit={recup}>
+          <label className="sr" htmlFor="code">Code de sauvegarde</label>
+          <input id="code" value={code} onChange={(e) => setCode(e.target.value.toUpperCase())} maxLength={7} placeholder="J'ai déjà un code" autoComplete="off" />
+          <button className="btn btn-outline" type="submit">Récupérer</button>
+        </form>
+      </section>
+      {msg && <p className="msg" role="status">{msg}</p>}
+      <p className="muted tiny">Le jeu se joue dans votre navigateur : un joueur déterminé pourrait tricher. Le classement est là pour le plaisir.</p>
     </main>
   )
 }
@@ -582,6 +683,10 @@ function Revue() {
 /* ---------------- App ---------------- */
 export default function App() {
   const r = useRoute()
+  useEffect(() => {
+    const d = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Paris' })
+    if (store.get('b27-visite', '') !== d) { store.set('b27-visite', d); api('/api/compte', { action: 'visite', joueur: joueurId() }) }
+  }, [])
   const page = r.startsWith('fiche-') ? 'trombino' : r.startsWith('apercu-') ? r.slice(7) : r
   const arg = r.startsWith('fiche-') ? r.slice(6) : undefined
   return (
@@ -595,6 +700,7 @@ export default function App() {
         : page === 'boussole' ? <Bientot titre="Ma Boussole" quand="MARS 2027" texte="Le comparateur complet, sur la liste officielle publiée par le Conseil constitutionnel. Vous verrez vos accords… et vos désaccords." />
         : page === 'methodo' ? <Methodo />
         : page === 'revue' ? <Revue />
+        : page === 'classement' ? <Classement />
         : <Accueil />}
     </div>
   )

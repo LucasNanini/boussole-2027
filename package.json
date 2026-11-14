@@ -11,6 +11,8 @@
     "hebdo": "node scripts/hebdo/build.mjs"
   },
   "dependencies": {
+    "@upstash/redis": "^1.41.0",
+    "@vercel/analytics": "^2.0.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },

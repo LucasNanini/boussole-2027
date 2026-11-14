@@ -118,3 +118,26 @@ export const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d } catch { return d } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch { /* privé */ } },
 }
+
+/* ---------- Joueur anonyme + API ---------- */
+export function joueurId() {
+  let id = store.get('b27-joueur', null)
+  if (!id) {
+    id = (crypto.randomUUID ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, () => Math.floor(Math.random() * 16).toString(16)))
+    store.set('b27-joueur', id)
+  }
+  return id
+}
+export async function api(path, body) {
+  try {
+    const r = await fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined)
+    const j = await r.json()
+    return j
+  } catch { return null }
+}
+export function syncStats(user) {
+  if (!user) return
+  const s = store.get('qec-stats', {})
+  store.set('qec-stats', { ...s, serie: user.serie, dernier: user.dernier, joues: user.joues, gagnes: user.gagnes, meilleur: user.meilleur, pseudo: user.pseudo, code: user.code })
+}
+export const fmt = (n) => new Intl.NumberFormat('fr-FR').format(n || 0)
