@@ -76,9 +76,13 @@ async function avecPseudos(r, raw, champs = []) {
   if (!ids.length) return []
   const q = r.pipeline(); ids.forEach(([id]) => q.hmget(K.user(id), 'pseudo', 'num', ...champs))
   const users = await q.exec()
+  // un pseudo n'est affiché que pour le joueur qui le détient ; les doublons d'avant l'unicité redeviennent « Joueur N »
+  const q2 = r.pipeline(); users.forEach((u) => q2.get(K.pseudo(u?.pseudo ? clePseudo(u.pseudo) : '-')))
+  const proprios = await q2.exec()
   const out = []
   for (let i = 0; i < ids.length; i++) {
     const u = { ...(users[i] || {}) }
+    if (u.pseudo && proprios[i] && proprios[i] !== ids[i][0]) u.pseudo = null
     if (!u.pseudo && !u.num) u.num = await numeroPublic(r, ids[i][0], u) // joueurs d'avant les numéros
     out.push({ ...u, nom: nomPublic(u), score: ids[i][1] })
   }
