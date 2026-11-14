@@ -2,7 +2,7 @@
  "semaine": "2026-W45",
  "du": "2026-11-02",
  "au": "2026-11-08",
- "statut": "brouillon",
+ "statut": "publie",
  "genere_le": "2026-11-14T17:22:17.145Z",
  "candidats": {
   "attal": {
@@ -545,5 +545,6 @@
     }
    ]
   }
- }
+ },
+ "publie_le": "2026-11-14"
 }
