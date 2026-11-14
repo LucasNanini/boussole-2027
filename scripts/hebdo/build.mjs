@@ -56,6 +56,8 @@ if (erreurs.some((e) => e.includes('introuvable') || e.includes('inconnu'))) {
   console.error('Brouillon refusé :\n- ' + erreurs.join('\n- ')); process.exit(1)
 }
 fs.mkdirSync(path.dirname(out), { recursive: true })
-fs.writeFileSync(out, JSON.stringify({ semaine, du, au, statut: 'brouillon', genere_le: new Date().toISOString(), candidats }, null, 1))
+const COMPTES = JSON.parse(fs.readFileSync(path.join(root, 'src/data/comptes.json'), 'utf8')).comptes
+const suivis = Object.keys(COMPTES).filter((k) => COMPTES[k].some((a) => a.valide && a.oriane_id))
+fs.writeFileSync(out, JSON.stringify({ semaine, du, au, statut: 'brouillon', suivis, genere_le: new Date().toISOString(), candidats }, null, 1))
 console.log(`Brouillon écrit : ${out} (${Object.keys(candidats).length} candidats)`)
 if (erreurs.length) console.log('Avertissements :\n- ' + erreurs.join('\n- '))
