@@ -490,7 +490,8 @@ function Absents({ h }) {
   const suivis = Object.keys(COMPTES.comptes)
   const absents = suivis.filter((k) => !h.candidats[k]).map((k) => {
     const c = CANDIDATS.find((x) => x.id === k)
-    const raison = COMPTES.comptes[k].some((a) => a.valide) ? 'aucune vidéo politique cette semaine' : 'pas encore de compte officiel validé'
+    const cs = COMPTES.comptes[k]
+    const raison = cs.some((a) => a.valide && a.oriane_id) ? 'aucune vidéo politique cette semaine' : cs.some((a) => a.valide) ? 'compte de campagne pas encore indexé' : 'pas encore de compte officiel validé'
     return c ? `${c.nom} (${raison})` : null
   }).filter(Boolean)
   if (!absents.length) return null

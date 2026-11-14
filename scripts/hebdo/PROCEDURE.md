@@ -9,6 +9,10 @@ Pour chaque candidat de `src/data/comptes.json` dont la liste est vide :
 - Ajouter les comptes trouvés avec `"valide": false`, `plateforme`, `handle`, `oriane_id`.
 - Ne PAS lancer la suite pour un candidat dont aucun compte n'est `"valide": true`.
 
+Pour chaque compte `"valide": true` sans `oriane_id` : UNE recherche `search_profiles` (projection `basic`,
+`handle` en `exactMatch`, sur instagram, tiktok et youtube). S'il est trouvé, renseigner `oriane_id` et la
+plateforme, et le signaler dans la PR. Sinon, le noter dans la PR (« pas encore indexé ») et passer au suivant.
+
 ## 1. Collecte — 1 appel Oriane par candidat
 Pour chaque candidat ayant au moins un compte validé, UN SEUL appel `search_contents` :
 - `operator: "and"`, `filters.profileId.includes` = ses `oriane_id` validés
