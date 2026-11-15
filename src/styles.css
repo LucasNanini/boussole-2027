@@ -182,3 +182,19 @@ h2 { font-size: 20px; }
 .kk-verdict.ok { background: #E8F4EC; } .kk-verdict.ko { background: #FDECEC; }
 .kk-grid { font-size: 30px; letter-spacing: 4px; }
 .kk-recap { display: flex; flex-direction: column; gap: 10px; }
+/* accueil : mystère compact + Kikadi en couleur */
+.hero-compact { padding: 16px 18px; gap: 10px; }
+.hero-compact .hero-body { gap: 4px; padding-right: 48px; }
+.hero-compact h1 { font-size: 28px; }
+.hero-compact .hero-flag { width: 40px; }
+.hero-compact .btn { padding-top: 11px; padding-bottom: 11px; }
+.kk-card { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: stretch; gap: 6px; background: #000091; border: 0; color: #fff; padding: 18px; border-radius: 20px; box-shadow: 0 8px 22px rgba(0, 0, 145, .25); }
+.kk-card .kk-mark { position: absolute; right: 4px; top: -46px; font-size: 140px; color: #E1000F; opacity: .9; pointer-events: none; }
+.kk-card-top { display: flex; align-items: center; gap: 8px; position: relative; }
+.kk-new { background: #E1000F; color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .06em; padding: 3px 8px; border-radius: 999px; }
+.kk-title { font-family: 'Space Grotesk', sans-serif; font-size: 38px; line-height: 1.05; position: relative; }
+.kk-sub { color: #DADAF5; font-size: 15px; position: relative; max-width: 75%; }
+.kk-btn { background: #fff; color: #000091; font-weight: 700; text-align: center; margin-top: 6px; position: relative; }
+/* jeu Kikadi en couleur */
+.kk-quote { background: #000091; color: #fff; padding: 18px 18px 20px; border-radius: 18px; position: relative; }
+.kk-progress .cur { background: #000091; }

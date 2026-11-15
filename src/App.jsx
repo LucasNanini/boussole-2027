@@ -111,18 +111,15 @@ function Accueil() {
         </div>
       )}
 
-      <section className="hero">
+      <section className="hero hero-compact">
         <div className="hero-flag"><Tricolore vertical /></div>
         <div className="hero-body">
           <span className="eyebrow light">Le mystère du jour · #{n}</span>
-          <h1>Qui est-ce ?</h1>
-          <p>Un·e candidat·e mystère. 6 indices maximum. Moins vous en utilisez, plus vous marquez.</p>
-          <span className="pill-ghost">Série : {stats.serie} jour{stats.serie > 1 ? 's' : ''}</span>
+          <div className="row-between"><h1>Qui est-ce ?</h1><span className="pill-ghost">Série {stats.serie}</span></div>
         </div>
         <button className="btn btn-light" onClick={() => go('jeu')}>
-          {etat?.fini ? 'Voir mon résultat' : etat?.essais?.length ? 'Reprendre la partie' : 'Jouer au mystère du jour'}
+          {etat?.fini ? 'Voir mon résultat' : etat?.essais?.length ? 'Reprendre' : 'Jouer'}
         </button>
-        <span className="small center light-muted">Nouveau mystère chaque jour à minuit</span>
       </section>
 
       <KikadiCarte n={n} />
@@ -154,13 +151,11 @@ function KikadiCarte({ n }) {
   const sc = fait && jeu ? jeu.filter((q, k) => e.rep[k] === q.id).length : null
   return (
     <a className="kk-card" href="#kikadi">
-      <span className="kk-mark">«</span>
-      <span className="col">
-        <span className="eyebrow">Nouveau · #{n}</span>
-        <b>Kikadi ?</b>
-        <span className="small muted">{fait ? `Fait : ${sc}/5. Revenez demain pour 5 nouvelles citations.` : e?.rep?.length ? 'Reprendre : il vous reste des citations.' : '5 vraies phrases de candidats. Qui les a dites ?'}</span>
-      </span>
-      <Icon d={I.next} />
+      <span className="kk-mark" aria-hidden="true">«</span>
+      <div className="kk-card-top"><span className="kk-new">NOUVEAU</span><span className="eyebrow light">5 citations du jour · #{n}</span></div>
+      <b className="kk-title">Kikadi ?</b>
+      <span className="kk-sub">{fait ? `${sc}/5 aujourd'hui. 5 nouvelles demain.` : e?.rep?.length ? 'Il vous reste des citations.' : 'Vraies phrases. Qui les a dites ?'}</span>
+      <span className="btn kk-btn">{fait ? 'Voir mon récap' : e?.rep?.length ? 'Reprendre' : 'Jouer'}</span>
     </a>
   )
 }
