@@ -603,11 +603,44 @@ function Hebdo() {
 }
 
 /* ---------------- De quoi parlent-ils ? ---------------- */
+function Nuage({ h, cid, color, mot, setMot }) {
+  const nom = (k) => CANDIDATS.find((y) => y.id === k)?.nom || k
+  const liste = cid ? h.candidats[cid]?.mots : h.mots_campagne
+  if (!liste) return <div className="callout soft"><b>Le nuage de mots arrive avec l'édition du lundi 16 novembre.</b><span className="small">Cette semaine, voyez la répartition par thème dans « Les thèmes ».</span></div>
+  if (!liste.length) return <p className="muted small">{cid ? "Pas assez de vidéos politiques cette semaine pour dégager des mots propres à ce candidat." : 'Pas encore de mots partagés par plusieurs candidats cette semaine.'}</p>
+  const max = Math.max(...liste.map((t) => t.n)), min = Math.min(...liste.map((t) => t.n))
+  const taille = (n) => 15 + (max === min ? 10 : ((n - min) / (max - min)) * 22)
+  // ordre mélangé (graine = semaine) pour éviter une liste triée qui ressemblerait à un classement
+  const melange = shuffle([...liste], (h.semaine + (cid || '')).split('').reduce((a, c) => a * 31 + c.charCodeAt(0) >>> 0, 7))
+  const sel = liste.find((t) => t.mot === mot)
+  return (
+    <section className="stack8">
+      <div className="nuage">
+        {melange.map((t) => (
+          <button key={t.mot} className={'mot' + (t.mot === mot ? ' on' : '')} style={{ fontSize: taille(t.n), color: t.mot === mot ? '#fff' : color, background: t.mot === mot ? color : 'transparent' }} onClick={() => setMot(t.mot === mot ? null : t.mot)}>{t.mot}</button>
+        ))}
+      </div>
+      {sel && (
+        <div className="card stack8">
+          <div className="row-between small"><b>« {sel.mot} »</b><span className="muted">{sel.n} fois cette semaine</span></div>
+          {cid ? (sel.extraits || []).map((x, k) => (
+            <blockquote key={k} className="extrait">« {x.texte} »<span className="muted tiny"> {x.plateforme} · {dateFr(x.date)} · <a href={x.url} target="_blank" rel="noreferrer">Voir la vidéo</a></span></blockquote>
+          )) : <ul className="small qui">{sel.qui.map((q) => <li key={q.id}><span style={{ color: blocOf(CANDIDATS.find((y) => y.id === q.id)).color }}>●</span> {nom(q.id)} · {q.n} fois</li>)}</ul>}
+          <span className="muted tiny">Un mot seul peut tromper : lisez toujours la phrase entière.</span>
+        </div>
+      )}
+    </section>
+  )
+}
+
 function Themes() {
   const [h, prev] = editions()
   const [id, setId, ids] = useHebdoCandidat(h)
   const [vue, setVue] = useState('campagne')
   const [tout, setTout] = useState(false)
+  const [mode, setMode] = useState('mots')
+  const [mot, setMot] = useState(null)
+  useEffect(() => setMot(null), [vue, id, mode])
   if (!h || !ids.length) return <SansEdition titre="De quoi parlent-ils ?" />
   const part = (src, cid) => {
     if (!src) return {}
@@ -628,7 +661,7 @@ function Themes() {
       <Header back="hebdo" title="" right={<span className="muted small">Semaine du {dateFr(h.du)}</span>} />
       <div className="stack4">
         <h1 className="h1">De quoi parlent-ils&nbsp;?</h1>
-        <p className="muted small">Part du temps de parole par thème dans les vidéos officielles. Pas un sondage : ça mesure ce qu'ils disent, pas ce que vous pensez.</p>
+        <p className="muted small">{mode === 'mots' ? "Les mots qu'ils emploient le plus, et nettement plus que les autres, dans leurs vidéos officielles. Touchez un mot pour lire la phrase entière." : 'Part du temps de parole par thème dans les vidéos officielles.'} Pas un sondage : ça mesure ce qu'ils disent, pas ce que vous pensez.</p>
       </div>
       <div className="seg">
         <button className={vue === 'campagne' ? 'on' : ''} onClick={() => setVue('campagne')}>Toute la campagne</button>
@@ -642,21 +675,28 @@ function Themes() {
       {cid && (() => { const n = h.candidats[cid].nb_videos; const x = CANDIDATS.find((y) => y.id === cid); return (
         <p className={n < 3 ? 'warn-soft' : 'muted small'}><b>{x.nom}</b> · {n} vidéo{n > 1 ? 's' : ''} cette semaine{n < 3 ? ' : trop peu pour en tirer une tendance, à lire avec prudence.' : ''}</p>
       ) })()}
-      <div className="legend"><span><i style={{ background: color }} />Cette semaine</span>{prev && <span><i style={{ background: '#C9CAD6' }} />Semaine d'avant</span>}</div>
-      <section className="chart">
-        {(tout ? rows : rows.slice(0, 6)).map((r) => {
-          const d = r.p != null ? Math.round(r.v - r.p) : null
-          return (
-            <div key={r.id} className="stack4">
-              <div className="row-between small"><b>{r.court}</b><span className="b">{Math.round(r.v)} %{d != null && <span className="muted"> {d > 0 ? `▲ +${d}` : d < 0 ? `▼ ${d}` : '='}</span>}</span></div>
-              <div className="track"><div style={{ width: `${(r.v / max) * 100}%`, background: color }} /></div>
-              {r.p != null && <div className="track thin"><div style={{ width: `${(r.p / max) * 100}%` }} /></div>}
-            </div>
-          )
-        })}
-        <button className="linkbtn" onClick={() => setTout(!tout)}>{tout ? 'Voir le top 6' : 'Voir les 12 thèmes'}</button>
-      </section>
-      {top && top.v - top.p > 0 && (
+      <div className="seg small-seg">
+        <button className={mode === 'mots' ? 'on' : ''} onClick={() => setMode('mots')}>Leurs mots</button>
+        <button className={mode === 'themes' ? 'on' : ''} onClick={() => setMode('themes')}>Les thèmes</button>
+      </div>
+      {mode === 'mots' && <Nuage h={h} cid={cid} color={color} mot={mot} setMot={setMot} />}
+      {mode === 'themes' && <>
+        <div className="legend"><span><i style={{ background: color }} />Cette semaine</span>{prev && <span><i style={{ background: '#C9CAD6' }} />Semaine d'avant</span>}</div>
+        <section className="chart">
+          {(tout ? rows : rows.slice(0, 6)).map((r) => {
+            const d = r.p != null ? Math.round(r.v - r.p) : null
+            return (
+              <div key={r.id} className="stack4">
+                <div className="row-between small"><b>{r.court}</b><span className="b">{Math.round(r.v)} %{d != null && <span className="muted"> {d > 0 ? `▲ +${d}` : d < 0 ? `▼ ${d}` : '='}</span>}</span></div>
+                <div className="track"><div style={{ width: `${(r.v / max) * 100}%`, background: color }} /></div>
+                {r.p != null && <div className="track thin"><div style={{ width: `${(r.p / max) * 100}%` }} /></div>}
+              </div>
+            )
+          })}
+          <button className="linkbtn" onClick={() => setTout(!tout)}>{tout ? 'Voir le top 6' : 'Voir les 12 thèmes'}</button>
+        </section>
+      </>}
+      {mode === 'themes' && top && top.v - top.p > 0 && (
         <div className="callout"><span className="eyebrow light">Le chiffre de la semaine</span><b>{top.court} : +{Math.round(top.v - top.p)} points en une semaine.</b></div>
       )}
       <Absents h={h} />
@@ -702,6 +742,8 @@ function Methodo() {
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
+        <h2>Le nuage de mots</h2>
+        <p>À partir des seuls passages politiques des vidéos, nous comptons les mots et expressions de chaque candidat, puis gardons ceux qu'il emploie nettement plus que les autres. On retire les mots-outils et les mots trop vagues (« choses », « vraiment », « pays »…). On ne retire jamais un mot parce qu'il est polémique. Un mot doit apparaître au moins deux fois. Les mots sont affichés dans un ordre mélangé, pas classés. Chaque mot renvoie à la phrase entière et à la vidéo : un mot sorti de son contexte peut tromper.</p>
         <h2>Sources</h2>
         <ul>{Object.values(SOURCES).map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.titre}</a> ({s.date})</li>)}</ul>
         <h2>Compteurs et classement</h2>

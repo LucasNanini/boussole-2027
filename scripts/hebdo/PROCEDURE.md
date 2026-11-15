@@ -29,7 +29,8 @@ Ne jamais utiliser `full`, la similarité visuelle ni `create_asset` (coût en c
 Pour chaque vidéo :
 - Découper la transcription en passages (≈ phrases). Donner à chaque passage UN thème parmi les 12
   de `src/data/themes.json` (exemples à l'appui), avec sa durée en secondes si disponible, sinon son nombre de mots.
-- Écrire `segments: [{ theme, poids }]` dans le fichier brut.
+- Écrire `segments: [{ theme, poids, texte }]` dans le fichier brut, où `texte` est le passage MOT POUR MOT
+  tiré de la transcription (il alimente le nuage de mots et ses extraits).
 - Passages SANS contenu politique (sport, vie privée, promotion, coulisses sans propos de campagne) : ne leur
   donner aucun thème et ne pas les compter. Une vidéo entièrement hors politique est ignorée (ni thèmes ni citation),
   et ne compte pas dans `nb_videos`. Si un candidat n'a aucune vidéo politique dans la semaine, ne pas le mettre
@@ -40,6 +41,14 @@ Choisir **5 citations** par candidat :
 - **mot pour mot** (copier-coller de la transcription), 8 à 30 mots, compréhensibles seules ;
 - pas d'extrait qui change le sens (vérifier la phrase d'avant et d'après) ;
 - écrire `citations: [{ texte, url, plateforme, date, vignette }]`.
+
+### Nuage de mots
+Le script calcule seul, pour chaque candidat, les mots et expressions qu'il emploie nettement plus que
+les autres (score de spécificité), en écartant les mots de `src/data/mots-exclus.json`.
+Après un premier `npm run hebdo`, relire le top 15 de chaque candidat : si un mot n'apprend rien
+(tic de langage, mot vague, nom propre sans intérêt), l'ajouter à la liste `exclus` du fichier brut et
+relancer. Ne JAMAIS retirer un mot parce qu'il est polémique ou dérangeant : c'est le but du nuage.
+Lister dans la PR les mots retirés et le top 10 de chaque candidat.
 
 ## 3. Construction du brouillon
 `npm run hebdo -- <AAAA-Www>` → crée `src/data/hebdo/<AAAA-Www>.json` avec `"statut": "brouillon"`.

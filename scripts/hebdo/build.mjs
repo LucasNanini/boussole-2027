@@ -2,6 +2,7 @@
 //         node scripts/hebdo/build.mjs 2026-W47 --publier → statut "publie"
 import fs from 'node:fs'
 import path from 'node:path'
+import { nuages } from './mots.mjs'
 
 const [semaine, flag] = process.argv.slice(2)
 if (!/^\d{4}-W\d{2}$/.test(semaine || '')) { console.error('Semaine attendue au format 2026-W47'); process.exit(1) }
@@ -52,12 +53,25 @@ for (const [id, c] of Object.entries(raw.candidats)) {
   candidats[id] = { nb_videos: videos.length, themes, citations }
 }
 
+// Nuage de mots : à partir des passages politiques (texte verbatim) de chaque candidat
+const passages = {}
+for (const [id, c] of Object.entries(raw.candidats)) {
+  if (!candidats[id]) continue
+  passages[id] = (c.videos || []).flatMap((v) => (v.segments || []).filter((sg) => sg.texte).map((sg) => ({ texte: sg.texte, url: v.url, date: (v.date || '').slice(0, 10), plateforme: v.plateforme })))
+}
+const avecTexte = Object.values(passages).filter((p) => p.length).length
+if (avecTexte >= 2) {
+  const nu = nuages(passages, { exclus: raw.exclus || [] })
+  for (const [id, termes] of Object.entries(nu.parCandidat)) candidats[id].mots = termes
+  var campagneMots = nu.campagne
+} else erreurs.push('Nuage de mots non calculé : les segments n\'ont pas de champ « texte ».')
+
 if (erreurs.some((e) => e.includes('introuvable') || e.includes('inconnu'))) {
   console.error('Brouillon refusé :\n- ' + erreurs.join('\n- ')); process.exit(1)
 }
 fs.mkdirSync(path.dirname(out), { recursive: true })
 const COMPTES = JSON.parse(fs.readFileSync(path.join(root, 'src/data/comptes.json'), 'utf8')).comptes
 const suivis = Object.keys(COMPTES).filter((k) => COMPTES[k].some((a) => a.valide && a.oriane_id))
-fs.writeFileSync(out, JSON.stringify({ semaine, du, au, statut: 'brouillon', suivis, genere_le: new Date().toISOString(), candidats }, null, 1))
+fs.writeFileSync(out, JSON.stringify({ semaine, du, au, statut: 'brouillon', suivis, mots_campagne: typeof campagneMots !== 'undefined' ? campagneMots : undefined, genere_le: new Date().toISOString(), candidats }, null, 1))
 console.log(`Brouillon écrit : ${out} (${Object.keys(candidats).length} candidats)`)
 if (erreurs.length) console.log('Avertissements :\n- ' + erreurs.join('\n- '))
