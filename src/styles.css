@@ -202,3 +202,11 @@ h2 { font-size: 20px; }
 .explore a { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; column-gap: 8px; padding: 12px 14px; color: var(--ink); text-decoration: none; border-top: 1px solid #ECECF2; }
 .explore a:first-child { border-top: 0; }
 .explore a svg { grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+.hero-compact .hero-body { padding-right: 120px; }
+.qe-cards { position: absolute; right: 18px; top: 14px; width: 110px; height: 96px; pointer-events: none; }
+.qe-card { position: absolute; width: 58px; height: 80px; border-radius: 10px; border: 3px solid #fff; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 40px; color: #fff; box-shadow: 0 6px 14px rgba(0,0,0,.35); }
+.qe-card.red { background: #E1000F; left: 0; top: 8px; transform: rotate(-12deg); }
+.qe-card.blue { background: #000091; right: 0; top: 2px; transform: rotate(9deg); animation: qe-bob 3s ease-in-out infinite; }
+@keyframes qe-bob { 0%, 100% { transform: rotate(9deg) translateY(0); } 50% { transform: rotate(6deg) translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .qe-card.blue { animation: none; } }
+.hero-compact > .btn { margin-right: 0; position: relative; }

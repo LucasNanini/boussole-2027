@@ -112,10 +112,10 @@ function Accueil() {
       )}
 
       <section className="hero hero-compact">
-        <div className="hero-flag"><Tricolore vertical /></div>
+        <div className="qe-cards" aria-hidden="true"><span className="qe-card red">?</span><span className="qe-card blue">?</span></div>
         <div className="hero-body">
           <span className="eyebrow light">Le mystère du jour · #{n}</span>
-          <div className="row-between"><h1>Qui est-ce ?</h1><span className="pill-ghost">Série {stats.serie}</span></div>
+          <h1>Qui est-ce ?</h1><span className="pill-ghost">Série {stats.serie}</span>
         </div>
         <button className="btn btn-light" onClick={() => go('jeu')}>
           {etat?.fini ? 'Voir mon résultat' : etat?.essais?.length ? 'Reprendre' : 'Jouer'}
