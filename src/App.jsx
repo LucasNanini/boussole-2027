@@ -129,16 +129,13 @@ function Accueil() {
         <Icon d={I.next} />
       </a>
 
-      <div className="row-between"><h2>Les modes</h2><span className="muted small">5 ouverts · 2 bientôt</span></div>
-      <div className="grid2">
-        <ModeCard on title="Qui est-ce ?" sub="Devinez à partir d'indices" to="jeu" />
-        <ModeCard on title="Kikadi ?" sub="5 citations : qui l'a dit ?" to="kikadi" />
-        <ModeCard on title="Le Trombino" sub={`Les ${CANDIDATS.length} candidatures, carte par carte`} to="trombino" />
-        <ModeCard on title="L'hebdo" sub="Leurs 5 phrases de la semaine" to="hebdo" />
-        <ModeCard on title="De quoi parlent-ils ?" sub="Les thèmes, semaine après semaine" to="themes" />
-        <ModeCard title="À l'aveugle" sub="Des idées sans les noms" to="aveugle" tag="JANVIER" />
-        <ModeCard title="Mon cap" sub="Le comparateur, liste officielle" to="cap" tag="MARS 2027" />
+      <h2>Explorer</h2>
+      <div className="explore">
+        <a href="#trombino"><b>Le Trombino</b><span className="muted small">Les {CANDIDATS.length} candidatures, carte par carte</span><Icon d={I.next} /></a>
+        <a href="#hebdo"><b>L'hebdo</b><span className="muted small">Leurs 5 phrases de la semaine</span><Icon d={I.next} /></a>
+        <a href="#themes"><b>De quoi parlent-ils ?</b><span className="muted small">Leurs mots, semaine après semaine</span><Icon d={I.next} /></a>
       </div>
+      <p className="muted small">Bientôt : <a href="#aveugle">À l'aveugle</a> (janvier) · <a href="#cap">Mon cap</a> (mars 2027)</p>
 
       <footer className="foot"><span>Neutre · sourcé · sans compte</span>{INSTAGRAM && <a href={IG_URL} target="_blank" rel="noreferrer">@{INSTAGRAM}</a>}<a href="#methodo">Méthodologie</a></footer>
     </main>
@@ -152,20 +149,13 @@ function KikadiCarte({ n }) {
   return (
     <a className="kk-card" href="#kikadi">
       <span className="kk-mark" aria-hidden="true">«</span>
-      <div className="kk-card-top"><span className="kk-new">NOUVEAU</span><span className="eyebrow light">5 citations du jour · #{n}</span></div>
+      <div className="kk-card-top"><span className="kk-new">NOUVEAU</span><span className="eyebrow light">#{n} · 5 citations</span></div>
       <b className="kk-title">Kikadi ?</b>
       <span className="kk-sub">{fait ? `${sc}/5 aujourd'hui. 5 nouvelles demain.` : e?.rep?.length ? 'Il vous reste des citations.' : 'Vraies phrases. Qui les a dites ?'}</span>
       <span className="btn kk-btn">{fait ? 'Voir mon récap' : e?.rep?.length ? 'Reprendre' : 'Jouer'}</span>
     </a>
   )
 }
-const ModeCard = ({ on, title, sub, to, tag }) => (
-  <a className={on ? 'mode' : 'mode mode-soon'} href={`#${to}`}>
-    <span className={on ? 'tag tag-on' : 'tag'}>{on ? 'EN LIGNE' : tag}</span>
-    <b>{title}</b>
-    <span className="muted small">{sub}</span>
-  </a>
-)
 
 /* ---------------- Qui est-ce ? ---------------- */
 // Mettre à true pour afficher les couleurs de parti dès le début (rend l'indice 4 inutile).
