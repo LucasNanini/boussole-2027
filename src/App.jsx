@@ -115,7 +115,7 @@ function Accueil() {
         <div className="qe-cards" aria-hidden="true"><span className="qe-card red">?</span><span className="qe-card blue">?</span></div>
         <div className="hero-body">
           <span className="eyebrow light">Le mystère du jour · #{n}</span>
-          <h1>Qui est-ce ?</h1><span className="pill-ghost">Série {stats.serie}</span>
+          <h1>KYESSE ?</h1><span className="pill-ghost">Série {stats.serie}</span>
         </div>
         <button className="btn btn-light" onClick={() => go('jeu')}>
           {etat?.fini ? 'Voir mon résultat' : etat?.essais?.length ? 'Reprendre' : 'Jouer'}
@@ -126,7 +126,7 @@ function Accueil() {
       <a className="kk-card dacc-card" href="#swipe">
         <span className="dacc-mark" aria-hidden="true"><i>✕</i><i>✓</i></span>
         <div className="kk-card-top"><span className="kk-new white">NOUVEAU</span><span className="eyebrow light">Swipe</span></div>
-        <b className="kk-title">D'ACC ?</b>
+        <b className="kk-title">DAKOUPA ?</b>
         <span className="kk-sub">20 vraies phrases. D'accord ou pas ? On révèle qui à la fin.</span>
         <span className="btn kk-btn">Swiper</span>
       </a>
@@ -164,7 +164,7 @@ function KikadiCarte({ n }) {
   )
 }
 
-/* ---------------- Qui est-ce ? ---------------- */
+/* ---------------- KYESSE ? ---------------- */
 // Mettre à true pour afficher les couleurs de parti dès le début (rend l'indice 4 inutile).
 const COULEURS_TOUJOURS = false
 
@@ -213,7 +213,7 @@ function Jeu() {
 
   return (
     <main className="screen">
-      <Header title={`Qui est-ce ? #${n}`} right={<span className="pts">{points} pts</span>} />
+      <Header title={`KYESSE ? #${n}`} right={<span className="pts">{points} pts</span>} />
       {defi && <div className="defi">On vous a défié : {defi === 'X' ? 'votre ami·e n\'a pas trouvé' : `votre ami·e a trouvé en ${defi} indice${defi > 1 ? 's' : ''}`}. À vous de faire mieux !</div>}
       <div className="dots" aria-label={`${vus} indices sur 6`}>
         {clues.map((_, i) => <span key={i} className={i < vus ? 'on' : ''} />)}
@@ -294,7 +294,7 @@ function texteGrille(n, etat) {
   const sq = grille(etat).map((g) => (g === 'win' ? '🟩' : g === 'rate' ? '🟥' : '⬜')).join('')
   const ig = INSTAGRAM ? `\nSuis @${INSTAGRAM} sur Instagram : instagram.com/${INSTAGRAM}` : ''
   const score = etat.gagne ? etat.essais.length : 'X'
-  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${score}/6\nJe te défie : tu le/la reconnais en moins d'indices ?\nhttps://${SITE}/?defi=${score}&n=${n}#jeu${ig}`
+  return `MOVO 2027 · KYESSE ? #${n}\n${sq} ${score}/6\nJe te défie : tu le/la reconnais en moins d'indices ?\nhttps://${SITE}/?defi=${score}&n=${n}#jeu${ig}`
 }
 // Défi reçu : ?defi=3&n=12 dans l'adresse (lu une fois, puis gardé pour la partie du jour)
 function defiRecu(n) {
@@ -334,7 +334,7 @@ function Resultat({ n, rep, etat, clues }) {
   }, [n, etat])
   const partagerStory = async () => {
     if (!img) return
-    const file = new File([img.blob], `movo-qui-est-ce-${n}.png`, { type: 'image/png' })
+    const file = new File([img.blob], `movo-kyesse-${n}.png`, { type: 'image/png' })
     try {
       if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file] }); return }
     } catch (e) { if (e?.name === 'AbortError') return } // annulé par le joueur
@@ -344,7 +344,7 @@ function Resultat({ n, rep, etat, clues }) {
     <main className="screen">
       <Header title="" right={<span className="muted small b">Série : {stats.serie} · Meilleur : {stats.meilleur ?? '–'}/6</span>} />
       <div className="center stack4">
-        <span className="eyebrow">Qui est-ce ? #{n}</span>
+        <span className="eyebrow">KYESSE ? #{n}</span>
         <h1 className="h1">{etat.gagne ? `Trouvé en ${etat.essais.length} indice${etat.essais.length > 1 ? 's' : ''}` : 'Raté pour aujourd\'hui'}</h1>
         <span className="b">{pts} pts</span>
       </div>
@@ -389,7 +389,7 @@ function Resultat({ n, rep, etat, clues }) {
             <img src={img.url} alt="Votre résultat MOVO, format story" className="story-img" />
             <p className="small">Appui long sur l'image, puis « Enregistrer l'image ». Ajoutez-la ensuite à votre story Instagram.</p>
             <div className="grid2 w100">
-              <a className="btn btn-dark" href={img.url} download={`movo-qui-est-ce-${n}.png`}>Télécharger</a>
+              <a className="btn btn-dark" href={img.url} download={`movo-kyesse-${n}.png`}>Télécharger</a>
               <button className="btn btn-outline" onClick={() => setApercu(false)}>Fermer</button>
             </div>
           </div>
@@ -399,7 +399,7 @@ function Resultat({ n, rep, etat, clues }) {
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
         <Grille etat={etat} />
-        <span className="mono small">Qui est-ce ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · {SITE}</span>
+        <span className="mono small">KYESSE ? #{n} · {etat.gagne ? etat.essais.length : 'X'}/6 · {SITE}</span>
         <div className="grid2 w100">
           <button className="btn btn-light" onClick={partagerStory}><Icon d={I.share} size={18} /> Story</button>
           <button className="btn btn-outline-light" onClick={partagerTexte}>Défier un ami</button>
@@ -446,7 +446,7 @@ async function story(n, etat) {
   await document.fonts?.ready
   x.fillStyle = '#fff'
   x.font = '700 56px "Space Grotesk", sans-serif'; x.fillText('MOVO 2027', 220, 200); x.fillStyle = '#D9D9E3'; x.font = '400 40px Inter, sans-serif'; x.fillText('Mais où va-t-on ?', 220, 260); x.fillStyle = '#fff'
-  x.fillStyle = '#D9D9E3'; x.font = '700 40px Inter, sans-serif'; x.fillText(`QUI EST-CE ? #${n}`, 220, 700)
+  x.fillStyle = '#D9D9E3'; x.font = '700 40px Inter, sans-serif'; x.fillText(`KYESSE ? #${n}`, 220, 700)
   x.fillStyle = '#fff'; x.font = '700 170px "Space Grotesk", sans-serif'
   x.fillText(etat.gagne ? 'Trouvé' : 'Raté', 220, 900)
   x.fillText(etat.gagne ? `en ${etat.essais.length}/6` : 'en 6/6', 220, 1060)
@@ -789,7 +789,7 @@ function KikadiResultat({ n, jeu, etat }) {
         </div>
       )}
       {INSTAGRAM && <a className="ig-btn" href={IG_URL} target="_blank" rel="noreferrer">Suivre @{INSTAGRAM} sur Instagram</a>}
-      <p className="muted small center">5 nouvelles citations demain · <a href="#jeu">Jouer au mystère du jour</a></p>
+      <p className="muted small center">5 nouvelles citations demain · <a href="#jeu">Jouer à KYESSE ?</a></p>
     </main>
   )
 }
@@ -814,7 +814,7 @@ function Swipe() {
   const i = rep.length
   const fini = i >= cartes.length
   useEffect(() => { if (fini && cartes.length) api('/api/partie', { jeu: 'swipe', joueur: joueurId() }) }, [fini])
-  if (cartes.length < 6) return <main className="screen"><Header title="D'ACC ?" /><p className="muted">Pas encore assez de citations publiées.</p></main>
+  if (cartes.length < 6) return <main className="screen"><Header title="DAKOUPA ?" /><p className="muted">Pas encore assez de citations publiées.</p></main>
   if (fini) return <SwipeResultat cartes={cartes} rep={rep} rejouer={() => { setCartes(pioche()); setRep([]) }} />
   const q = cartes[i]
   const voter = (v) => { setRep([...rep, v]); setDx(0); setDepart(null) }
@@ -822,7 +822,7 @@ function Swipe() {
   return (
     <main className="screen">
       <Header title="" right={<span className="muted small b">{i + 1} / {cartes.length}</span>} />
-      <div className="stack4"><h1 className="h1">D'ACC&nbsp;?</h1><p className="muted small">De vraies phrases de candidats, sans les noms. Glissez à droite si vous êtes d'accord, à gauche sinon. On révèle tout à la fin.</p></div>
+      <div className="stack4"><h1 className="h1">DAKOUPA&nbsp;?</h1><p className="muted small">De vraies phrases de candidats, sans les noms. Glissez à droite si vous êtes d'accord, à gauche sinon. On révèle tout à la fin.</p></div>
       <div className="sw-zone">
         {cartes[i + 1] && <div className="sw-card sw-next">« {cartes[i + 1].texte} »</div>}
         <div className={'sw-card' + (dx > 40 ? ' yes' : dx < -40 ? ' no' : '')}
@@ -854,7 +854,7 @@ function SwipeResultat({ cartes, rep, rejouer }) {
   const total = cartes.length
   const partager = async () => {
     const qui = proches.length ? `je suis le plus souvent d'accord avec ${proches.map((l) => nomDe(l.id).nom).join(' et ')}` : "je ne suis d'accord avec personne"
-    const t = `MOVO 2027 · D'ACC ?\nSur ${total} vraies phrases de candidats, sans les noms, ${qui}. Surprise !\nEt toi ? https://${SITE}/#swipe`
+    const t = `MOVO 2027 · DAKOUPA ?\nSur ${total} vraies phrases de candidats, sans les noms, ${qui}. Surprise !\nEt toi ? https://${SITE}/#swipe`
     if (navigator.share) { try { await navigator.share({ text: t }); return } catch (e) { if (e?.name === 'AbortError') return } }
     try { await navigator.clipboard.writeText(t); setCopie('Texte copié !') } catch { /* bloqué */ }
     setDefiTexte(t)
@@ -1038,14 +1038,14 @@ function Methodo() {
         <p>{META.regle_couleur} La couleur est toujours accompagnée du nom de la famille écrit en toutes lettres.</p>
         <h2>« Principaux »</h2>
         <p>Candidats testés dans les intentions de vote nationales récentes. Les autres sont tous dans l'onglet « Tous les déclarés ».</p>
-        <h2>Le mystère du jour</h2>
+        <h2>KYESSE ? (le mystère du jour)</h2>
         <p>Un tirage fixé à l'avance, le même pour tout le monde. Seules les candidatures avec une ligne politique sourcée y entrent. Les modes fondés sur les programmes (À l'aveugle, Mon cap) n'incluront que les candidats ayant publié un programme.</p>
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
         <h2>KIKADI ?</h2>
         <p>Chaque jour, 5 citations tirées des éditions de L'hebdo déjà publiées, les mêmes pour tout le monde. Elles sont mot pour mot, avec la vidéo d'origine. On écarte les phrases où le candidat se nomme lui-même. Les 3 autres noms proposés sont tirés au hasard parmi les candidats cités dans L'hebdo. Une citation ne revient pas avant une semaine tant que le stock le permet. Les nouvelles citations entrent le lendemain de la publication de L'hebdo.</p>
-        <h2>D'ACC ?</h2>
+        <h2>DAKOUPA ?</h2>
         <p>Le même nombre de phrases pour chaque candidat cité dans L'hebdo, tirées au hasard et présentées sans nom. À la fin, on indique avec qui vous avez été le plus souvent d'accord sur ces phrases-là. C'est un jeu, pas un comparateur de programmes ni une consigne de vote. Vos réponses ne quittent pas votre téléphone : seul le nombre de parties est compté.</p>
         <h2>Le nuage de mots</h2>
         <p>À partir des seuls passages politiques des vidéos, nous comptons les mots et expressions de chaque candidat, puis gardons ceux qu'il emploie nettement plus que les autres. On retire les mots-outils et les mots trop vagues (« choses », « vraiment », « pays »…). On ne retire jamais un mot parce qu'il est polémique. Un mot doit apparaître au moins deux fois. Les mots sont affichés dans un ordre mélangé, pas classés. Chaque mot renvoie à la phrase entière et à la vidéo : un mot sorti de son contexte peut tromper.</p>
