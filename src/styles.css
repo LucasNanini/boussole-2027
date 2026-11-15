@@ -226,3 +226,10 @@ h2 { font-size: 20px; }
 .row12.wrap { flex-wrap: wrap; }
 .sw-ligne { padding: 8px 0; border-bottom: 1px solid #ECECF2; }
 .explore .kk-new { font-size: 10px; vertical-align: middle; margin-left: 4px; }
+.dacc-card { background: #E1000F; box-shadow: 0 8px 22px rgba(225, 0, 15, .25); }
+.dacc-card .kk-sub { color: #FFE3E5; }
+.dacc-card .kk-btn { color: #E1000F; }
+.kk-new.white { background: #fff; color: #E1000F; }
+.dacc-mark { position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; pointer-events: none; }
+.dacc-mark i { font-style: normal; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22px; background: #fff; color: #E1000F; box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+.dacc-mark i + i { background: #146B3A; color: #fff; transform: translateY(14px); }

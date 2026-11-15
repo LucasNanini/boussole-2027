@@ -123,6 +123,13 @@ function Accueil() {
       </section>
 
       <KikadiCarte n={n} />
+      <a className="kk-card dacc-card" href="#swipe">
+        <span className="dacc-mark" aria-hidden="true"><i>✕</i><i>✓</i></span>
+        <div className="kk-card-top"><span className="kk-new white">NOUVEAU</span><span className="eyebrow light">Swipe</span></div>
+        <b className="kk-title">D'ACC ?</b>
+        <span className="kk-sub">20 vraies phrases. D'accord ou pas ? On révèle qui à la fin.</span>
+        <span className="btn kk-btn">Swiper</span>
+      </a>
 
       <a className="lb-link" href="#classement">
         <span className="col"><b>Les classements</b><span className="muted small">{st?.classementJour?.[0]?.essais ? `Aujourd'hui en tête : ${st.classementJour[0].pseudo}, en ${st.classementJour[0].essais} indice${st.classementJour[0].essais > 1 ? 's' : ''}` : "Aujourd'hui · Moyenne · Séries"}</span></span>
@@ -131,7 +138,6 @@ function Accueil() {
 
       <h2>Explorer</h2>
       <div className="explore">
-        <a href="#swipe"><b>D'accord ou pas ? <span className="kk-new">NOUVEAU</span></b><span className="muted small">Des phrases sans les noms : swipez, on révèle à la fin</span><Icon d={I.next} /></a>
         <a href="#trombino"><b>Le Trombino</b><span className="muted small">Les {CANDIDATS.length} candidatures, carte par carte</span><Icon d={I.next} /></a>
         <a href="#hebdo"><b>L'hebdo</b><span className="muted small">Leurs 5 phrases de la semaine</span><Icon d={I.next} /></a>
         <a href="#themes"><b>De quoi parlent-ils ?</b><span className="muted small">Leurs mots, semaine après semaine</span><Icon d={I.next} /></a>
@@ -151,7 +157,7 @@ function KikadiCarte({ n }) {
     <a className="kk-card" href="#kikadi">
       <span className="kk-mark" aria-hidden="true">«</span>
       <div className="kk-card-top"><span className="kk-new">NOUVEAU</span><span className="eyebrow light">#{n} · 5 citations</span></div>
-      <b className="kk-title">Kikadi ?</b>
+      <b className="kk-title">KIKADI ?</b>
       <span className="kk-sub">{fait ? `${sc}/5 aujourd'hui. 5 nouvelles demain.` : e?.rep?.length ? 'Il vous reste des citations.' : 'Vraies phrases. Qui les a dites ?'}</span>
       <span className="btn kk-btn">{fait ? 'Voir mon récap' : e?.rep?.length ? 'Reprendre' : 'Jouer'}</span>
     </a>
@@ -608,7 +614,7 @@ function Hebdo() {
   )
 }
 
-/* ---------------- Kikadi ? (qui l'a dit) ---------------- */
+/* ---------------- KIKADI ? (qui l'a dit) ---------------- */
 const KK_NB = 5
 const sansAcc = (t) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 // Citations jouables le jour n : éditions publiées dont la semaine est finie depuis au moins un jour
@@ -665,7 +671,7 @@ function Kikadi() {
   const key = `kk-${n}`
   const [etat, setEtat] = useState(() => store.get(key, { rep: [] }))
   const defi = useMemo(() => defiKikadi(n), [n])
-  if (!jeu) return <main className="screen"><Header title="Kikadi ?" /><p className="muted">Pas encore assez de citations publiées. Revenez après la prochaine édition de L'hebdo.</p></main>
+  if (!jeu) return <main className="screen"><Header title="KIKADI ?" /><p className="muted">Pas encore assez de citations publiées. Revenez après la prochaine édition de L'hebdo.</p></main>
   const i = etat.rep.length
   const fini = i >= KK_NB
   if (fini && etat.vu) return <KikadiResultat n={n} jeu={jeu} etat={etat} />
@@ -686,7 +692,7 @@ function Kikadi() {
   const bon = choisi === cur.id
   return (
     <main className="screen">
-      <Header title="" right={<span className="muted small b">Kikadi ? #{n}</span>} />
+      <Header title="" right={<span className="muted small b">KIKADI ? #{n}</span>} />
       {defi != null && i === 0 && <div className="defi">On vous a défié : votre ami·e a fait {defi}/5. À vous de faire mieux !</div>}
       <div className="kk-progress">{jeu.map((_, k) => <span key={k} className={k < etat.rep.length ? (etat.rep[k] === jeu[k].id ? 'ok' : 'ko') : k === i ? 'cur' : ''} />)}</div>
       <span className="eyebrow">Citation {Math.min(etat.rep.length + (montrer ? 0 : 1), KK_NB)} sur {KK_NB} · Qui l'a dit ?</span>
@@ -717,7 +723,7 @@ function texteKikadi(n, jeu, etat) {
   const sc = jeu.filter((q, k) => etat.rep[k] === q.id).length
   const sq = jeu.map((q, k) => (etat.rep[k] === q.id ? '🟩' : '🟥')).join('')
   const ig = INSTAGRAM ? `\nSuis @${INSTAGRAM} sur Instagram : instagram.com/${INSTAGRAM}` : ''
-  return `MOVO 2027 · Kikadi ? #${n}\n${sq} ${sc}/5\n5 vraies phrases de candidats : tu sais qui les a dites ?\nhttps://${SITE}/?defik=${sc}&n=${n}#kikadi${ig}`
+  return `MOVO 2027 · KIKADI ? #${n}\n${sq} ${sc}/5\n5 vraies phrases de candidats : tu sais qui les a dites ?\nhttps://${SITE}/?defik=${sc}&n=${n}#kikadi${ig}`
 }
 function KikadiResultat({ n, jeu, etat }) {
   const sc = jeu.filter((q, k) => etat.rep[k] === q.id).length
@@ -738,15 +744,15 @@ function KikadiResultat({ n, jeu, etat }) {
   const mots = ['Aïe.', 'Il y a du boulot.', 'Pas mal.', 'Bien joué.', 'Très fort.', 'Sans faute !']
   return (
     <main className="screen">
-      <Header title="" right={<span className="muted small b">Kikadi ? #{n}</span>} />
+      <Header title="" right={<span className="muted small b">KIKADI ? #{n}</span>} />
       <div className="center stack4">
-        <span className="eyebrow">Kikadi ? #{n}</span>
+        <span className="eyebrow">KIKADI ? #{n}</span>
         <h1 className="h1">{sc}/5 · {mots[sc]}</h1>
       </div>
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
         <div className="kk-grid">{jeu.map((q, k) => <span key={k}>{etat.rep[k] === q.id ? '🟩' : '🟥'}</span>)}</div>
-        <span className="mono small">Kikadi ? #{n} · {sc}/5 · {SITE}</span>
+        <span className="mono small">KIKADI ? #{n} · {sc}/5 · {SITE}</span>
         <button className="btn btn-light w100" onClick={partager}><Icon d={I.share} size={18} /> Défier un ami</button>
         {copie && <span className="small">{copie}</span>}
       </section>
@@ -808,7 +814,7 @@ function Swipe() {
   const i = rep.length
   const fini = i >= cartes.length
   useEffect(() => { if (fini && cartes.length) api('/api/partie', { jeu: 'swipe', joueur: joueurId() }) }, [fini])
-  if (cartes.length < 6) return <main className="screen"><Header title="Swipe" /><p className="muted">Pas encore assez de citations publiées.</p></main>
+  if (cartes.length < 6) return <main className="screen"><Header title="D'ACC ?" /><p className="muted">Pas encore assez de citations publiées.</p></main>
   if (fini) return <SwipeResultat cartes={cartes} rep={rep} rejouer={() => { setCartes(pioche()); setRep([]) }} />
   const q = cartes[i]
   const voter = (v) => { setRep([...rep, v]); setDx(0); setDepart(null) }
@@ -816,7 +822,7 @@ function Swipe() {
   return (
     <main className="screen">
       <Header title="" right={<span className="muted small b">{i + 1} / {cartes.length}</span>} />
-      <div className="stack4"><h1 className="h1">D'accord ou pas&nbsp;?</h1><p className="muted small">De vraies phrases de candidats, sans les noms. Glissez à droite si vous êtes d'accord, à gauche sinon. On révèle tout à la fin.</p></div>
+      <div className="stack4"><h1 className="h1">D'ACC&nbsp;?</h1><p className="muted small">De vraies phrases de candidats, sans les noms. Glissez à droite si vous êtes d'accord, à gauche sinon. On révèle tout à la fin.</p></div>
       <div className="sw-zone">
         {cartes[i + 1] && <div className="sw-card sw-next">« {cartes[i + 1].texte} »</div>}
         <div className={'sw-card' + (dx > 40 ? ' yes' : dx < -40 ? ' no' : '')}
@@ -848,7 +854,7 @@ function SwipeResultat({ cartes, rep, rejouer }) {
   const total = cartes.length
   const partager = async () => {
     const qui = proches.length ? `je suis le plus souvent d'accord avec ${proches.map((l) => nomDe(l.id).nom).join(' et ')}` : "je ne suis d'accord avec personne"
-    const t = `MOVO 2027 · D'accord ou pas ?\nSur ${total} vraies phrases de candidats, sans les noms, ${qui}. Surprise !\nEt toi ? https://${SITE}/#swipe`
+    const t = `MOVO 2027 · D'ACC ?\nSur ${total} vraies phrases de candidats, sans les noms, ${qui}. Surprise !\nEt toi ? https://${SITE}/#swipe`
     if (navigator.share) { try { await navigator.share({ text: t }); return } catch (e) { if (e?.name === 'AbortError') return } }
     try { await navigator.clipboard.writeText(t); setCopie('Texte copié !') } catch { /* bloqué */ }
     setDefiTexte(t)
@@ -1037,9 +1043,9 @@ function Methodo() {
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
-        <h2>Kikadi ?</h2>
+        <h2>KIKADI ?</h2>
         <p>Chaque jour, 5 citations tirées des éditions de L'hebdo déjà publiées, les mêmes pour tout le monde. Elles sont mot pour mot, avec la vidéo d'origine. On écarte les phrases où le candidat se nomme lui-même. Les 3 autres noms proposés sont tirés au hasard parmi les candidats cités dans L'hebdo. Une citation ne revient pas avant une semaine tant que le stock le permet. Les nouvelles citations entrent le lendemain de la publication de L'hebdo.</p>
-        <h2>D'accord ou pas ?</h2>
+        <h2>D'ACC ?</h2>
         <p>Le même nombre de phrases pour chaque candidat cité dans L'hebdo, tirées au hasard et présentées sans nom. À la fin, on indique avec qui vous avez été le plus souvent d'accord sur ces phrases-là. C'est un jeu, pas un comparateur de programmes ni une consigne de vote. Vos réponses ne quittent pas votre téléphone : seul le nombre de parties est compté.</p>
         <h2>Le nuage de mots</h2>
         <p>À partir des seuls passages politiques des vidéos, nous comptons les mots et expressions de chaque candidat, puis gardons ceux qu'il emploie nettement plus que les autres. On retire les mots-outils et les mots trop vagues (« choses », « vraiment », « pays »…). On ne retire jamais un mot parce qu'il est polémique. Un mot doit apparaître au moins deux fois. Les mots sont affichés dans un ordre mélangé, pas classés. Chaque mot renvoie à la phrase entière et à la vidéo : un mot sorti de son contexte peut tromper.</p>
