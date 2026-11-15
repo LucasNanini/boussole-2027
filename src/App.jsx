@@ -125,14 +125,17 @@ function Accueil() {
         <span className="small center light-muted">Nouveau mystère chaque jour à minuit</span>
       </section>
 
+      <KikadiCarte n={n} />
+
       <a className="lb-link" href="#classement">
         <span className="col"><b>Les classements</b><span className="muted small">{st?.classementJour?.[0]?.essais ? `Aujourd'hui en tête : ${st.classementJour[0].pseudo}, en ${st.classementJour[0].essais} indice${st.classementJour[0].essais > 1 ? 's' : ''}` : "Aujourd'hui · Moyenne · Séries"}</span></span>
         <Icon d={I.next} />
       </a>
 
-      <div className="row-between"><h2>Les modes</h2><span className="muted small">4 ouverts · 2 bientôt</span></div>
+      <div className="row-between"><h2>Les modes</h2><span className="muted small">5 ouverts · 2 bientôt</span></div>
       <div className="grid2">
         <ModeCard on title="Qui est-ce ?" sub="Devinez à partir d'indices" to="jeu" />
+        <ModeCard on title="Kikadi ?" sub="5 citations : qui l'a dit ?" to="kikadi" />
         <ModeCard on title="Le Trombino" sub={`Les ${CANDIDATS.length} candidatures, carte par carte`} to="trombino" />
         <ModeCard on title="L'hebdo" sub="Leurs 5 phrases de la semaine" to="hebdo" />
         <ModeCard on title="De quoi parlent-ils ?" sub="Les thèmes, semaine après semaine" to="themes" />
@@ -142,6 +145,23 @@ function Accueil() {
 
       <footer className="foot"><span>Neutre · sourcé · sans compte</span>{INSTAGRAM && <a href={IG_URL} target="_blank" rel="noreferrer">@{INSTAGRAM}</a>}<a href="#methodo">Méthodologie</a></footer>
     </main>
+  )
+}
+function KikadiCarte({ n }) {
+  const e = store.get(`kk-${n}`, null)
+  const fait = e?.vu
+  const jeu = useMemo(() => (fait ? kikadiDuJour(n) : null), [n, fait])
+  const sc = fait && jeu ? jeu.filter((q, k) => e.rep[k] === q.id).length : null
+  return (
+    <a className="kk-card" href="#kikadi">
+      <span className="kk-mark">«</span>
+      <span className="col">
+        <span className="eyebrow">Nouveau · #{n}</span>
+        <b>Kikadi ?</b>
+        <span className="small muted">{fait ? `Fait : ${sc}/5. Revenez demain pour 5 nouvelles citations.` : e?.rep?.length ? 'Reprendre : il vous reste des citations.' : '5 vraies phrases de candidats. Qui les a dites ?'}</span>
+      </span>
+      <Icon d={I.next} />
+    </a>
   )
 }
 const ModeCard = ({ on, title, sub, to, tag }) => (
@@ -602,6 +622,186 @@ function Hebdo() {
   )
 }
 
+/* ---------------- Kikadi ? (qui l'a dit) ---------------- */
+const KK_NB = 5
+const sansAcc = (t) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+// Citations jouables le jour n : éditions publiées dont la semaine est finie depuis au moins un jour
+// (une édition publiée le lundi entre dans le Kikadi du mardi : le jeu du jour ne change jamais en cours de journée).
+function poolKikadi(n) {
+  const veille = new Date(Date.UTC(2026, 10, 14) + (n - 2) * 864e5).toISOString().slice(0, 10)
+  const pool = []
+  for (const h of EDITIONS) {
+    if (h.statut !== 'publie' || !(h.au < veille)) continue
+    for (const [id, c] of Object.entries(h.candidats)) {
+      const cand = CANDIDATS.find((x) => x.id === id)
+      if (!cand) continue
+      const noms = cand.nom.split(' ').filter((m) => m.length > 2).map(sansAcc)
+      for (const q of c.citations || []) {
+        const mots = q.texte.split(/\s+/).length
+        const t = sansAcc(q.texte)
+        if (mots < 6 || mots > 45 || noms.some((m) => t.includes(m))) continue // trop court, trop long, ou se nomme lui-même
+        pool.push({ ...q, id, key: `${id}|${q.url}|${q.texte.slice(0, 30)}` })
+      }
+    }
+  }
+  return pool
+}
+function kikadiDuJour(n) {
+  const pool = poolKikadi(n)
+  const ids = [...new Set(pool.map((q) => q.id))]
+  if (pool.length < KK_NB || ids.length < 4) return null
+  // pas de citation déjà tombée dans les 6 jours précédents (tant que le stock le permet)
+  const recent = new Set()
+  let pick = []
+  for (let d = Math.max(1, n - 6); d <= n; d++) {
+    const ordre = shuffle(pool, d * 7919 + 13)
+    const dispo = ordre.filter((q) => !recent.has(q.key))
+    const src = dispo.length >= KK_NB ? dispo : ordre
+    pick = []; const vus = new Set()
+    for (const q of src) { if (pick.length < KK_NB && !vus.has(q.id)) { vus.add(q.id); pick.push(q) } }
+    for (const q of src) { if (pick.length < KK_NB && !pick.includes(q)) pick.push(q) }
+    pick.forEach((q) => recent.add(q.key))
+  }
+  return pick.map((q, i) => ({ ...q, options: shuffle([q.id, ...shuffle(ids.filter((x) => x !== q.id), n * 31 + i).slice(0, 3)], n * 17 + i) }))
+}
+function defiKikadi(n) {
+  try {
+    const q = new URLSearchParams(window.location.search)
+    if (q.get('defik') && Number(q.get('n')) === n) store.set('defik-' + n, q.get('defik'))
+  } catch { /* rien */ }
+  return store.get('defik-' + n, null)
+}
+const nomDe = (id) => CANDIDATS.find((x) => x.id === id)
+
+function Kikadi() {
+  const n = numeroDuJour()
+  const jeu = useMemo(() => kikadiDuJour(n), [n])
+  const key = `kk-${n}`
+  const [etat, setEtat] = useState(() => store.get(key, { rep: [] }))
+  const defi = useMemo(() => defiKikadi(n), [n])
+  if (!jeu) return <main className="screen"><Header title="Kikadi ?" /><p className="muted">Pas encore assez de citations publiées. Revenez après la prochaine édition de L'hebdo.</p></main>
+  const i = etat.rep.length
+  const fini = i >= KK_NB
+  if (fini && etat.vu) return <KikadiResultat n={n} jeu={jeu} etat={etat} />
+  const q = jeu[Math.min(i, KK_NB - 1)]
+  const dernier = i > 0 ? { q: jeu[i - 1], r: etat.rep[i - 1] } : null
+  const montrer = etat.attente // réponse donnée, on montre la correction avant de passer
+  const repondre = (id) => {
+    if (montrer || fini) return
+    const next = { ...etat, rep: [...etat.rep, id], attente: true }
+    setEtat(next); store.set(key, next)
+  }
+  const suivante = () => {
+    const next = { ...etat, attente: false, vu: etat.rep.length >= KK_NB }
+    setEtat(next); store.set(key, next); window.scrollTo(0, 0)
+  }
+  const cur = montrer ? dernier.q : q
+  const choisi = montrer ? dernier.r : null
+  const bon = choisi === cur.id
+  return (
+    <main className="screen">
+      <Header title="" right={<span className="muted small b">Kikadi ? #{n}</span>} />
+      {defi != null && i === 0 && <div className="defi">On vous a défié : votre ami·e a fait {defi}/5. À vous de faire mieux !</div>}
+      <div className="kk-progress">{jeu.map((_, k) => <span key={k} className={k < etat.rep.length ? (etat.rep[k] === jeu[k].id ? 'ok' : 'ko') : k === i ? 'cur' : ''} />)}</div>
+      <span className="eyebrow">Citation {Math.min(etat.rep.length + (montrer ? 0 : 1), KK_NB)} sur {KK_NB} · Qui l'a dit ?</span>
+      <blockquote className="kk-quote">« {cur.texte} »</blockquote>
+      <span className="muted tiny">Mot pour mot, vidéo du {dateFr(cur.date)}</span>
+      <div className="kk-options">
+        {cur.options.map((id) => {
+          const c = nomDe(id)
+          const cls = !montrer ? '' : id === cur.id ? ' good' : id === choisi ? ' bad' : ' dim'
+          return (
+            <button key={id} className={'kk-opt' + cls} onClick={() => repondre(id)} disabled={montrer}>
+              <TileFace c={c} /><span className="b small">{c.nom}</span>
+            </button>
+          )
+        })}
+      </div>
+      {montrer && (
+        <div className={'kk-verdict ' + (bon ? 'ok' : 'ko')}>
+          <b>{bon ? 'Bien vu !' : `Non : c'était ${nomDe(cur.id).nom}.`}</b>
+          <span className="small">{nomDe(cur.id).parti} · <a href={cur.url} target="_blank" rel="noreferrer">Voir la vidéo</a></span>
+          <button className="btn btn-dark" onClick={suivante}>{etat.rep.length >= KK_NB ? 'Voir mon score' : 'Citation suivante'}</button>
+        </div>
+      )}
+    </main>
+  )
+}
+function texteKikadi(n, jeu, etat) {
+  const sc = jeu.filter((q, k) => etat.rep[k] === q.id).length
+  const sq = jeu.map((q, k) => (etat.rep[k] === q.id ? '🟩' : '🟥')).join('')
+  const ig = INSTAGRAM ? `\nSuis @${INSTAGRAM} sur Instagram : instagram.com/${INSTAGRAM}` : ''
+  return `MOVO 2027 · Kikadi ? #${n}\n${sq} ${sc}/5\n5 vraies phrases de candidats : tu sais qui les a dites ?\nhttps://${SITE}/?defik=${sc}&n=${n}#kikadi${ig}`
+}
+function KikadiResultat({ n, jeu, etat }) {
+  const sc = jeu.filter((q, k) => etat.rep[k] === q.id).length
+  const [distrib, setDistrib] = useState(null)
+  const [defiTexte, setDefiTexte] = useState(null)
+  const [copie, setCopie] = useState('')
+  useEffect(() => { api('/api/partie', { jeu: 'kikadi', joueur: joueurId(), numero: n, score: sc }).then((j) => { if (j?.distrib) setDistrib(j.distrib) }) }, [n])
+  const partager = async () => {
+    const t = texteKikadi(n, jeu, etat)
+    if (navigator.share) {
+      try { await navigator.share({ text: t }); return }
+      catch (e) { if (e?.name === 'AbortError') return }
+    }
+    try { await navigator.clipboard.writeText(t); setCopie('Défi copié ! Collez-le dans une conversation.') } catch { /* bloqué */ }
+    setDefiTexte(t)
+  }
+  const total = distrib ? Object.values(distrib).reduce((a, b) => a + Number(b), 0) : 0
+  const mots = ['Aïe.', 'Il y a du boulot.', 'Pas mal.', 'Bien joué.', 'Très fort.', 'Sans faute !']
+  return (
+    <main className="screen">
+      <Header title="" right={<span className="muted small b">Kikadi ? #{n}</span>} />
+      <div className="center stack4">
+        <span className="eyebrow">Kikadi ? #{n}</span>
+        <h1 className="h1">{sc}/5 · {mots[sc]}</h1>
+      </div>
+      <section className="share">
+        <span className="eyebrow light">Votre grille, sans spoiler</span>
+        <div className="kk-grid">{jeu.map((q, k) => <span key={k}>{etat.rep[k] === q.id ? '🟩' : '🟥'}</span>)}</div>
+        <span className="mono small">Kikadi ? #{n} · {sc}/5 · {SITE}</span>
+        <button className="btn btn-light w100" onClick={partager}><Icon d={I.share} size={18} /> Défier un ami</button>
+        {copie && <span className="small">{copie}</span>}
+      </section>
+      {total > 0 && (
+        <section className="distrib" aria-label="Résultats des joueurs aujourd'hui">
+          <div className="row-between"><b>Aujourd'hui, les {fmt(total)} joueurs</b><span className="muted tiny">bonnes réponses</span></div>
+          {['5', '4', '3', '2', '1', '0'].map((k) => { const v = Number(distrib[k] || 0); const max = Math.max(...Object.values(distrib).map(Number), 1); return (
+            <div key={k} className={k === String(sc) ? 'drow me' : 'drow'}>
+              <span className="dk">{k}/5</span>
+              <div className="dbar"><div style={{ width: `${Math.max(4, (v / max) * 100)}%` }}><span>{Math.round((v / total) * 100)} %</span></div></div>
+            </div>
+          ) })}
+        </section>
+      )}
+      <section className="stack8">
+        <h2>Le récap</h2>
+        {jeu.map((q, k) => { const c = nomDe(q.id); const ok = etat.rep[k] === q.id; return (
+          <div key={k} className="card kk-recap">
+            <div className="row12"><Portrait c={c} /><div className="stack4"><b>{ok ? '✅' : '❌'} {c.nom}</b><span className="muted tiny">{c.parti}{!ok && ` · vous aviez dit ${nomDe(etat.rep[k]).nom}`}</span></div></div>
+            <blockquote className="extrait">« {q.texte} »<span className="muted tiny"> {q.plateforme === 'tiktok' ? 'TikTok' : q.plateforme === 'youtube' ? 'YouTube' : 'Instagram'} · {dateFr(q.date)} · <a href={q.url} target="_blank" rel="noreferrer">Voir la vidéo</a></span></blockquote>
+          </div>
+        ) })}
+      </section>
+      {defiTexte && (
+        <div className="modal" role="dialog" aria-label="Défier un ami" onClick={() => setDefiTexte(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <b>Défier un ami</b>
+            <a className="btn btn-dark" href={`https://wa.me/?text=${encodeURIComponent(defiTexte)}`} target="_blank" rel="noreferrer">Envoyer par WhatsApp</a>
+            <a className="btn btn-outline" href={`sms:?&body=${encodeURIComponent(defiTexte)}`}>Envoyer par SMS</a>
+            <label className="small muted" htmlFor="defik-txt">Ou copiez le texte :</label>
+            <textarea id="defik-txt" readOnly value={defiTexte} rows={6} className="defi-txt" onFocus={(e) => e.target.select()} />
+            <button className="btn btn-outline" onClick={() => setDefiTexte(null)}>Fermer</button>
+          </div>
+        </div>
+      )}
+      {INSTAGRAM && <a className="ig-btn" href={IG_URL} target="_blank" rel="noreferrer">Suivre @{INSTAGRAM} sur Instagram</a>}
+      <p className="muted small center">5 nouvelles citations demain · <a href="#jeu">Jouer au mystère du jour</a></p>
+    </main>
+  )
+}
+
 /* ---------------- De quoi parlent-ils ? ---------------- */
 function Nuage({ h, cid, color, mot, setMot }) {
   const nom = (k) => CANDIDATS.find((y) => y.id === k)?.nom || k
@@ -742,6 +942,8 @@ function Methodo() {
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
+        <h2>Kikadi ?</h2>
+        <p>Chaque jour, 5 citations tirées des éditions de L'hebdo déjà publiées, les mêmes pour tout le monde. Elles sont mot pour mot, avec la vidéo d'origine. On écarte les phrases où le candidat se nomme lui-même. Les 3 autres noms proposés sont tirés au hasard parmi les candidats cités dans L'hebdo. Une citation ne revient pas avant une semaine tant que le stock le permet. Les nouvelles citations entrent le lendemain de la publication de L'hebdo.</p>
         <h2>Le nuage de mots</h2>
         <p>À partir des seuls passages politiques des vidéos, nous comptons les mots et expressions de chaque candidat, puis gardons ceux qu'il emploie nettement plus que les autres. On retire les mots-outils et les mots trop vagues (« choses », « vraiment », « pays »…). On ne retire jamais un mot parce qu'il est polémique. Un mot doit apparaître au moins deux fois. Les mots sont affichés dans un ordre mélangé, pas classés. Chaque mot renvoie à la phrase entière et à la vidéo : un mot sorti de son contexte peut tromper.</p>
         <h2>Sources</h2>
@@ -856,6 +1058,7 @@ export default function App() {
       <Tricolore />
       {page === 'jeu' ? <Jeu />
         : page === 'trombino' ? <Trombino id={arg} key={arg || 't'} />
+        : page === 'kikadi' ? <Kikadi />
         : page === 'hebdo' ? <Hebdo />
         : page === 'themes' ? <Themes />
         : page === 'aveugle' ? <Bientot titre="À l'aveugle" quand="JANVIER" texte="Réagissez à de vraies propositions, sans nom, sans parti, sans couleur. À la fin, on révèle qui les porte. Réservé aux candidat·es ayant publié un programme." />

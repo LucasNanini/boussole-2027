@@ -228,3 +228,22 @@ export async function visite(r, id) {
   await p.exec()
   return { ok: true }
 }
+
+// Kikadi : 5 citations par jour, score sur 5. Une partie comptée par joueur et par jour.
+export async function kikadi(r, { joueur, numero, score }) {
+  const n = Number(numero), sc = Number(score)
+  if (!ID_RE.test(joueur || '') || !Number.isInteger(n) || n < 1 || n > 2000) return { erreur: 'invalide' }
+  const cle = `b27:kkd:${n}`
+  if (Number.isInteger(sc) && sc >= 0 && sc <= 5) {
+    const nouveau = await r.set(`b27:kk:${n}:${joueur}`, 1, { nx: true, ex: 60 * 60 * 24 * 60 })
+    if (nouveau) {
+      const d = jourParis()
+      const p = r.pipeline()
+      p.incr(K.total); p.hincrby(cle, String(sc), 1); p.expire(cle, 60 * 60 * 24 * 60)
+      p.pfadd(K.joueursJour(d), joueur); p.expire(K.joueursJour(d), 60 * 60 * 24 * 8)
+      p.pfadd(K.joueurs, joueur)
+      await p.exec()
+    }
+  }
+  return { ok: true, distrib: (await r.hgetall(cle)) || {} }
+}

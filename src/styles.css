@@ -165,3 +165,20 @@ h2 { font-size: 20px; }
 .mot { border: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; line-height: 1.15; padding: 2px 6px; border-radius: 8px; cursor: pointer; }
 .extrait { margin: 0; padding-left: 10px; border-left: 3px solid #C9CAD6; font-size: 14px; line-height: 1.45; display: flex; flex-direction: column; gap: 4px; }
 .qui { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.kk-card { display: flex; align-items: center; gap: 14px; background: #fff; border: 2px solid var(--ink); border-radius: 18px; padding: 14px 16px; color: var(--ink); text-decoration: none; }
+.kk-card .col { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.kk-card b { font-family: 'Space Grotesk', sans-serif; font-size: 22px; }
+.kk-mark { font-family: 'Space Grotesk', sans-serif; font-size: 54px; line-height: 1; color: #E1000F; font-weight: 700; }
+.kk-progress { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.kk-progress span { height: 6px; border-radius: 3px; background: #DCDCE6; }
+.kk-progress .ok { background: #146B3A; } .kk-progress .ko { background: #E1000F; } .kk-progress .cur { background: var(--ink); }
+.kk-quote { margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; line-height: 1.3; font-weight: 600; color: var(--ink); }
+.kk-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.kk-opt { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px 8px; border-radius: 14px; border: 2px solid #DCDCE6; background: #fff; cursor: pointer; color: var(--ink); text-align: center; }
+.kk-opt .tile-face { width: 64px; height: 64px; }
+.kk-opt.good { border-color: #146B3A; background: #E8F4EC; } .kk-opt.bad { border-color: #E1000F; background: #FDECEC; } .kk-opt.dim { opacity: .45; }
+.kk-opt:disabled { cursor: default; }
+.kk-verdict { display: flex; flex-direction: column; gap: 8px; padding: 14px; border-radius: 14px; }
+.kk-verdict.ok { background: #E8F4EC; } .kk-verdict.ko { background: #FDECEC; }
+.kk-grid { font-size: 30px; letter-spacing: 4px; }
+.kk-recap { display: flex; flex-direction: column; gap: 10px; }
