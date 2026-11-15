@@ -91,7 +91,7 @@ async function avecPseudos(r, raw, champs = []) {
 
 export function numeroServeur(date = new Date()) {
   const [y, m, d] = jourParis(date).split('-').map(Number)
-  return Math.max(1, Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(2026, 10, 16)) / 86400000) + 1)
+  return Math.max(1, Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(2026, 10, 14)) / 86400000) + 1)
 }
 // Migration unique : remet dans les classements les parties jouées avant leur création,
 // donne un numéro aux joueurs anonymes et réserve les pseudos déjà pris.

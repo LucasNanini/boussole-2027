@@ -297,13 +297,22 @@ function Resultat({ n, rep, etat, clues }) {
       else { await navigator.clipboard.writeText(t); setCopie('Copié ! Collez-le où vous voulez.') }
     } catch { /* annulé */ }
   }
+  // L'image est préparée dès l'affichage du résultat : au clic, le partage part tout de suite
+  // (les navigateurs mobiles refusent un partage lancé trop longtemps après le toucher).
+  const [img, setImg] = useState(null)
+  const [apercu, setApercu] = useState(false)
+  useEffect(() => {
+    let url
+    story(n, etat).then((blob) => { if (blob) { url = URL.createObjectURL(blob); setImg({ blob, url }) } }).catch(() => {})
+    return () => { if (url) URL.revokeObjectURL(url) }
+  }, [n, etat])
   const partagerStory = async () => {
-    const blob = await story(n, etat)
-    const file = new File([blob], `movo-qui-est-ce-${n}.png`, { type: 'image/png' })
+    if (!img) return
+    const file = new File([img.blob], `movo-qui-est-ce-${n}.png`, { type: 'image/png' })
     try {
-      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], text: SITE }); return }
-    } catch { return }
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; a.click()
+      if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file] }); return }
+    } catch (e) { if (e?.name === 'AbortError') return } // annulé par le joueur
+    setApercu(true) // pas de partage de fichier possible (navigateur intégré, ordinateur…) : on montre l'image
   }
   return (
     <main className="screen">
@@ -335,6 +344,19 @@ function Resultat({ n, rep, etat, clues }) {
       </section>
 
       <Distribution n={n} etat={etat} />
+
+      {apercu && img && (
+        <div className="modal" role="dialog" aria-label="Image à partager en story" onClick={() => setApercu(false)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <img src={img.url} alt="Votre résultat MOVO, format story" className="story-img" />
+            <p className="small">Appui long sur l'image, puis « Enregistrer l'image ». Ajoutez-la ensuite à votre story Instagram.</p>
+            <div className="grid2 w100">
+              <a className="btn btn-dark" href={img.url} download={`movo-qui-est-ce-${n}.png`}>Télécharger</a>
+              <button className="btn btn-outline" onClick={() => setApercu(false)}>Fermer</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <section className="share">
         <span className="eyebrow light">Votre grille, sans spoiler</span>
@@ -392,7 +414,7 @@ async function story(n, etat) {
   x.fillText(etat.gagne ? `en ${etat.essais.length}/6` : 'en 6/6', 220, 1060)
   grille(etat).forEach((g, i) => {
     const X = 220 + i * 128, Y = 1130, S = 108
-    x.beginPath(); x.roundRect(X, Y, S, S, 24)
+    x.beginPath(); if (x.roundRect) x.roundRect(X, Y, S, S, 24); else x.rect(X, Y, S, S)
     if (g === 'vide') { x.strokeStyle = '#4A4E60'; x.lineWidth = 6; x.stroke() } else { x.fillStyle = g === 'win' ? '#18A058' : '#E1000F'; x.fill() }
     if (g === 'win') { x.strokeStyle = '#fff'; x.lineWidth = 12; x.beginPath(); x.moveTo(X + 28, Y + 56); x.lineTo(X + 48, Y + 78); x.lineTo(X + 82, Y + 34); x.stroke() }
   })

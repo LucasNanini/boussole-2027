@@ -36,7 +36,7 @@ export function initiales(nom) {
 }
 
 /* ---------- Mystère du jour ---------- */
-export const LANCEMENT = '2026-11-16' // n°1
+export const LANCEMENT = '2026-11-14' // n°1 = samedi 14 novembre 2026, jour de la mise en ligne
 export const PREMIER_TOUR = '2027-04-18'
 
 function rng(seed) {
@@ -65,7 +65,7 @@ const parisDay = (date) => {
   return Date.UTC(...s.split('-').map((n, i) => (i === 1 ? n - 1 : +n)))
 }
 export function numeroDuJour(date = new Date()) {
-  const start = Date.UTC(2026, 10, 16)
+  const start = Date.UTC(2026, 10, 14)
   return Math.max(1, Math.floor((parisDay(date) - start) / DAY) + 1)
 }
 export function joursAvant(iso, date = new Date()) {
