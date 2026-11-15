@@ -172,6 +172,7 @@ function Jeu() {
   const clues = useMemo(() => indices(rep), [rep])
   const key = `qec-${n}`
   const [etat, setEtat] = useState(() => store.get(key, { essais: [], fini: false, gagne: false }))
+  const defi = useMemo(() => defiRecu(n), [n])
   const [saisie, setSaisie] = useState('')
   const [msg, setMsg] = useState('')
   const vus = Math.min(6, etat.essais.length + 1)
@@ -201,6 +202,7 @@ function Jeu() {
   return (
     <main className="screen">
       <Header title={`Qui est-ce ? #${n}`} right={<span className="pts">{points} pts</span>} />
+      {defi && <div className="defi">On vous a défié : {defi === 'X' ? 'votre ami·e n\'a pas trouvé' : `votre ami·e a trouvé en ${defi} indice${defi > 1 ? 's' : ''}`}. À vous de faire mieux !</div>}
       <div className="dots" aria-label={`${vus} indices sur 6`}>
         {clues.map((_, i) => <span key={i} className={i < vus ? 'on' : ''} />)}
       </div>
@@ -279,7 +281,16 @@ function grille(etat) {
 function texteGrille(n, etat) {
   const sq = grille(etat).map((g) => (g === 'win' ? '🟩' : g === 'rate' ? '🟥' : '⬜')).join('')
   const ig = INSTAGRAM ? `\nSuis @${INSTAGRAM} sur Instagram : instagram.com/${INSTAGRAM}` : ''
-  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${etat.gagne ? etat.essais.length : 'X'}/6\nEt toi, tu le/la reconnais ? ${SITE}${ig}`
+  const score = etat.gagne ? etat.essais.length : 'X'
+  return `MOVO 2027 · Qui est-ce ? #${n}\n${sq} ${score}/6\nJe te défie : tu le/la reconnais en moins d'indices ?\nhttps://${SITE}/?defi=${score}&n=${n}#jeu${ig}`
+}
+// Défi reçu : ?defi=3&n=12 dans l'adresse (lu une fois, puis gardé pour la partie du jour)
+function defiRecu(n) {
+  try {
+    const q = new URLSearchParams(window.location.search)
+    if (q.get('defi') && Number(q.get('n')) === n) store.set('defi-' + n, q.get('defi'))
+  } catch { /* rien */ }
+  return store.get('defi-' + n, null)
 }
 
 function Resultat({ n, rep, etat, clues }) {
@@ -290,12 +301,15 @@ function Resultat({ n, rep, etat, clues }) {
     finirPartie(n, etat, maj); maj()
   }, [n])
   const pts = etat.gagne ? 100 - 15 * (etat.essais.length - 1) : 0
+  const [defiTexte, setDefiTexte] = useState(null)
   const partagerTexte = async () => {
     const t = texteGrille(n, etat)
-    try {
-      if (navigator.share) await navigator.share({ text: t })
-      else { await navigator.clipboard.writeText(t); setCopie('Copié ! Collez-le où vous voulez.') }
-    } catch { /* annulé */ }
+    if (navigator.share) {
+      try { await navigator.share({ text: t }); return }
+      catch (e) { if (e?.name === 'AbortError') return } // annulé par le joueur
+    }
+    try { await navigator.clipboard.writeText(t); setCopie('Défi copié ! Collez-le dans une conversation.') } catch { /* presse-papiers bloqué */ }
+    setDefiTexte(t) // dans tous les cas : fenêtre avec WhatsApp, SMS et le texte à copier
   }
   // L'image est préparée dès l'affichage du résultat : au clic, le partage part tout de suite
   // (les navigateurs mobiles refusent un partage lancé trop longtemps après le toucher).
@@ -345,6 +359,18 @@ function Resultat({ n, rep, etat, clues }) {
 
       <Distribution n={n} etat={etat} />
 
+      {defiTexte && (
+        <div className="modal" role="dialog" aria-label="Défier un ami" onClick={() => setDefiTexte(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <b>Défier un ami</b>
+            <a className="btn btn-dark" href={`https://wa.me/?text=${encodeURIComponent(defiTexte)}`} target="_blank" rel="noreferrer">Envoyer par WhatsApp</a>
+            <a className="btn btn-outline" href={`sms:?&body=${encodeURIComponent(defiTexte)}`}>Envoyer par SMS</a>
+            <label className="small muted" htmlFor="defi-txt">Ou copiez le texte :</label>
+            <textarea id="defi-txt" readOnly value={defiTexte} rows={6} className="defi-txt" onFocus={(e) => e.target.select()} />
+            <button className="btn btn-outline" onClick={() => setDefiTexte(null)}>Fermer</button>
+          </div>
+        </div>
+      )}
       {apercu && img && (
         <div className="modal" role="dialog" aria-label="Image à partager en story" onClick={() => setApercu(false)}>
           <div className="modal-box" onClick={(e) => e.stopPropagation()}>
