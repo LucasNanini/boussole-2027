@@ -247,3 +247,13 @@ export async function kikadi(r, { joueur, numero, score }) {
   }
   return { ok: true, distrib: (await r.hgetall(cle)) || {} }
 }
+
+// Swipe : on compte seulement les parties, jamais les réponses (ce sont des opinions politiques).
+export async function swipe(r, { joueur }) {
+  if (!ID_RE.test(joueur || '')) return { erreur: 'invalide' }
+  const d = jourParis()
+  const p = r.pipeline()
+  p.incr(K.total); p.pfadd(K.joueursJour(d), joueur); p.expire(K.joueursJour(d), 60 * 60 * 24 * 8); p.pfadd(K.joueurs, joueur)
+  await p.exec()
+  return { ok: true }
+}

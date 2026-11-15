@@ -41,7 +41,8 @@
      "url": "https://www.instagram.com/reel/DfaNhfxjn-X/",
      "plateforme": "instagram",
      "date": "2026-11-06",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfaNhfxjn-X/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfaNhfxjn-X/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "Et donc si ce n'est pas la force qui fait l'union, c'est l'union qui doit faire la force.",
@@ -102,7 +103,8 @@
      "url": "https://www.instagram.com/reel/DfVPV-Qof-A/",
      "plateforme": "instagram",
      "date": "2026-11-04",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfVPV-Qof-A/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfVPV-Qof-A/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "Il fallait qu'on soit tous là pour réaffirmer la République une et indivisible et antiraciste.",
@@ -203,7 +205,8 @@
      "url": "https://www.tiktok.com/@jlmelenchon/video/7705708104423410977",
      "plateforme": "tiktok",
      "date": "2026-11-08",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705708104423410977/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7705708104423410977/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "Nous allons réussir la nouvelle France, celle de tous nos enfants, sans exception, quels que soient leurs ancêtres, leurs religions ou leurs couleurs de peau.",
@@ -419,14 +422,16 @@
      "url": "https://www.instagram.com/reel/DfZ9w6svczu/",
      "plateforme": "instagram",
      "date": "2026-11-06",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfZ9w6svczu/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfZ9w6svczu/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "Alors je commence par remercier votre reporter de terrain pour ce qu'il dit, parce que j'ai entendu peu de journalistes et peu de contenus éditoriaux le souligner.",
      "url": "https://www.instagram.com/reel/DfPfsu4TP4L/",
      "plateforme": "instagram",
      "date": "2026-11-02",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPfsu4TP4L/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPfsu4TP4L/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "je ne sais pas ce qui s'est passé dans ce pays pour que même organiser une simple manifestation, on ne sache plus le faire",
@@ -466,14 +471,16 @@
      "url": "https://www.instagram.com/reel/DfPAag1ug01/",
      "plateforme": "instagram",
      "date": "2026-11-02",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPAag1ug01/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfPAag1ug01/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "C'est une chance historique pour l'industrie de défense française et pour la France. Nous ne devons absolument pas la manquer.",
      "url": "https://www.instagram.com/reel/DfXlhjwOJ1C/",
      "plateforme": "instagram",
      "date": "2026-11-05",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXlhjwOJ1C/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfXlhjwOJ1C/thumbnail.webp",
+     "position": false
     },
     {
      "texte": "On a édifié le culte du diplôme sans chercher à savoir ce qu'il y avait dedans.",
@@ -541,7 +548,8 @@
      "url": "https://www.instagram.com/reel/DfO3tagI976/",
      "plateforme": "instagram",
      "date": "2026-11-02",
-     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp"
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfO3tagI976/thumbnail.webp",
+     "position": false
     }
    ]
   }

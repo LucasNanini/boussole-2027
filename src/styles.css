@@ -210,3 +210,19 @@ h2 { font-size: 20px; }
 @keyframes qe-bob { 0%, 100% { transform: rotate(9deg) translateY(0); } 50% { transform: rotate(6deg) translateY(-4px); } }
 @media (prefers-reduced-motion: reduce) { .qe-card.blue { animation: none; } }
 .hero-compact > .btn { margin-right: 0; position: relative; }
+.sw-zone { position: relative; height: 330px; margin-top: 4px; }
+.sw-card { position: absolute; inset: 0; background: #fff; border: 2px solid var(--ink); border-radius: 22px; padding: 26px 22px; display: flex; align-items: center; justify-content: center; touch-action: none; user-select: none; cursor: grab; box-shadow: 0 10px 24px rgba(21,23,43,.15); }
+.sw-card.sw-next { transform: scale(.95) translateY(10px); opacity: .5; font-size: 18px; color: #888; overflow: hidden; }
+.sw-card.yes { border-color: #146B3A; } .sw-card.no { border-color: #E1000F; }
+.sw-q { font-family: 'Space Grotesk', sans-serif; font-size: 22px; line-height: 1.3; font-weight: 600; text-align: center; color: var(--ink); }
+.sw-stamp { position: absolute; top: 16px; font-weight: 800; font-size: 14px; letter-spacing: .08em; padding: 4px 10px; border: 3px solid; border-radius: 8px; }
+.sw-stamp.yes { left: 16px; color: #146B3A; transform: rotate(-10deg); } .sw-stamp.no { right: 16px; color: #E1000F; transform: rotate(10deg); }
+.sw-btns { display: flex; justify-content: center; align-items: center; gap: 18px; }
+.sw-btn { width: 64px; height: 64px; border-radius: 50%; border: 0; font-size: 28px; font-weight: 800; color: #fff; cursor: pointer; box-shadow: 0 6px 14px rgba(0,0,0,.18); }
+.sw-btn.no { background: #E1000F; } .sw-btn.yes { background: #146B3A; }
+.sw-btn.skip { width: auto; height: 40px; padding: 0 14px; border-radius: 999px; background: #EDEDF3; color: var(--ink); font-size: 14px; box-shadow: none; }
+.sw-res { background: #000091; color: #fff; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.sw-res .name { color: #fff; }
+.row12.wrap { flex-wrap: wrap; }
+.sw-ligne { padding: 8px 0; border-bottom: 1px solid #ECECF2; }
+.explore .kk-new { font-size: 10px; vertical-align: middle; margin-left: 4px; }

@@ -50,6 +50,12 @@ Après un premier `npm run hebdo`, relire le top 15 de chaque candidat : si un m
 relancer. Ne JAMAIS retirer un mot parce qu'il est polémique ou dérangeant : c'est le but du nuage.
 Lister dans la PR les mots retirés et le top 10 de chaque candidat.
 
+### Jeu « D'accord ou pas ? »
+Pour chaque citation retenue, ajouter `"position": false` si la phrase n'exprime AUCUNE idée sur
+laquelle on peut être d'accord ou non (remerciement, anecdote, phrase sur soi : « quel honneur vous me
+faites », « je suis un combattant »). Ces phrases restent dans L'hebdo et Kikadi, mais sortent du swipe.
+Dans le doute, garder. Lister dans la PR les citations marquées.
+
 ## 3. Construction du brouillon
 `npm run hebdo -- <AAAA-Www>` → crée `src/data/hebdo/<AAAA-Www>.json` avec `"statut": "brouillon"`.
 Le script refuse toute citation qui ne figure pas mot pour mot dans la transcription.

@@ -131,6 +131,7 @@ function Accueil() {
 
       <h2>Explorer</h2>
       <div className="explore">
+        <a href="#swipe"><b>D'accord ou pas ? <span className="kk-new">NOUVEAU</span></b><span className="muted small">Des phrases sans les noms : swipez, on révèle à la fin</span><Icon d={I.next} /></a>
         <a href="#trombino"><b>Le Trombino</b><span className="muted small">Les {CANDIDATS.length} candidatures, carte par carte</span><Icon d={I.next} /></a>
         <a href="#hebdo"><b>L'hebdo</b><span className="muted small">Leurs 5 phrases de la semaine</span><Icon d={I.next} /></a>
         <a href="#themes"><b>De quoi parlent-ils ?</b><span className="muted small">Leurs mots, semaine après semaine</span><Icon d={I.next} /></a>
@@ -787,6 +788,115 @@ function KikadiResultat({ n, jeu, etat }) {
   )
 }
 
+/* ---------------- Swipe : d'accord / pas d'accord, sans les noms ---------------- */
+const SW_PAR_CANDIDAT = 2
+function pioche() {
+  const n = numeroDuJour() + 3 // toutes les citations publiées jusqu'ici
+  const pool = poolKikadi(n).filter((q) => q.position !== false) // phrases sans prise de position écartées (marquées à la relecture)
+  const par = {}
+  pool.forEach((q) => { (par[q.id] = par[q.id] || []).push(q) })
+  const seed = Math.floor(Math.random() * 1e9)
+  const ids = Object.keys(par).filter((id) => par[id].length >= SW_PAR_CANDIDAT) // même nombre de phrases pour chacun
+  const cartes = ids.flatMap((id, k) => shuffle(par[id], seed + k).slice(0, SW_PAR_CANDIDAT))
+  return shuffle(cartes, seed)
+}
+function Swipe() {
+  const [cartes, setCartes] = useState(() => pioche())
+  const [rep, setRep] = useState([]) // +1, -1 ou 0, gardé dans ce navigateur seulement
+  const [dx, setDx] = useState(0)
+  const [depart, setDepart] = useState(null)
+  const i = rep.length
+  const fini = i >= cartes.length
+  useEffect(() => { if (fini && cartes.length) api('/api/partie', { jeu: 'swipe', joueur: joueurId() }) }, [fini])
+  if (cartes.length < 6) return <main className="screen"><Header title="Swipe" /><p className="muted">Pas encore assez de citations publiées.</p></main>
+  if (fini) return <SwipeResultat cartes={cartes} rep={rep} rejouer={() => { setCartes(pioche()); setRep([]) }} />
+  const q = cartes[i]
+  const voter = (v) => { setRep([...rep, v]); setDx(0); setDepart(null) }
+  const fin = () => { if (dx > 90) voter(1); else if (dx < -90) voter(-1); else { setDx(0); setDepart(null) } }
+  return (
+    <main className="screen">
+      <Header title="" right={<span className="muted small b">{i + 1} / {cartes.length}</span>} />
+      <div className="stack4"><h1 className="h1">D'accord ou pas&nbsp;?</h1><p className="muted small">De vraies phrases de candidats, sans les noms. Glissez à droite si vous êtes d'accord, à gauche sinon. On révèle tout à la fin.</p></div>
+      <div className="sw-zone">
+        {cartes[i + 1] && <div className="sw-card sw-next">« {cartes[i + 1].texte} »</div>}
+        <div className={'sw-card' + (dx > 40 ? ' yes' : dx < -40 ? ' no' : '')}
+          style={{ transform: `translateX(${dx}px) rotate(${dx / 18}deg)`, transition: depart == null ? 'transform .2s' : 'none' }}
+          onPointerDown={(e) => { setDepart(e.clientX); e.currentTarget.setPointerCapture(e.pointerId) }}
+          onPointerMove={(e) => { if (depart != null) setDx(e.clientX - depart) }}
+          onPointerUp={fin} onPointerCancel={fin}>
+          {dx > 40 && <span className="sw-stamp yes">D'ACCORD</span>}
+          {dx < -40 && <span className="sw-stamp no">PAS D'ACCORD</span>}
+          <span className="sw-q">« {q.texte} »</span>
+        </div>
+      </div>
+      <div className="sw-btns">
+        <button className="sw-btn no" onClick={() => voter(-1)} aria-label="Pas d'accord">✕</button>
+        <button className="sw-btn skip" onClick={() => voter(0)}>Sans avis</button>
+        <button className="sw-btn yes" onClick={() => voter(1)} aria-label="D'accord">✓</button>
+      </div>
+    </main>
+  )
+}
+function SwipeResultat({ cartes, rep, rejouer }) {
+  const parId = {}
+  cartes.forEach((q, k) => { const p = (parId[q.id] = parId[q.id] || { id: q.id, pour: 0, contre: 0 }); if (rep[k] > 0) p.pour++; if (rep[k] < 0) p.contre++ })
+  const lignes = Object.values(parId).sort((a, b) => (b.pour - b.contre) - (a.pour - a.contre) || b.pour - a.pour)
+  const best = lignes[0].pour - lignes[0].contre
+  const proches = lignes.filter((l) => l.pour - l.contre === best && l.pour > 0)
+  const [copie, setCopie] = useState('')
+  const [defiTexte, setDefiTexte] = useState(null)
+  const total = cartes.length
+  const partager = async () => {
+    const qui = proches.length ? `je suis le plus souvent d'accord avec ${proches.map((l) => nomDe(l.id).nom).join(' et ')}` : "je ne suis d'accord avec personne"
+    const t = `MOVO 2027 · D'accord ou pas ?\nSur ${total} vraies phrases de candidats, sans les noms, ${qui}. Surprise !\nEt toi ? https://${SITE}/#swipe`
+    if (navigator.share) { try { await navigator.share({ text: t }); return } catch (e) { if (e?.name === 'AbortError') return } }
+    try { await navigator.clipboard.writeText(t); setCopie('Texte copié !') } catch { /* bloqué */ }
+    setDefiTexte(t)
+  }
+  return (
+    <main className="screen">
+      <Header title="" right={<span className="muted small b">Résultat</span>} />
+      <section className="sw-res">
+        <span className="eyebrow light">Sur ces {total} phrases</span>
+        {proches.length ? <>
+          <span>Vous étiez le plus souvent d'accord avec</span>
+          <div className="row12 wrap">{proches.map((l) => <div key={l.id} className="row6"><Portrait c={nomDe(l.id)} /><b className="name">{nomDe(l.id).nom}</b></div>)}</div>
+        </> : <b className="name">Vous n'étiez d'accord avec personne. Exigeant·e !</b>}
+        <button className="btn btn-light w100" onClick={partager}><Icon d={I.share} size={18} /> Partager</button>
+        {copie && <span className="small">{copie}</span>}
+      </section>
+      <p className="warn-soft">Un jeu, pas une consigne de vote : {SW_PAR_CANDIDAT} phrases par candidat, tirées au hasard dans leurs vidéos de la semaine, ce n'est pas un programme. Rejouez : d'autres phrases peuvent donner un autre résultat. Vos réponses restent sur votre téléphone, nous ne les enregistrons pas.</p>
+      <section className="stack8">
+        <h2>Tous les candidats</h2>
+        {lignes.map((l) => { const c = nomDe(l.id); return (
+          <div key={l.id} className="row-between small sw-ligne"><span className="row6"><span style={{ color: blocOf(c).color }}>●</span><b>{c.nom}</b></span><span>{l.pour} d'accord · {l.contre} pas d'accord</span></div>
+        ) })}
+      </section>
+      <section className="stack8">
+        <h2>Qui a dit quoi</h2>
+        {cartes.map((q, k) => { const c = nomDe(q.id); return (
+          <div key={k} className="card kk-recap">
+            <span className="small b">{rep[k] > 0 ? '👍 D\'accord' : rep[k] < 0 ? '👎 Pas d\'accord' : '· Sans avis'}</span>
+            <blockquote className="extrait">« {q.texte} »<span className="muted tiny"> <b>{c.nom}</b> · {dateFr(q.date)} · <a href={q.url} target="_blank" rel="noreferrer">Voir la vidéo</a></span></blockquote>
+          </div>
+        ) })}
+      </section>
+      <button className="btn btn-dark" onClick={rejouer}>Rejouer avec d'autres phrases</button>
+      {defiTexte && (
+        <div className="modal" role="dialog" aria-label="Partager" onClick={() => setDefiTexte(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <b>Partager</b>
+            <a className="btn btn-dark" href={`https://wa.me/?text=${encodeURIComponent(defiTexte)}`} target="_blank" rel="noreferrer">Envoyer par WhatsApp</a>
+            <a className="btn btn-outline" href={`sms:?&body=${encodeURIComponent(defiTexte)}`}>Envoyer par SMS</a>
+            <textarea readOnly value={defiTexte} rows={5} className="defi-txt" onFocus={(e) => e.target.select()} />
+            <button className="btn btn-outline" onClick={() => setDefiTexte(null)}>Fermer</button>
+          </div>
+        </div>
+      )}
+    </main>
+  )
+}
+
 /* ---------------- De quoi parlent-ils ? ---------------- */
 function Nuage({ h, cid, color, mot, setMot }) {
   const nom = (k) => CANDIDATS.find((y) => y.id === k)?.nom || k
@@ -929,6 +1039,8 @@ function Methodo() {
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
         <h2>Kikadi ?</h2>
         <p>Chaque jour, 5 citations tirées des éditions de L'hebdo déjà publiées, les mêmes pour tout le monde. Elles sont mot pour mot, avec la vidéo d'origine. On écarte les phrases où le candidat se nomme lui-même. Les 3 autres noms proposés sont tirés au hasard parmi les candidats cités dans L'hebdo. Une citation ne revient pas avant une semaine tant que le stock le permet. Les nouvelles citations entrent le lendemain de la publication de L'hebdo.</p>
+        <h2>D'accord ou pas ?</h2>
+        <p>Le même nombre de phrases pour chaque candidat cité dans L'hebdo, tirées au hasard et présentées sans nom. À la fin, on indique avec qui vous avez été le plus souvent d'accord sur ces phrases-là. C'est un jeu, pas un comparateur de programmes ni une consigne de vote. Vos réponses ne quittent pas votre téléphone : seul le nombre de parties est compté.</p>
         <h2>Le nuage de mots</h2>
         <p>À partir des seuls passages politiques des vidéos, nous comptons les mots et expressions de chaque candidat, puis gardons ceux qu'il emploie nettement plus que les autres. On retire les mots-outils et les mots trop vagues (« choses », « vraiment », « pays »…). On ne retire jamais un mot parce qu'il est polémique. Un mot doit apparaître au moins deux fois. Les mots sont affichés dans un ordre mélangé, pas classés. Chaque mot renvoie à la phrase entière et à la vidéo : un mot sorti de son contexte peut tromper.</p>
         <h2>Sources</h2>
@@ -1044,6 +1156,7 @@ export default function App() {
       {page === 'jeu' ? <Jeu />
         : page === 'trombino' ? <Trombino id={arg} key={arg || 't'} />
         : page === 'kikadi' ? <Kikadi />
+        : page === 'swipe' ? <Swipe />
         : page === 'hebdo' ? <Hebdo />
         : page === 'themes' ? <Themes />
         : page === 'aveugle' ? <Bientot titre="À l'aveugle" quand="JANVIER" texte="Réagissez à de vraies propositions, sans nom, sans parti, sans couleur. À la fin, on révèle qui les porte. Réservé aux candidat·es ayant publié un programme." />
