@@ -1,0 +1,5904 @@
+{
+ "semaine": "2026-W46",
+ "du": "2026-11-09",
+ "au": "2026-11-15",
+ "statut": "publie",
+ "suivis": [
+  "attal",
+  "glucksmann",
+  "le-pen",
+  "lisnard",
+  "melenchon",
+  "philippe",
+  "retailleau",
+  "roussel",
+  "tondelier",
+  "zemmour",
+  "riner",
+  "arthaud",
+  "batho",
+  "bouamrane",
+  "branco",
+  "durif",
+  "kazib",
+  "philippot"
+ ],
+ "mots_campagne": [
+  {
+   "mot": "euros",
+   "n": 40,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 25
+    },
+    {
+     "id": "arthaud",
+     "n": 8
+    },
+    {
+     "id": "glucksmann",
+     "n": 3
+    },
+    {
+     "id": "tondelier",
+     "n": 3
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "entreprises",
+   "n": 22,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 18
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "roussel",
+     "n": 1
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "salaires",
+   "n": 16,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 7
+    },
+    {
+     "id": "kazib",
+     "n": 4
+    },
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "roussel",
+     "n": 1
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "droit",
+   "n": 15,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 4
+    },
+    {
+     "id": "zemmour",
+     "n": 4
+    },
+    {
+     "id": "retailleau",
+     "n": 2
+    },
+    {
+     "id": "philippot",
+     "n": 2
+    },
+    {
+     "id": "arthaud",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "enfants",
+   "n": 13,
+   "qui": [
+    {
+     "id": "philippe",
+     "n": 4
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    },
+    {
+     "id": "le-pen",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "système",
+   "n": 13,
+   "qui": [
+    {
+     "id": "philippot",
+     "n": 4
+    },
+    {
+     "id": "kazib",
+     "n": 4
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "train",
+   "n": 12,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 10
+    },
+    {
+     "id": "glucksmann",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "vivre",
+   "n": 11,
+   "qui": [
+    {
+     "id": "glucksmann",
+     "n": 3
+    },
+    {
+     "id": "kazib",
+     "n": 3
+    },
+    {
+     "id": "retailleau",
+     "n": 2
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "travail",
+   "n": 11,
+   "qui": [
+    {
+     "id": "riner",
+     "n": 6
+    },
+    {
+     "id": "philippe",
+     "n": 2
+    },
+    {
+     "id": "roussel",
+     "n": 2
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "état",
+   "n": 10,
+   "qui": [
+    {
+     "id": "riner",
+     "n": 4
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "caddie",
+   "n": 10,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 8
+    },
+    {
+     "id": "riner",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "social",
+   "n": 9,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 3
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "attal",
+     "n": 1
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "smic",
+   "n": 9,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 5
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "appelle",
+   "n": 9,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 5
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "passer",
+   "n": 9,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 4
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "côté",
+   "n": 9,
+   "qui": [
+    {
+     "id": "riner",
+     "n": 4
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "travaille",
+   "n": 9,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 8
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "augmentation",
+   "n": 9,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 4
+    },
+    {
+     "id": "arthaud",
+     "n": 4
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "travailleurs",
+   "n": 9,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 4
+    },
+    {
+     "id": "kazib",
+     "n": 4
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "électriques",
+   "n": 8,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 7
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "profits",
+   "n": 8,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 7
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "peut-être",
+   "n": 8,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 3
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "augmenter",
+   "n": 8,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 4
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "roussel",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "gauche",
+   "n": 8,
+   "qui": [
+    {
+     "id": "zemmour",
+     "n": 4
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "retailleau",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "avenir",
+   "n": 8,
+   "qui": [
+    {
+     "id": "zemmour",
+     "n": 4
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "sortir",
+   "n": 8,
+   "qui": [
+    {
+     "id": "retailleau",
+     "n": 4
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "réalité",
+   "n": 8,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 3
+    },
+    {
+     "id": "kazib",
+     "n": 3
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "couleur",
+   "n": 7,
+   "qui": [
+    {
+     "id": "riner",
+     "n": 4
+    },
+    {
+     "id": "attal",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "véhicules",
+   "n": 7,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 6
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "véhicules électriques",
+   "n": 7,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 6
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "jeunes",
+   "n": 7,
+   "qui": [
+    {
+     "id": "philippe",
+     "n": 2
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "seule",
+   "n": 7,
+   "qui": [
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    },
+    {
+     "id": "le-pen",
+     "n": 1
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "zemmour",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "santé",
+   "n": 7,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "le-pen",
+     "n": 1
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "république",
+   "n": 7,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "philippe",
+     "n": 2
+    },
+    {
+     "id": "riner",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "richesses",
+   "n": 7,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 5
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "public",
+   "n": 7,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    },
+    {
+     "id": "arthaud",
+     "n": 2
+    },
+    {
+     "id": "tondelier",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "jeunesse",
+   "n": 7,
+   "qui": [
+    {
+     "id": "kazib",
+     "n": 6
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "syndicats",
+   "n": 7,
+   "qui": [
+    {
+     "id": "retailleau",
+     "n": 5
+    },
+    {
+     "id": "kazib",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "société",
+   "n": 7,
+   "qui": [
+    {
+     "id": "arthaud",
+     "n": 4
+    },
+    {
+     "id": "retailleau",
+     "n": 2
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "argent",
+   "n": 7,
+   "qui": [
+    {
+     "id": "tondelier",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    },
+    {
+     "id": "roussel",
+     "n": 1
+    },
+    {
+     "id": "arthaud",
+     "n": 1
+    },
+    {
+     "id": "kazib",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "genere_le": "2026-11-16T05:55:16.597Z",
+ "candidats": {
+  "attal": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 71.9,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 28.1
+   },
+   "citations": [
+    {
+     "texte": "Je propose qu'on puisse généraliser la pratique du testing, notamment du testing à l'embauche",
+     "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkgIHmIi8_/thumbnail.webp"
+    },
+    {
+     "texte": "Évidemment qu'il y a du racisme, il y a des discriminations en France.",
+     "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkgIHmIi8_/thumbnail.webp"
+    },
+    {
+     "texte": "Je propose par ailleurs, et ça me semble majeur, qu'on réalise un audit des algorithmes d'intelligence artificielle pour l'embauche.",
+     "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkgIHmIi8_/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "embauche",
+     "n": 5,
+     "score": 5.95,
+     "extraits": [
+      {
+       "texte": "Je propose qu'on puisse généraliser la pratique du testing, notamment du testing à l'embauche, c'est-à-dire l'envoi de CV différents, avec différentes origines sociales, géographiques, pour mesurer s'il y a de la discrimination […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je propose par ailleurs, et ça me semble majeur, qu'on réalise un audit des algorithmes d'intelligence artificielle pour l'embauche.",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "discriminations",
+     "n": 3,
+     "score": 5.5,
+     "extraits": [
+      {
+       "texte": "Il y a des discriminations en France.",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je propose qu'on puisse généraliser la pratique du testing, notamment du testing à l'embauche, c'est-à-dire l'envoi de CV différents, avec différentes origines sociales, géographiques, pour mesurer s'il y a de la discrimination […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "algorithmes",
+     "n": 3,
+     "score": 5.5,
+     "extraits": [
+      {
+       "texte": "Je propose par ailleurs, et ça me semble majeur, qu'on réalise un audit des algorithmes d'intelligence artificielle pour l'embauche.",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "origines",
+     "n": 2,
+     "score": 5.16,
+     "extraits": [
+      {
+       "texte": "Vous avez des Français qui, en raison de leur couleur de peau, en raison de leurs origines se voient priver l'accès à un emploi, à un logement, parfois même à l'ouverture d'un […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "propose",
+     "n": 2,
+     "score": 5.16,
+     "extraits": [
+      {
+       "texte": "Je propose qu'on puisse généraliser la pratique du testing, notamment du testing à l'embauche, c'est-à-dire l'envoi de CV différents, avec différentes origines sociales, géographiques, pour mesurer s'il y a de la discrimination […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je propose par ailleurs, et ça me semble majeur, qu'on réalise un audit des algorithmes d'intelligence artificielle pour l'embauche.",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "testing",
+     "n": 2,
+     "score": 5.16,
+     "extraits": [
+      {
+       "texte": "Je propose qu'on puisse généraliser la pratique du testing, notamment du testing à l'embauche, c'est-à-dire l'envoi de CV différents, avec différentes origines sociales, géographiques, pour mesurer s'il y a de la discrimination […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "peau",
+     "n": 2,
+     "score": 4.06,
+     "extraits": [
+      {
+       "texte": "Et encore une fois, dire ça quelques semaines après un attentat terroriste raciste qui a coûté la vie à un homme pour sa couleur de peau, je veux dire, c'est absolument scandaleux […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vous avez des Français qui, en raison de leur couleur de peau, en raison de leurs origines se voient priver l'accès à un emploi, à un logement, parfois même à l'ouverture d'un […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "couleur",
+     "n": 2,
+     "score": 2.76,
+     "extraits": [
+      {
+       "texte": "Et encore une fois, dire ça quelques semaines après un attentat terroriste raciste qui a coûté la vie à un homme pour sa couleur de peau, je veux dire, c'est absolument scandaleux […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vous avez des Français qui, en raison de leur couleur de peau, en raison de leurs origines se voient priver l'accès à un emploi, à un logement, parfois même à l'ouverture d'un […]",
+       "url": "https://www.instagram.com/reel/DfkgIHmIi8_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "glucksmann": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 66,
+    "education": 0,
+    "logement": 0,
+    "finances": 34,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "En 100 jours, on va lancer la libération de la France. La sortie des énergies fossiles.",
+     "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkreOCKxMB/thumbnail.webp"
+    },
+    {
+     "texte": "Nous mettrons en place une contribution exceptionnelle pour l'investissement climatique, pour les patrimoines au-dessus de 100 millions d'euros.",
+     "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkreOCKxMB/thumbnail.webp"
+    },
+    {
+     "texte": "Nous taxerons les super profits des groupes pétroliers qui se sont gavés en profitant de la guerre en Ukraine et de la guerre au Moyen-Orient.",
+     "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkreOCKxMB/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "mars",
+     "n": 3,
+     "score": 5.17,
+     "extraits": [
+      {
+       "texte": "Vous avez les moyens de vivre sur Mars ?",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors Elon Musk, il peut aller vivre sur Mars tout seul.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "terre",
+     "n": 2,
+     "score": 4.84,
+     "extraits": [
+      {
+       "texte": "Pas sur Mars, sur Terre.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Nous, on va changer les choses ici, sur Terre, en France et en Europe.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "énergies",
+     "n": 2,
+     "score": 4.84,
+     "extraits": [
+      {
+       "texte": "La sortie des énergies fossiles.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "En doublant la production des énergies renouvelables.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "révolution écologique",
+     "n": 2,
+     "score": 4.84,
+     "extraits": [
+      {
+       "texte": "La révolution écologique.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Les 100 premiers jours du quinquennat seront une révolution écologique.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "million",
+     "n": 2,
+     "score": 3.23,
+     "extraits": [
+      {
+       "texte": "En rendant accessible 1 million de véhicules électriques en leasing sociale.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Nous mettrons en place une contribution exceptionnelle pour l'investissement climatique, pour les patrimoines au-dessus de 100 millions d'euros.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "vivre",
+     "n": 3,
+     "score": 2.34,
+     "extraits": [
+      {
+       "texte": "Vous avez les moyens de vivre sur Mars ?",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ce qui nous permettra de mieux vivre.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "guerre",
+     "n": 2,
+     "score": 2.89,
+     "extraits": [
+      {
+       "texte": "Nous taxerons les super profits des groupes pétroliers qui se sont gavés en profitant de la guerre en Ukraine et de la guerre au Moyen-Orient.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "changer",
+     "n": 2,
+     "score": 2.64,
+     "extraits": [
+      {
+       "texte": "100 jours pour changer la vie.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Nous, on va changer les choses ici, sur Terre, en France et en Europe.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "justice",
+     "n": 2,
+     "score": 2.64,
+     "extraits": [
+      {
+       "texte": "Et qui remettra de la justice dans ce pays.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Avec de la justice fiscale.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "train",
+     "n": 2,
+     "score": 1.79,
+     "extraits": [
+      {
+       "texte": "En offrant aux jeunes un pass mobilité durable qui leur permettra pour 1 euro par jour de prendre les transports en commun, le train, les TER, les intercités, les trains de nuit, […]",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "euros",
+     "n": 3,
+     "score": 0.86,
+     "extraits": [
+      {
+       "texte": "1 million de pompes à chaleur à 1 euro par jour.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Nous mettrons en place une contribution exceptionnelle pour l'investissement climatique, pour les patrimoines au-dessus de 100 millions d'euros.",
+       "url": "https://www.instagram.com/reel/DfkreOCKxMB/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "le-pen": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 100,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Elles n'étaient pas dans les tranchées, mais elles étaient au cœur de la bataille.",
+     "url": "https://www.instagram.com/reel/DfnHFQ8uD3l/",
+     "plateforme": "instagram",
+     "date": "2026-11-11",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfnHFQ8uD3l/thumbnail.webp",
+     "position": false
+    },
+    {
+     "texte": "Ce fut bien sûr la victoire du front, mais aussi tout aussi exemplaire et magnifique des combattants de l'arrière, au premier rang desquels les femmes.",
+     "url": "https://www.instagram.com/reel/DfnHFQ8uD3l/",
+     "plateforme": "instagram",
+     "date": "2026-11-11",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfnHFQ8uD3l/thumbnail.webp",
+     "position": false
+    }
+   ],
+   "mots": [
+    {
+     "mot": "arrière",
+     "n": 2,
+     "score": 5.09,
+     "extraits": [
+      {
+       "texte": "Ce fut bien sûr la victoire du front, mais aussi tout aussi exemplaire et magnifique des combattants de l'arrière, au premier rang desquels les femmes.",
+       "url": "https://www.instagram.com/reel/DfnHFQ8uD3l/",
+       "date": "2026-11-11",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "victoire",
+     "n": 2,
+     "score": 3.48,
+     "extraits": [
+      {
+       "texte": "Ce fut bien sûr la victoire du front, mais aussi tout aussi exemplaire et magnifique des combattants de l'arrière, au premier rang desquels les femmes.",
+       "url": "https://www.instagram.com/reel/DfnHFQ8uD3l/",
+       "date": "2026-11-11",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "melenchon": {
+   "nb_videos": 3,
+   "themes": {
+    "pouvoir-achat": 24,
+    "sante": 31.8,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 2.8,
+    "ecologie": 0,
+    "education": 2.7,
+    "logement": 0,
+    "finances": 7.1,
+    "international": 0,
+    "democratie": 2.3,
+    "campagne": 29.3
+   },
+   "citations": [
+    {
+     "texte": "Quand il y a plus de 10 millions de pauvres, les perturbations économiques mondiales qui paraissent éloignées deviennent vite des enjeux de survie quotidienne pour des millions de gens.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706182890198928672/thumbnail.webp"
+    },
+    {
+     "texte": "Nous sommes candidats au pouvoir, maintenant, tout de suite, pour tout changer, pour faire la 6ème République, pour partager les richesses, pour faire la bifurcation écologique.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+     "plateforme": "tiktok",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706576066516634913/thumbnail.webp"
+    },
+    {
+     "texte": "Oui, nous allons créer un pôle public du médicament. De toute façon, nous ferons le 100% sécu parce que c'est cinq fois moins cher que le système privé",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+     "plateforme": "tiktok",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706466087755386145/thumbnail.webp"
+    },
+    {
+     "texte": "Nous allons faire exactement le contraire de tout ce qu'ils disent. Notre programme change complètement de logique économique.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706182890198928672/thumbnail.webp"
+    },
+    {
+     "texte": "Nous appliquerons un principe de précaution sanitaire pour chaque produit quand il y a un doute scientifique.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+     "plateforme": "tiktok",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706466087755386145/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "silence",
+     "n": 4,
+     "score": 4.01,
+     "extraits": [
+      {
+       "texte": "Alors c'est à nous de savoir mieux que d'autres, interpréter les silences, répondre aux souffles suspendus ou aux gros soupirs, qui sont autant de protestations muettes souvent autour de nous.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Pourquoi tant de silence ?",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "urss",
+     "n": 3,
+     "score": 3.76,
+     "extraits": [
+      {
+       "texte": "» On ne peut pas imposer aux entreprises un salaire minimum garanti, sinon c'est entré en URSS.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "économique",
+     "n": 3,
+     "score": 3.76,
+     "extraits": [
+      {
+       "texte": "Notre programme change complètement de logique économique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Quand il y a plus de 10 millions de pauvres, les perturbations économiques mondiales qui paraissent éloignées deviennent vite des enjeux de survie quotidienne pour des millions de gens.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "contaminé",
+     "n": 3,
+     "score": 3.76,
+     "extraits": [
+      {
+       "texte": "L'air respiré, l'eau but, les aliments consommés, tout a été contaminé.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et alors, nous interdirons ce produit, ainsi que l'entrée en France des produits des autres nations qui en seraient contaminés.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "conditions",
+     "n": 4,
+     "score": 2.91,
+     "extraits": [
+      {
+       "texte": "Durcissement des conditions d'accès à la retraite, fermeture des services publics, liquidation de l'état social.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Dans un système capitaliste, néolibéral, sa condition économique, sa classe sociale, c'est politique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "services publics",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "Durcissement des conditions d'accès à la retraite, fermeture des services publics, liquidation de l'état social.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Ils font une politique dans un sens, la destruction des services publics, les soi-disant économies, les aides aux entreprises, blablabli, blablabla.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "salaire minimum",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "» On ne peut pas imposer aux entreprises un salaire minimum garanti, sinon c'est entré en URSS.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Aujourd'hui, par exemple, si l'on était soucieux du grand nombre, il faudrait immédiatement bloquer les prix, augmenter le SWIC, indexer les salaires sur l'inflation, rétablir l'accès aux ressources vitales.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "ressources",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "Une différence dans le prix des carburants, dans le prix de l'électricité et dans les prix de ses ressources.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Aujourd'hui, par exemple, si l'on était soucieux du grand nombre, il faudrait immédiatement bloquer les prix, augmenter le SWIC, indexer les salaires sur l'inflation, rétablir l'accès aux ressources vitales.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "équipe",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "Nous sommes maintenant une équipe, nombreuse, et tout le monde le sait, le voit.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "visage",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "Et regardez bien leur visage, beaucoup sont très populaires, parce que c'est les visages de notre futur gouvernement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "décisions",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "C'est un silence stipendier, c'est un silence acheté, car nous savons dorénavant que la santé publique dépend pour l'essentiel de conditions environnementales qui donnent lieu à des décisions politiques.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et au point de départ, ce sont toujours des décisions politiques.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "aliments",
+     "n": 2,
+     "score": 3.42,
+     "extraits": [
+      {
+       "texte": "L'air respiré, l'eau but, les aliments consommés, tout a été contaminé.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et de même, nous savons que contre la maladie, c'est l'accès universel à une alimentation saine la condition de passer à côté.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "peuple",
+     "n": 3,
+     "score": 2.66,
+     "extraits": [
+      {
+       "texte": "C'est devenu les plus hostiles aux droits sociaux du peuple en France.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "C'était la candidature dont le peuple français avait besoin à gauche pour l'emporter en 2027.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "prix",
+     "n": 3,
+     "score": 2.15,
+     "extraits": [
+      {
+       "texte": "Une différence dans le prix des carburants, dans le prix de l'électricité et dans les prix de ses ressources.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Aujourd'hui, par exemple, si l'on était soucieux du grand nombre, il faudrait immédiatement bloquer les prix, augmenter le SWIC, indexer les salaires sur l'inflation, rétablir l'accès aux ressources vitales.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "produit",
+     "n": 3,
+     "score": 2.15,
+     "extraits": [
+      {
+       "texte": "Nous appliquerons un principe de précaution sanitaire pour chaque produit quand il y a un doute scientifique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "contraire",
+     "n": 2,
+     "score": 2.32,
+     "extraits": [
+      {
+       "texte": "Nous allons faire exactement le contraire de tout ce qu'ils disent.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "survie",
+     "n": 2,
+     "score": 2.32,
+     "extraits": [
+      {
+       "texte": "Quand il y a plus de 10 millions de pauvres, les perturbations économiques mondiales qui paraissent éloignées deviennent vite des enjeux de survie quotidienne pour des millions de gens.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Parce que la santé, c'est devenu un problème central pour la survie de notre espèce.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "candidature",
+     "n": 2,
+     "score": 2.32,
+     "extraits": [
+      {
+       "texte": "Ce n'est pas une candidature de plus.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "accès",
+     "n": 3,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "Durcissement des conditions d'accès à la retraite, fermeture des services publics, liquidation de l'état social.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Aujourd'hui, par exemple, si l'on était soucieux du grand nombre, il faudrait immédiatement bloquer les prix, augmenter le SWIC, indexer les salaires sur l'inflation, rétablir l'accès aux ressources vitales.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "santé",
+     "n": 3,
+     "score": 1.56,
+     "extraits": [
+      {
+       "texte": "Ils font une politique dans un sens, la destruction des services publics, les soi-disant économies, les aides aux entreprises, blablabli, blablabla.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On pense qu'on doit garder pour soi les aspects les plus déplaisants de ce qu'on vit, parce qu'on veut mettre avec les autres en partage le bon, le beau, les choses qu'on […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "rendus",
+     "n": 2,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "et s'en n'étaient pas rendus compte.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Personne ne veut être rendu infertile.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "peur",
+     "n": 2,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "Il ne faut pas tourner autour des mots ou en avoir peur.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il n'y a qu'une seule façon de s'affranchir de ces chaînes, élire celles et ceux qui nous ressemblent et qui parlent à vos cœurs plutôt qu'à vos peurs.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "commun",
+     "n": 2,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "Vous êtes ceux qui portez un programme qui s'appelle l'avenir en commun.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "A tous ceux qui payent une complémentaire la santé, cause commune ou pas avec nous, voilà la question.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "meilleur",
+     "n": 2,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "De toute façon, nous ferons le 100% sécu parce que c'est cinq fois moins cher que le système privé, qui comme vous le savez est toujours meilleur.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "alimentation",
+     "n": 2,
+     "score": 1.81,
+     "extraits": [
+      {
+       "texte": "Et de même, nous savons que contre la maladie, c'est l'accès universel à une alimentation saine la condition de passer à côté.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706466087755386145",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "droit",
+     "n": 4,
+     "score": 0.88,
+     "extraits": [
+      {
+       "texte": "C'est devenu les plus hostiles aux droits sociaux du peuple en France.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et puis à la sortie, vous êtes moins soignés, moins éduqués et vous avez moins de droits de toutes sortes.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "république",
+     "n": 2,
+     "score": 1.03,
+     "extraits": [
+      {
+       "texte": "Notre France est ici, la République c'est nous, elle est vivante, liberté, égalité, fraternité.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Nous sommes candidats au pouvoir, maintenant, tout de suite, pour tout changer, pour faire la 6ème République, pour partager les richesses, pour faire la bifurcation écologique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "public",
+     "n": 2,
+     "score": 1.03,
+     "extraits": [
+      {
+       "texte": "Durcissement des conditions d'accès à la retraite, fermeture des services publics, liquidation de l'état social.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Ils font une politique dans un sens, la destruction des services publics, les soi-disant économies, les aides aux entreprises, blablabli, blablabla.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706182890198928672",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "peut-être",
+     "n": 2,
+     "score": 0.86,
+     "extraits": []
+    },
+    {
+     "mot": "gauche",
+     "n": 2,
+     "score": 0.86,
+     "extraits": [
+      {
+       "texte": "En 2027, il n'y a qu'un bouclier, c'est celui de la gauche de russure, c'est celui de l'insoumission.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "C'était la candidature dont le peuple français avait besoin à gauche pour l'emporter en 2027.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7706576066516634913",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "philippe": {
+   "nb_videos": 2,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 23.2,
+    "immigration": 28.1,
+    "ecologie": 0,
+    "education": 37.3,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 11.5
+   },
+   "citations": [
+    {
+     "texte": "Moi, je suis un défenseur de l'apprentissage et de l'alternance.",
+     "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkcTBQOPfR/thumbnail.webp"
+    },
+    {
+     "texte": "On a le droit dans notre pays de dire qu'on a un sujet avec l'intégration dans la nation.",
+     "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfiVd4quj98/thumbnail.webp"
+    },
+    {
+     "texte": "Il faut défendre l'apprentissage, il faut dire à ceux qui le remettent en cause, je pense notamment à M. Mélenchon et à la France Insoumise, que cette filière existe",
+     "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfkcTBQOPfR/thumbnail.webp"
+    },
+    {
+     "texte": "ce qui me choque, c'est pas ce que j'ai dit, c'est ce qui s'est passé, qui est inacceptable.",
+     "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfiVd4quj98/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "emploi",
+     "n": 5,
+     "score": 4.12,
+     "extraits": [
+      {
+       "texte": "son accès à l'emploi.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est pour ça qu'ici, aujourd'hui, avec les acteurs de l'apprentissage, je dis que nous devons développer et protéger cette filière qui forme bien des jeunes gens qui, derrière, ont une insertion dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "apprentis",
+     "n": 3,
+     "score": 4.77,
+     "extraits": [
+      {
+       "texte": "On a un déplacement à Chartres, à l'invitation de la Lysace Bern, le maire de Chartres, que je remercie très sincèrement de son accueil ici, pour consacrer un moment cet après-midi dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Moi, je suis un défenseur de l'apprentissage et de l'alternance.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "apprentissage",
+     "n": 3,
+     "score": 4.77,
+     "extraits": [
+      {
+       "texte": "Moi, je suis un défenseur de l'apprentissage et de l'alternance.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Il faut défendre l'apprentissage, il faut dire à ceux qui le remettent en cause, je pense notamment à M.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "immigration",
+     "n": 3,
+     "score": 4.77,
+     "extraits": [
+      {
+       "texte": "Pas seulement des enfants issus d'immigration, de l'ensemble de notre peuple qui a un lien incroyablement distant avec ce que c'est que la nation.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Accessoirement, elle est issue de l'immigration.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "nation",
+     "n": 4,
+     "score": 3.92,
+     "extraits": [
+      {
+       "texte": "On a le droit dans notre pays de dire qu'on a un sujet avec l'intégration dans la nation.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Notre pays qui, pendant des années, s'est pensé comme un creuset républicain qui faisait que d'où on venait, on pouvait devenir, par l'effort souvent, on pouvait faire un avec la nation française.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "chartres",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "On a un déplacement à Chartres, à l'invitation de la Lysace Bern, le maire de Chartres, que je remercie très sincèrement de son accueil ici, pour consacrer un moment cet après-midi dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "formation",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "On a un déplacement à Chartres, à l'invitation de la Lysace Bern, le maire de Chartres, que je remercie très sincèrement de son accueil ici, pour consacrer un moment cet après-midi dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "filière",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "C'est pour ça qu'ici, aujourd'hui, avec les acteurs de l'apprentissage, je dis que nous devons développer et protéger cette filière qui forme bien des jeunes gens qui, derrière, ont une insertion dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mélenchon et à la France Insoumise, que cette filière existe, qu'elle s'est développée en France, qu'elle fonctionne et qu'elle sera défendue.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "issus",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "Pas seulement des enfants issus d'immigration, de l'ensemble de notre peuple qui a un lien incroyablement distant avec ce que c'est que la nation.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Accessoirement, elle est issue de l'immigration.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "café",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "Elle a un café.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "creuset républicain",
+     "n": 2,
+     "score": 4.43,
+     "extraits": [
+      {
+       "texte": "Notre pays qui, pendant des années, s'est pensé comme un creuset républicain qui faisait que d'où on venait, on pouvait devenir, par l'effort souvent, on pouvait faire un avec la nation française.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "enfants",
+     "n": 4,
+     "score": 2.07,
+     "extraits": [
+      {
+       "texte": "Pas seulement des enfants issus d'immigration, de l'ensemble de notre peuple qui a un lien incroyablement distant avec ce que c'est que la nation.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Elle a mis 6 enfants à l'école, à l'école publique.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "accès",
+     "n": 2,
+     "score": 2.23,
+     "extraits": [
+      {
+       "texte": "On a un déplacement à Chartres, à l'invitation de la Lysace Bern, le maire de Chartres, que je remercie très sincèrement de son accueil ici, pour consacrer un moment cet après-midi dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "90% des apprentis ont accès à un emploi et à un emploi durable.",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "école",
+     "n": 2,
+     "score": 2.23,
+     "extraits": [
+      {
+       "texte": "Elle a mis 6 enfants à l'école, à l'école publique.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "jeunes",
+     "n": 2,
+     "score": 2.03,
+     "extraits": [
+      {
+       "texte": "On a un déplacement à Chartres, à l'invitation de la Lysace Bern, le maire de Chartres, que je remercie très sincèrement de son accueil ici, pour consacrer un moment cet après-midi dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est pour ça qu'ici, aujourd'hui, avec les acteurs de l'apprentissage, je dis que nous devons développer et protéger cette filière qui forme bien des jeunes gens qui, derrière, ont une insertion dans […]",
+       "url": "https://www.instagram.com/reel/DfkcTBQOPfR/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "république",
+     "n": 2,
+     "score": 2.03,
+     "extraits": [
+      {
+       "texte": "A côté de la presse de la République, juste après les émeubles, j'ai été voir une dame.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "travail",
+     "n": 2,
+     "score": 1.49,
+     "extraits": [
+      {
+       "texte": "Quand je vois des jeunes gens pillés, cassés, se foutre totalement de la masse de travail, ça me touche au cœur.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ce qui fait que des parents expliquent à leurs enfants que non, on ne peut pas aller ruiner le travail des autres, prier un magasin.",
+       "url": "https://www.instagram.com/reel/DfiVd4quj98/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "retailleau": {
+   "nb_videos": 6,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 47.1,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 29.3,
+    "logement": 0,
+    "finances": 20.1,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 3.4
+   },
+   "citations": [
+    {
+     "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+     "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfkso3ohknU/thumbnail.webp"
+    },
+    {
+     "texte": "vous connaissez le poids des syndicats dans l'éducation nationale ? Il est énorme",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+     "plateforme": "tiktok",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706632976867642657/thumbnail.webp"
+    },
+    {
+     "texte": "Tout ce qui bouge, on le taxe. Ce qui bouge encore, on le réglemente. Et ce qui ne bouge plus du tout, on le subventionne.",
+     "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfhi6x9N_Ku/thumbnail.webp"
+    },
+    {
+     "texte": "au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706178140510457121/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "bouge",
+     "n": 6,
+     "score": 6.03,
+     "extraits": [
+      {
+       "texte": "Tout ce qui bouge, on le taxe.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Tout ce qui bouge, on le taxe.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "paresse",
+     "n": 4,
+     "score": 5.66,
+     "extraits": [
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, Moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "syndicats",
+     "n": 5,
+     "score": 4.25,
+     "extraits": [
+      {
+       "texte": "Certains syndicats en effet.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "célébrer",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "éducation nationale",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Vous connaissez le poids des syndicats dans l'éducation nationale ?",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "éternelle",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "La France éternelle sera toujours nouvelle.",
+       "url": "https://www.instagram.com/reel/DfjbG-tt6Ih/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La France éternelle sera toujours nouvelle.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706498498316832033",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "réglemente",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Ce qui bouge encore, on le réglemente.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ce qui bouge encore, on le réglemente.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "subventionne",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Et ce qui ne bouge plus du tout, on le subventionne.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Et ce qui ne bouge plus du tout, on le subventionne.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "cassant",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "mensonge",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "travaillez",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "vivrez mieux",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "rousseau",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, Moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "proclamer",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, Moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "opinions",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, Moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "respectables",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors, que Mme Rousseau veuille proclamer un droit à la paresse, Moi, je vais vous dire, toutes les opinions sont respectables.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "crochet",
+     "n": 2,
+     "score": 5.07,
+     "extraits": [
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "sortir",
+     "n": 4,
+     "score": 3.46,
+     "extraits": [
+      {
+       "texte": "Donc ça, il faut en sortir.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "refusent",
+     "n": 2,
+     "score": 3.97,
+     "extraits": [
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "arriver",
+     "n": 2,
+     "score": 3.97,
+     "extraits": [
+      {
+       "texte": "Mais comment peut-on arriver là ?",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Il est énorme, mais comment peut-on arriver là ?",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "taxe",
+     "n": 2,
+     "score": 3.97,
+     "extraits": [
+      {
+       "texte": "Tout ce qui bouge, on le taxe.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Tout ce qui bouge, on le taxe.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "vivent",
+     "n": 2,
+     "score": 3.97,
+     "extraits": [
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "connaissez",
+     "n": 2,
+     "score": 3.46,
+     "extraits": [
+      {
+       "texte": "Vous connaissez le poids des syndicats dans l'éducation nationale ?",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "poids",
+     "n": 2,
+     "score": 3.46,
+     "extraits": [
+      {
+       "texte": "Vous connaissez le poids des syndicats dans l'éducation nationale ?",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "retraite",
+     "n": 2,
+     "score": 3.46,
+     "extraits": [
+      {
+       "texte": "La retraite à 60 ans et la semaine est 35 heures.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La retraite a 60 ans et la semaine est 35 heures.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "haut",
+     "n": 2,
+     "score": 3.13,
+     "extraits": [
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche, qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais on ne peut en sortir qu'en cassant le mensonge très largement de la gauche qui nous a dit qu'avant du haut français, les amis, travaillez moins et vous vivrez mieux.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "profs",
+     "n": 2,
+     "score": 2.88,
+     "extraits": [
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "novembre",
+     "n": 2,
+     "score": 2.88,
+     "extraits": [
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "école",
+     "n": 2,
+     "score": 2.88,
+     "extraits": [
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises.",
+       "url": "https://www.instagram.com/reel/Dfkso3ohknU/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand je pense qu'il y a des profs qui refusent de célébrer pendant dix petites minutes le 11 novembre en France, dans les écoles françaises, et vous avez des syndicats, vous connaissez […]",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706632976867642657",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "société",
+     "n": 2,
+     "score": 2.68,
+     "extraits": [
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.instagram.com/reel/Dfhi6x9N_Ku/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais que, au moins, ceux qui veulent vivre de la paresse ne vivent pas au crochet de la société.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7706178140510457121",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "roussel": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 68.9,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 31.1,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Les mêmes entreprises qui disent qu'on ne peut pas augmenter les salaires, vont mettre la clé sous la porte parce qu'elles ne vendront plus rien.",
+     "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfhwp7hO-Qq/thumbnail.webp"
+    },
+    {
+     "texte": "Tout ce que nous demandons, c'est que le capital paye et que le travail reçoit.",
+     "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfhwp7hO-Qq/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "capital paye",
+     "n": 2,
+     "score": 6.29,
+     "extraits": [
+      {
+       "texte": "Tout ce que nous demandons, c'est que le capital paye et que le travail reçoit.",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Tout ce que nous demandons, c'est que le capital paye et que le travail reçoit.",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "travail reçoit",
+     "n": 2,
+     "score": 6.29,
+     "extraits": [
+      {
+       "texte": "Tout ce que nous demandons, c'est que le capital paye et que le travail reçoit.",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Tout ce que nous demandons, c'est que le capital paye et que le travail reçoit.",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "responsable",
+     "n": 2,
+     "score": 6.29,
+     "extraits": [
+      {
+       "texte": "Et donc qui est responsable ?",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "récession",
+     "n": 2,
+     "score": 6.29,
+     "extraits": [
+      {
+       "texte": "Coupable de conduire notre pays à la récession, il va conduire notre pays à la récession.",
+       "url": "https://www.instagram.com/reel/Dfhwp7hO-Qq/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "tondelier": {
+   "nb_videos": 4,
+   "themes": {
+    "pouvoir-achat": 16.3,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 83.7,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Il faut rappeler qu'il y a 2,3 millions de travailleurs pauvres en France, c'est-à-dire des personnes qui travaillent, et dont les salaires ne permettent pas de se loger dignement",
+     "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfiZUeRvGME/thumbnail.webp"
+    },
+    {
+     "texte": "C'est très rare qu'on parle de l'écologie dans la campagne présidentielle.",
+     "url": "https://www.instagram.com/reel/DfiLkzDBjUs/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfiLkzDBjUs/thumbnail.webp"
+    },
+    {
+     "texte": "je veux des HLM version voiture. Je veux un parc social de voiture, un million de véhicules électriques.",
+     "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfhHQCNTWy0/thumbnail.webp"
+    },
+    {
+     "texte": "je ne serai pas comme Emmanuel Macron, le président qui, après les accords de Paris, n'aurait pas respecté les engagements que la France avait pris",
+     "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfj2yxGTbG0/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "écologie",
+     "n": 6,
+     "score": 4.9,
+     "extraits": [
+      {
+       "texte": "C'est très rare qu'on parle de l'écologie dans la campagne présidentielle.",
+       "url": "https://www.instagram.com/reel/DfiLkzDBjUs/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "J'étais très rassurée pour ceux qui ne la connaissent pas, les ministres de l'écologie.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "voiture",
+     "n": 5,
+     "score": 4.73,
+     "extraits": [
+      {
+       "texte": "Un budget qui divise le fond vert par 4 en 2 ans, qui rabote tout, qui ne permet pas de changer de voiture, qui ne permet pas d'isolé de son logement.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vous payez chaque mois pour votre voiture, puis à la fin, au bout de trois ans, elle ne vous appartient pas.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "électriques",
+     "n": 7,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Ils ont besoin de passer aux véhicules électriques.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "véhicules électriques",
+     "n": 6,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Ils ont besoin de passer aux véhicules électriques.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "protège",
+     "n": 4,
+     "score": 4.53,
+     "extraits": [
+      {
+       "texte": "Et puis aussi, nous, on porterait une écologie qui protège les Français.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "budget",
+     "n": 3,
+     "score": 4.28,
+     "extraits": [
+      {
+       "texte": "Et il dit, à la fin, ça m'a vraiment énervée, il dit, et si vous voulez de l'argent pour l'écologie, il faut un budget.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "isolé",
+     "n": 3,
+     "score": 4.28,
+     "extraits": [
+      {
+       "texte": "Un budget qui divise le fond vert par 4 en 2 ans, qui rabote tout, qui ne permet pas de changer de voiture, qui ne permet pas d'isolé de son logement.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Les Français, ils ont besoin qu'on isole leur logement, ça allégera leur facteur d'électricité.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "climat",
+     "n": 3,
+     "score": 4.28,
+     "extraits": [
+      {
+       "texte": "on a plein de propositions j'en viens au climat politique mais on ne peut pas attendre à chaque fois 6 mois, puis après présidentiel il y aura une autre élection, ça fait […]",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Deuxièmement, j'aurai crédibilité, puisque je ne serai pas comme Emmanuel Macron, le président qui, après les accords de Paris, n'aurait pas respecté les engagements que la France avait pris sur le volant […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "leasing",
+     "n": 3,
+     "score": 3.18,
+     "extraits": [
+      {
+       "texte": "Et par exemple, là, on a fait le leasing.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "monique barbu",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Il dit, pour les solutions, rassurez-vous, j'ai mandaté Monique Barbu pour faire des propositions.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "sécheresse",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Ils ont besoin qu'on lutte contre la sécheresse, ça permettra de baisser le coût de l'alimentation.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "appartient",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Vous payez chaque mois pour votre voiture, puis à la fin, au bout de trois ans, elle ne vous appartient pas.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "parc social",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Je veux un parc social de voiture, un million de véhicules électriques.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Parce que les Français, ils sont surendettés par rapport au climat.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "canicule",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "on a plein de propositions j'en viens au climat politique mais on ne peut pas attendre à chaque fois 6 mois, puis après présidentiel il y aura une autre élection, ça fait […]",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "précédentes",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Il était là aux précédentes, à certaines des précédentes.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "porterait",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Et puis aussi, nous, on porterait une écologie qui protège les Français.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "surendettés",
+     "n": 2,
+     "score": 3.94,
+     "extraits": [
+      {
+       "texte": "Parce que les Français, ils sont surendettés par rapport au climat.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "augmentation",
+     "n": 4,
+     "score": 2.13,
+     "extraits": [
+      {
+       "texte": "Je vais être clair, je considère qu'à ce stade, ce n'est pas une augmentation, c'est une provocation.",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ils attendront la prochaine augmentation.",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "logement",
+     "n": 3,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Un budget qui divise le fond vert par 4 en 2 ans, qui rabote tout, qui ne permet pas de changer de voiture, qui ne permet pas d'isolé de son logement.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Les Français, ils ont besoin qu'on isole leur logement, ça allégera leur facteur d'électricité.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "prochaine",
+     "n": 2,
+     "score": 2.84,
+     "extraits": [
+      {
+       "texte": "Ils attendront la prochaine augmentation.",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "on a plein de propositions j'en viens au climat politique mais on ne peut pas attendre à chaque fois 6 mois, puis après présidentiel il y aura une autre élection, ça fait […]",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "payez",
+     "n": 2,
+     "score": 2.84,
+     "extraits": [
+      {
+       "texte": "Vous payez chaque mois pour votre voiture, puis à la fin, au bout de trois ans, elle ne vous appartient pas.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "décennies",
+     "n": 2,
+     "score": 2.84,
+     "extraits": [
+      {
+       "texte": "on a plein de propositions j'en viens au climat politique mais on ne peut pas attendre à chaque fois 6 mois, puis après présidentiel il y aura une autre élection, ça fait […]",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "octobre",
+     "n": 3,
+     "score": 2.08,
+     "extraits": [
+      {
+       "texte": "Et il dit, Monique Barbu, elle va rendre des propositions début octobre.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "peut-être",
+     "n": 3,
+     "score": 1.88,
+     "extraits": []
+    },
+    {
+     "mot": "annoncé",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Vous dites 24 euros, en réalité, il avait déjà annoncé une augmentation de 1% du SMIC.",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Déjà, je serai là, puisqu'il a quand même annoncé qu'il n'irait pas à la COP 31.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "permet",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Il faut rappeler qu'il y a 2,3 millions de travailleurs pauvres en France, c'est-à-dire des personnes qui travaillent, et dont les salaires ne permettent pas de se loger dignement, de se nourrir […]",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Un budget qui divise le fond vert par 4 en 2 ans, qui rabote tout, qui ne permet pas de changer de voiture, qui ne permet pas d'isolé de son logement.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "alimentation",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Ils ont besoin qu'on lutte contre la sécheresse, ça permettra de baisser le coût de l'alimentation.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "million",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Il faut rappeler qu'il y a 2,3 millions de travailleurs pauvres en France, c'est-à-dire des personnes qui travaillent, et dont les salaires ne permettent pas de se loger dignement, de se nourrir […]",
+       "url": "https://www.instagram.com/reel/DfiZUeRvGME/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je veux un parc social de voiture, un million de véhicules électriques.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "serai",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Déjà, je serai là, puisqu'il a quand même annoncé qu'il n'irait pas à la COP 31.",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Deuxièmement, j'aurai crédibilité, puisque je ne serai pas comme Emmanuel Macron, le président qui, après les accords de Paris, n'aurait pas respecté les engagements que la France avait pris sur le volant […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "payer",
+     "n": 2,
+     "score": 2.33,
+     "extraits": [
+      {
+       "texte": "Vous payez chaque mois pour votre voiture, puis à la fin, au bout de trois ans, elle ne vous appartient pas.",
+       "url": "https://www.instagram.com/reel/DfhHQCNTWy0/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On vit chaque jour à crédit sur la planète, mais aussi on se surendette parce qu'on n'arrive pas à payer notre chauffage, parce qu'on n'est pas isolé dans nos maisons, parce qu'on […]",
+       "url": "https://www.instagram.com/reel/Dfj2yxGTbG0/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "zemmour": {
+   "nb_videos": 4,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 13.5,
+    "immigration": 10.7,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 64.3,
+    "campagne": 11.5
+   },
+   "citations": [
+    {
+     "texte": "Je me présente pour me permettre de conserver une France française et que notre avenir soit français.",
+     "url": "https://www.instagram.com/reel/Dfkt8osOLj_/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfkt8osOLj_/thumbnail.webp"
+    },
+    {
+     "texte": "Il rappelle qu'un homme d'état c'est d'abord quelqu'un qui connaît l'histoire de France par cœur.",
+     "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfhlH1tOaw3/thumbnail.webp"
+    },
+    {
+     "texte": "Les juges interprètent ainsi une loi liberticide que j'abolirai si je suis président, parce que ça permet aux juges d'interdire la liberté d'expression.",
+     "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfk7j9yx7gF/thumbnail.webp"
+    },
+    {
+     "texte": "J'ai été relaxé 30 fois depuis dix ans.",
+     "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfk7j9yx7gF/thumbnail.webp",
+     "position": false
+    }
+   ],
+   "mots": [
+    {
+     "mot": "gaulle",
+     "n": 4,
+     "score": 4.39,
+     "extraits": [
+      {
+       "texte": "J'avais tenu à commencer mon livre, Le Suicide français, par la mort du général de Gaulle parce que pour moi, c'est sans doute là que comment la dégringolade française, le déclin français, […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Voilà, le général de Gaulle c'est ça, c'était quelqu'un qui avait raison contre tous et qui a fini par avoir raison contre tous, qui nous donne une grande leçon.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "coran",
+     "n": 4,
+     "score": 4.39,
+     "extraits": [
+      {
+       "texte": "Le djihad est dans le Coran.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "mort",
+     "n": 3,
+     "score": 4.14,
+     "extraits": [
+      {
+       "texte": "J'avais tenu à commencer mon livre, Le Suicide français, par la mort du général de Gaulle parce que pour moi, c'est sans doute là que comment la dégringolade française, le déclin français, […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Il est condamné à mort par la justice.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "condamné",
+     "n": 3,
+     "score": 4.14,
+     "extraits": [
+      {
+       "texte": "Il faut cependant rappeler qu'il a au contraire été toujours ostracisé, rejeté, insulté, condamné.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Il est condamné à mort par la justice.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "volé",
+     "n": 3,
+     "score": 4.14,
+     "extraits": [
+      {
+       "texte": "Moi, je n'ai volé personne.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Encore une fois, le droit, c'est vous avez volé, vous avez tué.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "musulman",
+     "n": 3,
+     "score": 4.14,
+     "extraits": [
+      {
+       "texte": "D'abord, le musulman n'est pas une race.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "général",
+     "n": 4,
+     "score": 3.29,
+     "extraits": [
+      {
+       "texte": "J'avais tenu à commencer mon livre, Le Suicide français, par la mort du général de Gaulle parce que pour moi, c'est sans doute là que comment la dégringolade française, le déclin français, […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Voilà, le général de Gaulle c'est ça, c'était quelqu'un qui avait raison contre tous et qui a fini par avoir raison contre tous, qui nous donne une grande leçon.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "histoire",
+     "n": 3,
+     "score": 3.04,
+     "extraits": [
+      {
+       "texte": "incarner la France, connaître son histoire.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "déclin",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Et j'ai regardé, j'ai comparé et je me suis dit vraiment qu'aucun candidat, aucun programme ne pouvait enrayer notre déclin et surtout faire que notre avenir sera vraiment français.",
+       "url": "https://www.instagram.com/reel/Dfkt8osOLj_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "J'avais tenu à commencer mon livre, Le Suicide français, par la mort du général de Gaulle parce que pour moi, c'est sans doute là que comment la dégringolade française, le déclin français, […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "conserver",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Je me présente pour me permettre de conserver une France française et que notre avenir soit français.",
+       "url": "https://www.instagram.com/reel/Dfkt8osOLj_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je me présente pour me permettre de conserver une France française et que notre avenir soit français.",
+       "url": "https://www.instagram.com/reel/DfkytbMRxZw/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "ostracisé",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Il faut cependant rappeler qu'il a au contraire été toujours ostracisé, rejeté, insulté, condamné.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Voilà, c'est pour vous dire qu'aujourd'hui, tous ces gens-là passent leur temps à dire qu'il était merveilleux, alors qu'ils l'ont combattu, qu'ils l'ont ostracisé et qu'il était seul face à toutes les […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "télévision",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Il est interdit de télévision, de radio.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "radio",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Il est interdit de télévision, de radio.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "fasciste",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "La gauche le traite de poutchiste, de fasciste, dit qu'il a fait un coup d'état et qu'il est le successeur de Mussolini et de Hitler.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "dictateur",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "La gauche passera son temps à le traiter de dictateur, de fasciste.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "combattu",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Voilà, c'est pour vous dire qu'aujourd'hui, tous ces gens-là passent leur temps à dire qu'il était merveilleux, alors qu'ils l'ont combattu, qu'ils l'ont ostracisé et qu'il était seul face à toutes les […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "quelqu",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "En 1945, il revient en France, il gouverne quelques mois et il est obligé de démissionner car tous les partis politiques, de la gauche, du centre et de la droite, le repoussent […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Voilà, le général de Gaulle c'est ça, c'était quelqu'un qui avait raison contre tous et qui a fini par avoir raison contre tous, qui nous donne une grande leçon.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "incarner",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "incarner la France, connaître son histoire.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "connaître",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "incarner la France, connaître son histoire.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "étranger",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Simplement pour pouvoir la continuer, pour pouvoir la prolonger et pour pouvoir l'incarner et pour savoir exactement ce qu'elle a été pour ne pas la trahir et pour ne pas la soumettre […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "détourné",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Je n'ai pas détourné d'argent public.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je n'ai pas détourné de l'argent public.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "argent public",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Je n'ai pas détourné d'argent public.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je n'ai pas détourné de l'argent public.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "relaxé",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Peut-être, il y en a d'autres, bien sûr, mais il faut que vous voyez aussi toutes les fois où j'ai été relaxé par la justice.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "juges",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Les juges interprètent ainsi une loi liberticide que j'abolirai si je suis président, parce que ça permet aux juges d'interdire la liberté d'expression.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "djihad",
+     "n": 2,
+     "score": 3.8,
+     "extraits": [
+      {
+       "texte": "Le djihad est dans le Coran.",
+       "url": "https://www.instagram.com/reel/Dfk7j9yx7gF/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "avenir",
+     "n": 4,
+     "score": 2.19,
+     "extraits": [
+      {
+       "texte": "Et j'ai regardé, j'ai comparé et je me suis dit vraiment qu'aucun candidat, aucun programme ne pouvait enrayer notre déclin et surtout faire que notre avenir sera vraiment français.",
+       "url": "https://www.instagram.com/reel/Dfkt8osOLj_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je me présente pour me permettre de conserver une France française et que notre avenir soit français.",
+       "url": "https://www.instagram.com/reel/Dfkt8osOLj_/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "gauche",
+     "n": 4,
+     "score": 2.19,
+     "extraits": [
+      {
+       "texte": "On peut aujourd'hui voir que tout le monde, comme il l'avait prédit d'ailleurs, est gaulliste, ou gaullien en tout cas, se réclame du général de Gaulle, de la droite, de la gauche, […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "En 1945, il revient en France, il gouverne quelques mois et il est obligé de démissionner car tous les partis politiques, de la gauche, du centre et de la droite, le repoussent […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "guerre",
+     "n": 3,
+     "score": 2.53,
+     "extraits": [
+      {
+       "texte": "On peut rappeler très vite, dans les années 30, il s'oppose à l'état-major français qui est resté fixé à la guerre 14 pour réclamer une guerre de mouvement et qu'on rassemble les […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "rappeler",
+     "n": 2,
+     "score": 2.7,
+     "extraits": [
+      {
+       "texte": "Il faut cependant rappeler qu'il a au contraire été toujours ostracisé, rejeté, insulté, condamné.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On peut rappeler très vite, dans les années 30, il s'oppose à l'état-major français qui est resté fixé à la guerre 14 pour réclamer une guerre de mouvement et qu'on rassemble les […]",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "époque",
+     "n": 2,
+     "score": 2.7,
+     "extraits": [
+      {
+       "texte": "A l'époque, il y a peu de télévision.",
+       "url": "https://www.instagram.com/reel/DfhlH1tOaw3/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "riner": {
+   "nb_videos": 2,
+   "themes": {
+    "pouvoir-achat": 4.4,
+    "sante": 0,
+    "travail": 0,
+    "securite": 16.5,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 5.6,
+    "logement": 0,
+    "finances": 13.2,
+    "international": 0,
+    "democratie": 2.3,
+    "campagne": 57.9
+   },
+   "citations": [
+    {
+     "texte": "Est-ce être fou de refuser de voir la France s'effondrer sous le poids de la dette un peu plus chaque jour ?",
+     "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfhHrlfIA2V/thumbnail.webp"
+    },
+    {
+     "texte": "La France n'a pas besoin d'un politicien professionnel qui récite des leçons et se querelle à longueur de journée.",
+     "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706120799576542497/thumbnail.webp"
+    },
+    {
+     "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+     "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+     "plateforme": "instagram",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfhHrlfIA2V/thumbnail.webp"
+    },
+    {
+     "texte": "Elle a besoin de bon sens, de fermeté, de justice et d'un état qui remet les choses à l'endroit.",
+     "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706120799576542497/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "refuser",
+     "n": 10,
+     "score": 5.25,
+     "extraits": [
+      {
+       "texte": "Ces mots prononcés il y a quelques années résonnent aujourd'hui comme un avertissement qu'on a refusé d'entendre.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de refuser de voir la France s'effondrer sous le poids de la dette un peu plus chaque jour ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "vive",
+     "n": 4,
+     "score": 3.3,
+     "extraits": [
+      {
+       "texte": "Vive la France, vive la République.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vive la France, vive la République.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "travail",
+     "n": 6,
+     "score": 2.37,
+     "extraits": [
+      {
+       "texte": "Je connais la valeur de l'effort réel et du travail qui mérite le respect.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je connais la valeur de l'effort réel et du travail qui mérite le respect.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "face",
+     "n": 4,
+     "score": 2.79,
+     "extraits": [
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "yeux",
+     "n": 4,
+     "score": 2.79,
+     "extraits": [
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "combat",
+     "n": 4,
+     "score": 2.79,
+     "extraits": [
+      {
+       "texte": "Le combat a toujours fait partie de moi.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Le combat a toujours fait partie de moi.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "crains",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "vivre face",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Aujourd'hui on vit côte à côte, je crains que demain on doit vivre face à face.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "résonnent",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Ces mots prononcés il y a quelques années résonnent aujourd'hui comme un avertissement qu'on a refusé d'entendre.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ces mots prononcés il y a quelques années résonnent aujourd'hui comme un avertissement qu'on a refusé d'entendre.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "avertissement",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Ces mots prononcés il y a quelques années résonnent aujourd'hui comme un avertissement qu'on a refusé d'entendre.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ces mots prononcés il y a quelques années résonnent aujourd'hui comme un avertissement qu'on a refusé d'entendre.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "rues",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Regardez notre pays, regardez nos rues, nos campagnes, nos quartiers.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Regardez notre pays, regardez nos rues, nos campagnes, nos quartiers.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "campagnes",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Regardez notre pays, regardez nos rues, nos campagnes, nos quartiers.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Regardez notre pays, regardez nos rues, nos campagnes, nos quartiers.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "installer",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "renoncement",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "sentiment",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "abandon généralisé",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "On a laissé s'installer la peur, le renoncement et un sentiment d'abandon généralisé.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "appelle teddy",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "teddy riner",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "serail",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Je sais ce qu'on va dire de moi, il est fou, il n'est pas du serail, il n'a pas les codes, il n'a jamais fait de politique.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je ne serai pas ceux qui regardent le pays brûler en se cherchant des excuses.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "codes",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Je sais ce qu'on va dire de moi, il est fou, il n'est pas du serail, il n'a pas les codes, il n'a jamais fait de politique.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je sais ce qu'on va dire de moi, il est fou, il n'est pas du serail, il n'a pas les codes, il n'a jamais fait de politique.",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "posez-vous",
+     "n": 2,
+     "score": 3.82,
+     "extraits": []
+    },
+    {
+     "mot": "effondrer",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Est-ce être fou de refuser de voir la France s'effondrer sous le poids de la dette un peu plus chaque jour ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de refuser de voir la France s'effondrer sous le poids de la dette un peu plus chaque jour ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "riche",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "De voir un pays si riche se raconter pauvre ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "De voir un pays si riche se raconter pauvre ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "raconter pauvre",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "De voir un pays si riche se raconter pauvre ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "De voir un pays si riche se raconter pauvre ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "trouver insupportable",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "père",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "famille serre",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "dents",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Je m'appelle Teddy Riner et aujourd'hui je vous le dis les yeux dans les yeux, je suis candidat à l'élection présidentielle de 2027.",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "remplissant",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce être fou de trouver insupportable qu'un père ou une mère de famille serre les dents en remplissant son caddie ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "tremble",
+     "n": 2,
+     "score": 3.82,
+     "extraits": [
+      {
+       "texte": "ou tremble en voyant son enfant sortir parce qu'on a laissé la rue au voyou et que l'autorité de l'État a disparu ?",
+       "url": "https://www.instagram.com/reel/DfhHrlfIA2V/",
+       "date": "2026-11-09",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "ou tremble en voyant son enfant sortir parce qu'on a laissé la rue au voyou et que l'autorité de l'État a disparu ?",
+       "url": "https://www.tiktok.com/@teddyriner/video/7706120799576542497",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "philippot": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 5.1,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 94.9
+   },
+   "citations": [
+    {
+     "texte": "si c'est pour avoir une nouvelle candidature du système ça ne m'intéresse pas beaucoup",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+     "plateforme": "tiktok",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706493676880432416/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "macroniste",
+     "n": 2,
+     "score": 5.26,
+     "extraits": [
+      {
+       "texte": "Pour le reste, hors du système, en réalité c'est ça qui va devoir éclaircir, parce que si on regarde tout l'entourage de ce qui a été annoncé dans sa campagne, c'est très […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "système",
+     "n": 4,
+     "score": 2.9,
+     "extraits": [
+      {
+       "texte": "Pour le reste, hors du système, en réalité c'est ça qui va devoir éclaircir, parce que si on regarde tout l'entourage de ce qui a été annoncé dans sa campagne, c'est très […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "bon donc c'est très système ça en fait donc il va falloir qu'il précise exactement ce qu'il pense parce qu'on va être dans le coup de com il a parfaitement le droit […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "fiscale",
+     "n": 2,
+     "score": 4.16,
+     "extraits": [
+      {
+       "texte": "Il y a quand même des choses à voir sur la question fiscale, puisqu'il a eu un redressement fiscal assez conséquent.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "droit",
+     "n": 2,
+     "score": 1.96,
+     "extraits": [
+      {
+       "texte": "Bon, d'abord il a parfaitement le droit d'être candidat et j'ai trouvé qu'il y avait parfois un peu de condescendance mal placée.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "bon donc c'est très système ça en fait donc il va falloir qu'il précise exactement ce qu'il pense parce qu'on va être dans le coup de com il a parfaitement le droit […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7706493676880432416",
+       "date": "2026-11-10",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "arthaud": {
+   "nb_videos": 2,
+   "themes": {
+    "pouvoir-achat": 82.4,
+    "sante": 0,
+    "travail": 10.9,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 6.7,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Ce n'est pas parce que vous êtes une très grande entreprise qui fait des super profits que vous payez bien vos salariés.",
+     "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706054662385880353/thumbnail.webp"
+    },
+    {
+     "texte": "nous avons tous besoin de vraies augmentations de salaire. C'est-à-dire de 400, de 500 euros de plus sur la fiche de paye.",
+     "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706220690378214689/thumbnail.webp"
+    },
+    {
+     "texte": "Tous ceux qui déplacent la question du pouvoir d'achat sur le terrain des taxes et du fonctionnement de l'État nous tendent un piège",
+     "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706220690378214689/thumbnail.webp"
+    },
+    {
+     "texte": "Parce que figurez-vous que ces grandes entreprises, c'est aussi le royaume des petits salaires.",
+     "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+     "plateforme": "tiktok",
+     "date": "2026-11-09",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7706054662385880353/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "entreprises",
+     "n": 18,
+     "score": 3.45,
+     "extraits": [
+      {
+       "texte": "Elle nous explique que cela causerait des difficultés aux entreprises.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Parce que figurez-vous que ces grandes entreprises, c'est aussi le royaume des petits salaires.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "difficultés",
+     "n": 7,
+     "score": 4.74,
+     "extraits": [
+      {
+       "texte": "Elle nous explique que cela causerait des difficultés aux entreprises.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et par ailleurs, j'avoue que je ne supporte plus cette idée de dire « Ah mais ça va poser des difficultés aux petites entreprises ».",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "travaille",
+     "n": 8,
+     "score": 3.77,
+     "extraits": [
+      {
+       "texte": "Donc, vous travailleurs, vous ouvriez, mettez vos difficultés dans votre poche, fermez votre bouche et finalement prenez votre mal en patience.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "C'est une provocation contre tous les travailleurs.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "profits",
+     "n": 7,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Ce n'est pas parce que vous êtes une très grande entreprise qui fait des super profits que vous payez bien vos salariés.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "En fait, une partie de leurs bénéfices vont grossir aujourd'hui les profits de total.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "total",
+     "n": 4,
+     "score": 4.23,
+     "extraits": [
+      {
+       "texte": "Aujourd'hui, combien il y a d'agriculteurs, combien il y a de petits artisans qui payent finalement leur contribution à total ?",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "D'abord, comme nous, elles passent à la pompe à essence et elles se font racketter par Total.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "marine",
+     "n": 3,
+     "score": 3.98,
+     "extraits": [
+      {
+       "texte": "J'ai entendu Marine Le Pen dire qu'elle était opposée à la hausse du SMIC, vous vous rendez compte, de 22 euros, mais ce n'est même pas une baguette par jour !",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il y a un espèce de front commun aujourd'hui entre le gouvernement, le patronat et puis beaucoup de politiciens, dont Marine Le Pen, qui est opposée à l'augmentation du SMIC, en expliquant […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "bénéfices",
+     "n": 3,
+     "score": 3.98,
+     "extraits": [
+      {
+       "texte": "En fait, une partie de leurs bénéfices vont grossir aujourd'hui les profits de total.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "C'est qu'en fait, une partie des bénéfices réalisés dans ces petites entreprises se retrouvent ensuite dans les super profits de Total.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "fonctionner",
+     "n": 3,
+     "score": 3.98,
+     "extraits": [
+      {
+       "texte": "Qu'on travaille serveuse dans une boulangerie, qu'on travaille dans une petite entreprise, qu'on travaille comme enseignante, comme moi, finalement tout ce qu'on fait, les richesses qu'on produit, la contribution qu'on donne à […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Non, il faut fièrement dire que nous tous, travailleuses et travailleurs, nous faisons fonctionner la société, nous produisons toutes les richesses et nous devrions avoir tous les droits sur l'utilisation de ces […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "richesses",
+     "n": 5,
+     "score": 2.82,
+     "extraits": [
+      {
+       "texte": "Qu'on travaille serveuse dans une boulangerie, qu'on travaille dans une petite entreprise, qu'on travaille comme enseignante, comme moi, finalement tout ce qu'on fait, les richesses qu'on produit, la contribution qu'on donne à […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et puis, en réalité, ces grandes entreprises, ce sont quand même elles qui aspirent toutes les richesses.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "smic",
+     "n": 5,
+     "score": 2.24,
+     "extraits": [
+      {
+       "texte": "J'ai entendu Marine Le Pen dire qu'elle était opposée à la hausse du SMIC, vous vous rendez compte, de 22 euros, mais ce n'est même pas une baguette par jour !",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il va porter le SMIC, tenez-vous bien, à 1 500 de euros net par mois.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "amazon",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Alors, dites-moi, quelles difficultés ça peut poser à Toyota, Amazon, à la BNP Paribas, à Stellantis, à Renault ?",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Mais quelle difficulté pour les grands groupes qui encaissent des milliards de profits et qui gavent leurs actionnaires pour la BNP Paribas, pour Sanofi, pour Sodexo, pour Stellantis, Amazon, Michelin, enfin bon […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "paribas",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Alors, dites-moi, quelles difficultés ça peut poser à Toyota, Amazon, à la BNP Paribas, à Stellantis, à Renault ?",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Mais quelle difficulté pour les grands groupes qui encaissent des milliards de profits et qui gavent leurs actionnaires pour la BNP Paribas, pour Sanofi, pour Sodexo, pour Stellantis, Amazon, Michelin, enfin bon […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "stellantis",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Alors, dites-moi, quelles difficultés ça peut poser à Toyota, Amazon, à la BNP Paribas, à Stellantis, à Renault ?",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Mais quelle difficulté pour les grands groupes qui encaissent des milliards de profits et qui gavent leurs actionnaires pour la BNP Paribas, pour Sanofi, pour Sodexo, pour Stellantis, Amazon, Michelin, enfin bon […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "salariés",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Ce n'est pas parce que vous êtes une très grande entreprise qui fait des super profits que vous payez bien vos salariés.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il y a plus de 50% des salariés qui travaillent dans les moyennes et grandes entreprises.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "supporte",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Et par ailleurs, j'avoue que je ne supporte plus cette idée de dire « Ah mais ça va poser des difficultés aux petites entreprises ».",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "combien",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Aujourd'hui, combien il y a d'agriculteurs, combien il y a de petits artisans qui payent finalement leur contribution à total ?",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "serveuse",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Qu'on travaille serveuse dans une boulangerie, qu'on travaille dans une petite entreprise, qu'on travaille comme enseignante, comme moi, finalement tout ce qu'on fait, les richesses qu'on produit, la contribution qu'on donne à […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "En réalité, bien sûr qu'il faut regarder du côté du CAC 40 l'argent qui s'y accumule, parce que que l'on travaille comme serveuse dans une boulangerie, y compris dans le secteur public, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "enseignante",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Qu'on travaille serveuse dans une boulangerie, qu'on travaille dans une petite entreprise, qu'on travaille comme enseignante, comme moi, finalement tout ce qu'on fait, les richesses qu'on produit, la contribution qu'on donne à […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "En réalité, bien sûr qu'il faut regarder du côté du CAC 40 l'argent qui s'y accumule, parce que que l'on travaille comme serveuse dans une boulangerie, y compris dans le secteur public, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "réponse",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Et j'espère que cette provocation ne restera pas sans réponse et qu'il y aura lors de la prochaine journée de grève et de manifestation encore plus de monde dans la rue.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Face aux provocations du gouvernement, il n'y a qu'une réponse en fait.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "actionnaires",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Mais quelle difficulté pour les grands groupes qui encaissent des milliards de profits et qui gavent leurs actionnaires pour la BNP Paribas, pour Sanofi, pour Sodexo, pour Stellantis, Amazon, Michelin, enfin bon […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut arrêter de considérer que parce qu'on est ouvrier, parce qu'on est employé, parce qu'on est intérimaire, nos intérêts doivent passer après ceux de tous les autres, après ceux des actionnaires, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "financiers",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Les petites entreprises donnent une partie de leurs bénéfices aux financiers, aux propriétaires immobiliers, aux assurances.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut arrêter de considérer que parce qu'on est ouvrier, parce qu'on est employé, parce qu'on est intérimaire, nos intérêts doivent passer après ceux de tous les autres, après ceux des actionnaires, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "compris",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "En réalité, bien sûr qu'il faut regarder du côté du CAC 40 l'argent qui s'y accumule, parce que que l'on travaille comme serveuse dans une boulangerie, y compris dans le secteur public, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut arrêter de considérer que parce qu'on est ouvrier, parce qu'on est employé, parce qu'on est intérimaire, nos intérêts doivent passer après ceux de tous les autres, après ceux des actionnaires, […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "produisons",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Non, il faut fièrement dire que nous tous, travailleuses et travailleurs, nous faisons fonctionner la société, nous produisons toutes les richesses et nous devrions avoir tous les droits sur l'utilisation de ces […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut prendre sur les profits que nous créons, sur les richesses que nous produisons.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "utile",
+     "n": 2,
+     "score": 3.65,
+     "extraits": [
+      {
+       "texte": "Non, il faut fièrement dire que nous tous, travailleuses et travailleurs, nous faisons fonctionner la société, nous produisons toutes les richesses et nous devrions avoir tous les droits sur l'utilisation de ces […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et elles devraient d'abord et avant tout servir à augmenter les salaires et à ce qui nous est utile, c'est-à-dire à la santé, à l'éducation, au logement, au transport.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "gros",
+     "n": 3,
+     "score": 2.88,
+     "extraits": [
+      {
+       "texte": "Parce que vous savez en fait, les petites entreprises, c'est une loi de cette société, de ce système, qu'elle se fasse écrabouiller par les gros.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Elles sont parasitées, elles aussi, par les plus gros.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "provocation",
+     "n": 3,
+     "score": 2.88,
+     "extraits": [
+      {
+       "texte": "C'est une provocation contre tous les travailleurs.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et j'espère que cette provocation ne restera pas sans réponse et qu'il y aura lors de la prochaine journée de grève et de manifestation encore plus de monde dans la rue.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "salaires",
+     "n": 7,
+     "score": 1.8,
+     "extraits": [
+      {
+       "texte": "Parce que figurez-vous que ces grandes entreprises, c'est aussi le royaume des petits salaires.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut dire à Monseigneur qui vient d'augmenter le SMIC de 8 euros que nous avons tous besoin de vraies augmentations de salaire.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "société",
+     "n": 4,
+     "score": 2.29,
+     "extraits": [
+      {
+       "texte": "Parce que vous savez en fait, les petites entreprises, c'est une loi de cette société, de ce système, qu'elle se fasse écrabouiller par les gros.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Non, il faut fièrement dire que nous tous, travailleuses et travailleurs, nous faisons fonctionner la société, nous produisons toutes les richesses et nous devrions avoir tous les droits sur l'utilisation de ces […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "augmenter",
+     "n": 4,
+     "score": 2.04,
+     "extraits": [
+      {
+       "texte": "Alors on entend dire que c'est une augmentation de 25 euros, mais en fait c'est même pas vrai, parce que le SMIC est indexé sur l'inflation et automatiquement il devait augmenter au […]",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut dire à Monseigneur qui vient d'augmenter le SMIC de 8 euros que nous avons tous besoin de vraies augmentations de salaire.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "travailleurs",
+     "n": 4,
+     "score": 1.84,
+     "extraits": [
+      {
+       "texte": "Donc, vous travailleurs, vous ouvriez, mettez vos difficultés dans votre poche, fermez votre bouche et finalement prenez votre mal en patience.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706054662385880353",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "C'est une provocation contre tous les travailleurs.",
+       "url": "https://www.tiktok.com/@nathaliearthaud/video/7706220690378214689",
+       "date": "2026-11-09",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "kazib": {
+   "nb_videos": 2,
+   "themes": {
+    "pouvoir-achat": 43.3,
+    "sante": 0,
+    "travail": 43.5,
+    "securite": 3.2,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 5.9,
+    "logement": 0,
+    "finances": 4.1,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "il n'y a qu'une seule solution à tout ça. C'est l'auto-organisation. C'est de construire par en bas.",
+     "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfjilq5gbbD/thumbnail.webp"
+    },
+    {
+     "texte": "il faut minimum 400 balles par mois à toutes et à tous pour commencer à sortir un petit peu la tête de l'eau.",
+     "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfiffynsurm/thumbnail.webp"
+    },
+    {
+     "texte": "Il faut en finir avec les classes surchargées, le manque de profs, le manque de médecins, d'infirmiers, etc.",
+     "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+     "plateforme": "instagram",
+     "date": "2026-11-10",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfiffynsurm/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "patrons",
+     "n": 10,
+     "score": 4.2,
+     "extraits": [
+      {
+       "texte": "donc tous celles et ceux qui sont mobilisés depuis le début, et qui voient que 7 euros c'est une mascarade, les amis on devrait exiger 400 euros d'augmentation de salaire pour toutes […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ah, merci patron.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "cfdt",
+     "n": 7,
+     "score": 3.87,
+     "extraits": [
+      {
+       "texte": "La famille, vous avez capté que la CFDT et FO, ils n'appellent pas à la grève le 17 novembre.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "galère",
+     "n": 6,
+     "score": 3.72,
+     "extraits": [
+      {
+       "texte": "donc tous celles et ceux qui sont mobilisés depuis le début, et qui voient que 7 euros c'est une mascarade, les amis on devrait exiger 400 euros d'augmentation de salaire pour toutes […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La vérité, on est tous en galère, les amis.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "vérité",
+     "n": 6,
+     "score": 3.72,
+     "extraits": [
+      {
+       "texte": "La vérité, non.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "il a baissé de quelques centimes, mais la vérité le carburant est au-dessus de 2 euros encore et c'est concrètement des gens qui mettent des 150 balles d'essence à chaque fois pour […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "miettes",
+     "n": 5,
+     "score": 3.56,
+     "extraits": [
+      {
+       "texte": "C'était une mascarade, c'était pour donner des miettes, pour que la CFDT et FO, ils se taillent.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "donc oui il faut commencer à s'organiser par en bas éviter merde éviter de se faire niquer par de la bureaucratie syndicale qui dès que tu lui jettes une miette, ils sont […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "revendications",
+     "n": 5,
+     "score": 3.56,
+     "extraits": [
+      {
+       "texte": "La famille, venez on commence pour de vrai, venez on commence pour de vrai, à utiliser nos réseaux sociaux pour imposer des vrais mots d'ordre les amis, des vraies revendications sur la […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais est-ce que là, il y a des revendications concrètes qu'on est en train de défendre ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "centimes",
+     "n": 5,
+     "score": 3.56,
+     "extraits": [
+      {
+       "texte": "il a baissé de quelques centimes, mais la vérité le carburant est au-dessus de 2 euros encore et c'est concrètement des gens qui mettent des 150 balles d'essence à chaque fois pour […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est quoi ces conneries de négociations avec le gouvernement pour rajouter au final 15 centimes de l'heure ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "train",
+     "n": 10,
+     "score": 2.59,
+     "extraits": [
+      {
+       "texte": "C'est pas ça ce qui est en train de se passer.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Mais est-ce que là, il y a des revendications concrètes qu'on est en train de défendre ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "euros",
+     "n": 25,
+     "score": 1.66,
+     "extraits": [
+      {
+       "texte": "C'est pas une dinguerie suite aux vieilles négociations tout pour rave parce qu'on t'a donné 7 euros.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "donc tous celles et ceux qui sont mobilisés depuis le début, et qui voient que 7 euros c'est une mascarade, les amis on devrait exiger 400 euros d'augmentation de salaire pour toutes […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "lycées",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "à la base entre nous, travailleuses, travailleurs, jeunes des quartiers, des lycées, des universités, des assemblées générales souveraines, des AG Interpro, dans lesquelles nous on va faire le travail, parce que tout […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "merde",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "Et là, le 5 novembre, plutôt que de nous donner une date pour qu'on sache « Ah, il y a grève le 5, il y a grève ceci, le 6 » ou […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "donc oui il faut commencer à s'organiser par en bas éviter merde éviter de se faire niquer par de la bureaucratie syndicale qui dès que tu lui jettes une miette, ils sont […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "bureaucratie syndicale",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "Le rôle de la bureaucratie syndicale.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "donc oui il faut commencer à s'organiser par en bas éviter merde éviter de se faire niquer par de la bureaucratie syndicale qui dès que tu lui jettes une miette, ils sont […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "intermédiaires",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "Il y a un terme que vous connaissez, les corps intermédiaires.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "commence",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "donc oui il faut commencer à s'organiser par en bas éviter merde éviter de se faire niquer par de la bureaucratie syndicale qui dès que tu lui jettes une miette, ils sont […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La famille, venez on commence pour de vrai, venez on commence pour de vrai, à utiliser nos réseaux sociaux pour imposer des vrais mots d'ordre les amis, des vraies revendications sur la […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "cartes",
+     "n": 4,
+     "score": 3.36,
+     "extraits": [
+      {
+       "texte": "On te dit n'importe quel montant, tu mets un coup de carte bleue, ça va.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand les gens sont partis taper des cartes Pokémon, mais vous croyez qu'ils sont partis prendre des cartes Pokémon pour jouer à Pokémon ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "caddie",
+     "n": 8,
+     "score": 2.38,
+     "extraits": [
+      {
+       "texte": "donc tous celles et ceux qui sont mobilisés depuis le début, et qui voient que 7 euros c'est une mascarade, les amis on devrait exiger 400 euros d'augmentation de salaire pour toutes […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "400 euros, c'est un bon caddie.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "jeunesse",
+     "n": 6,
+     "score": 2.63,
+     "extraits": [
+      {
+       "texte": "Si c'est pas un scandale, ça les amis, sérieusement, mais tournez le dos comme le fait la CFDT, force ouvrière, à la jeunesse, c'est dire à la jeunesse, allez vous faire foutre.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Moi, je suis pour qu'on défende les revendications de la jeunesse, c'est clair et net.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "pris",
+     "n": 6,
+     "score": 2.63,
+     "extraits": [
+      {
+       "texte": "Et vous avez pris des miettes sur des mains arrachées et des yeux éborgnés.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "il a baissé de quelques centimes, mais la vérité le carburant est au-dessus de 2 euros encore et c'est concrètement des gens qui mettent des 150 balles d'essence à chaque fois pour […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "grève",
+     "n": 5,
+     "score": 2.46,
+     "extraits": [
+      {
+       "texte": "La famille, vous avez capté que la CFDT et FO, ils n'appellent pas à la grève le 17 novembre.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "casse",
+     "n": 5,
+     "score": 2.46,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "final",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "Et là, le 5 novembre, plutôt que de nous donner une date pour qu'on sache « Ah, il y a grève le 5, il y a grève ceci, le 6 » ou […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est quoi ces conneries de négociations avec le gouvernement pour rajouter au final 15 centimes de l'heure ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "rôle",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "réseaux sociaux",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "La famille, venez on commence pour de vrai, venez on commence pour de vrai, à utiliser nos réseaux sociaux pour imposer des vrais mots d'ordre les amis, des vraies revendications sur la […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "et le 17 octobre, il est arrivé sur les réseaux sociaux autour de quoi ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "gosses",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "Ton gosse dit, papa, maman, je veux tel truc, tel jouet.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "des gosses, des gamins dans des écoles qui sont entassés, 37, 38 dans des classes, il n'y a même pas de chauffage Les TI, ça cogne.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "cartes pokémon",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "On te dit n'importe quel montant, tu mets un coup de carte bleue, ça va.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Quand les gens sont partis taper des cartes Pokémon, mais vous croyez qu'ils sont partis prendre des cartes Pokémon pour jouer à Pokémon ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "packs",
+     "n": 3,
+     "score": 3.11,
+     "extraits": [
+      {
+       "texte": "Les gens qui sont partis dans des Franprix, etc., qui sont sortis avec des packs de lait, du sopalin.",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "négociations",
+     "n": 2,
+     "score": 2.77,
+     "extraits": [
+      {
+       "texte": "C'est pas une dinguerie suite aux vieilles négociations tout pour rave parce qu'on t'a donné 7 euros.",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est quoi ces conneries de négociations avec le gouvernement pour rajouter au final 15 centimes de l'heure ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "garde",
+     "n": 2,
+     "score": 2.77,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Parce que je ne sais pas pour vous, mais celles et ceux qui me regardaient, est-ce que ça va bien pour vous, dans votre quotidien ?",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "virer",
+     "n": 2,
+     "score": 2.77,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "mettent",
+     "n": 2,
+     "score": 2.77,
+     "extraits": [
+      {
+       "texte": "continuez à vous faire éborgner, continuez à vous faire arracher des mains, continuez à finir en garde à vue, faites-vous virer de tous vos lycées, nous on se casse, on a obtenu […]",
+       "url": "https://www.instagram.com/reel/Dfjilq5gbbD/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "il a baissé de quelques centimes, mais la vérité le carburant est au-dessus de 2 euros encore et c'est concrètement des gens qui mettent des 150 balles d'essence à chaque fois pour […]",
+       "url": "https://www.instagram.com/reel/Dfiffynsurm/",
+       "date": "2026-11-10",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "publie_le": "2026-11-16"
+}
