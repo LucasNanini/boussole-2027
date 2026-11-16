@@ -181,7 +181,7 @@ function Jeu() {
   const n = numeroDuJour()
   const rep = useMemo(() => mystere(n), [n])
   const board = useMemo(() => plateau(n, rep), [n, rep])
-  const clues = useMemo(() => indices(rep), [rep])
+  const clues = useMemo(() => indicesDuJour(n, rep), [n, rep])
   const key = `qec-${n}`
   const [etat, setEtat] = useState(() => store.get(key, { essais: [], fini: false, gagne: false }))
   const defi = useMemo(() => defiRecu(n), [n])
@@ -362,7 +362,7 @@ function Resultat({ n, rep, etat, clues }) {
           </div>
           <div className="divider stack8">
             <span className="eyebrow">Les 6 indices</span>
-            {clues.map((c, i) => <span key={i} className="small">{i + 1} · {c.texte}</span>)}
+            {clues.map((c, i) => <span key={i} className="small">{i + 1} · {c.texte}{c.source && <> · <a href={c.source} target="_blank" rel="noreferrer">{c.type === 'Citation' ? 'Voir la vidéo' : 'Source'}</a></>}</span>)}
             <span className="small muted">Sources : <SourceLinks ids={rep.sources} /></span>
           </div>
           <a className="b" href={`#fiche-${rep.id}`}>Voir sa fiche</a>
@@ -637,6 +637,13 @@ function poolKikadi(n) {
     }
   }
   return pool
+}
+// Indices de KYESSE ? : citations de L'hebdo du mystère, en évitant celles du KIKADI ? du jour
+function indicesDuJour(n, rep) {
+  const kk = new Set((kikadiDuJour(n) || []).map((q) => q.key))
+  const siennes = poolKikadi(n).filter((q) => q.id === rep.id)
+  const libres = siennes.filter((q) => !kk.has(q.key))
+  return indices(rep, n, libres.length ? libres : siennes)
 }
 function kikadiDuJour(n) {
   const pool = poolKikadi(n)
@@ -1039,7 +1046,7 @@ function Methodo() {
         <h2>« Principaux »</h2>
         <p>Candidats testés dans les intentions de vote nationales récentes. Les autres sont tous dans l'onglet « Tous les déclarés ».</p>
         <h2>KYESSE ? (le mystère du jour)</h2>
-        <p>Un tirage fixé à l'avance, le même pour tout le monde. Seules les candidatures avec une ligne politique sourcée y entrent. Les modes fondés sur les programmes (À l'aveugle, Mon cap) n'incluront que les candidats ayant publié un programme.</p>
+        <p>Un tirage fixé à l'avance, le même pour tout le monde. Seules les candidatures avec une ligne politique sourcée y entrent. Les 6 indices changent chaque jour et vont du plus dur au plus facile : d'abord une anecdote de vie (sourcée) ou une citation mot pour mot tirée de L'hebdo, puis la ligne, le parcours ou la date d'annonce, et enfin la famille politique, la fonction ou le parti. Les modes fondés sur les programmes (À l'aveugle, Mon cap) n'incluront que les candidats ayant publié un programme.</p>
         <h2>L'hebdo et les thèmes</h2>
         <p>Chaque lundi, nous relevons les vidéos publiées sur les comptes officiels des candidats. Les citations sont reproduites mot pour mot, avec un lien vers la vidéo. Chaque passage reçoit un des 12 thèmes ci-dessous ; un humain relit avant publication. On ne publie aucun classement de popularité ni de vues : ce n'est pas un sondage.</p>
         <ul>{THEMES.themes.map((t) => <li key={t.id}><b>{t.label}</b> — ex. {t.exemples.join(', ')}</li>)}</ul>
