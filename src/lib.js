@@ -102,6 +102,29 @@ export function plateau(numero, reponse) {
 // 6 indices, tirés à nouveau chaque jour (graine = numéro du jour), du plus dur au plus facile :
 // 1-2 : une anecdote de vie et/ou une citation de L'hebdo · 3-4 : ligne, expérience, date, anecdote plus connue
 // 5-6 : deux parmi famille politique, fonction et parti (le parti, le plus révélateur, toujours en dernier s'il sort).
+const SIGNES = [[120, 'Capricorne'], [219, 'Verseau'], [321, 'Poissons'], [420, 'Bélier'], [521, 'Taureau'], [621, 'Gémeaux'], [723, 'Cancer'], [823, 'Lion'], [923, 'Vierge'], [1023, 'Balance'], [1122, 'Scorpion'], [1222, 'Sagittaire'], [1232, 'Capricorne']]
+export function signe(iso) {
+  const [, m, d] = iso.split('-').map(Number)
+  return SIGNES.find(([lim]) => m * 100 + d < lim)[1]
+}
+// Âge, signe astrologique et ville natale, calculés à partir de la fiche (date : celle du jour de jeu)
+function faitsSimples(c, n) {
+  const il = c.genre === 'f' ? 'Elle' : 'Il'
+  const e = c.genre === 'f' ? 'e' : ''
+  const src = c.source_naissance
+  const out = []
+  if (c.naissance) {
+    const jour = new Date(Date.UTC(2026, 10, 14) + (n - 1) * 864e5)
+    const [y, m, d] = c.naissance.split('-').map(Number)
+    const age = jour.getUTCFullYear() - y - ((jour.getUTCMonth() + 1) * 100 + jour.getUTCDate() < m * 100 + d ? 1 : 0)
+    out.push({ texte: `${il} a ${age} ans.`, source: src, niveau: 'moyen' })
+    out.push({ texte: `Signe astrologique : ${signe(c.naissance)}.`, source: src, niveau: 'dur' })
+  }
+  const dejaNe = (c.faits || []).some((f) => /\bnée? (à|en|au)\b/.test(f.texte))
+  if (c.ne_a && !dejaNe) out.push({ texte: `${il} est né${e} à ${c.ne_a}.`, source: src, niveau: 'moyen' })
+  return out
+}
+
 export function indices(c, n = 1, citations = []) {
   const r = rng(n * 104729 + 17)
   const pick = (arr) => arr.splice(Math.floor(r() * arr.length), 1)[0]
@@ -109,10 +132,10 @@ export function indices(c, n = 1, citations = []) {
     ? `Déjà candidat·e à la présidentielle en ${c.candidatures.join(', ').replace(/, (\d+)$/, ' et $1')}.`
     : 'Jamais candidat·e à une présidentielle jusqu\'ici.'
   const fait = (f) => ({ type: 'Anecdote', texte: f.texte, source: f.source })
-  const faits = shuffle(c.faits || [], n * 31 + 7)
+  const faits = shuffle([...(c.faits || []), ...faitsSimples(c, n)], n * 31 + 7)
   const durs = faits.filter((f) => f.niveau === 'dur').map(fait)
   const moyens = [
-    ...faits.filter((f) => f.niveau !== 'dur').map(fait),
+    ...faits.filter((f) => f.niveau === 'moyen' || !f.niveau).map(fait),
     { type: 'Date clé', texte: c.annonce ? `Candidature annoncée le ${dateFr(c.annonce)}.` : `${c.annonce_texte[0].toUpperCase()}${c.annonce_texte.slice(1)}.` },
     { type: 'Expérience', texte: exp },
     { type: 'Ligne', texte: c.ligne },
@@ -130,6 +153,9 @@ export function indices(c, n = 1, citations = []) {
     { type: 'Famille politique', texte: FAMILLES[c.famille].label, bloc: blocOf(c) },
     { type: 'Fonction', texte: c.fonction },
   ]
+  // anecdotes « faciles » (ex. un parent très connu) : seulement en fin de partie, à la place de la famille ou de la fonction
+  const facile = shuffle(faits.filter((f) => f.niveau === 'facile'), n)[0]
+  if (facile) faciles.splice(Math.floor(r() * 2), 1, fait(facile))
   const m = [milieu.length ? pick(milieu) : pick(faciles), milieu.length ? pick(milieu) : pick(faciles)]
   // 5-6 : le parti en dernier, sauf de temps en temps (famille + fonction)
   const fin = faciles.length === 2

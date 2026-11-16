@@ -5,7 +5,7 @@
   "regle_couleur": "Famille politique telle que classée par la source ; remplacée par la nuance du ministère de l'Intérieur dès publication. Bleu = droite et extrême droite, rouge = gauche et extrême gauche, vert = écologistes, gris = centre et divers.",
   "regle_principaux": "BROUILLON À VALIDER : candidats testés dans les intentions de vote nationales récentes.",
   "statut_donnees": "brouillon — chaque fiche doit être relue avant mise en ligne",
-  "regle_faits": "Anecdotes de vie (KYESSE ?) : vérifiées le 16/11/2026 dans la source indiquée, sans santé, religion, vie privée ni affaire judiciaire. À relire."
+  "regle_faits": "Anecdotes de vie (KYESSE ?) : vérifiées le 16/11/2026 dans la source indiquée. Famille : seulement parents et fratrie, jamais conjoint ni enfants. Rien sur la santé, la religion ou les affaires judiciaires. Âge, signe astrologique et ville de natale sont calculés à partir de « naissance » et « ne_a »."
  },
  "sources": {
   "R": {
@@ -89,7 +89,10 @@
      "source": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
      "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "f",
+   "naissance": "1970-02-23",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud"
   },
   {
    "id": "asselineau",
@@ -128,8 +131,17 @@
      "texte": "Passionné par l'Asie et l'Océanie, il parle japonais.",
      "source": "https://fr.wikipedia.org/wiki/François_Asselineau",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père était ingénieur à Gaz de France.",
+     "source": "https://fr.wikipedia.org/wiki/François_Asselineau",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1957-09-14",
+   "ne_a": "Paris",
+   "source_naissance": "https://fr.wikipedia.org/wiki/François_Asselineau"
   },
   {
    "id": "attal",
@@ -165,8 +177,17 @@
      "texte": "Étudiant, il a effectué une mission auprès du directeur de la villa Médicis, à Rome.",
      "source": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père était avocat et producteur de cinéma.",
+     "source": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1989-03-16",
+   "ne_a": "Clamart, dans les Hauts-de-Seine",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Gabriel_Attal"
   },
   {
    "id": "batho",
@@ -203,7 +224,10 @@
      "source": "https://fr.wikipedia.org/wiki/Delphine_Batho",
      "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "f",
+   "naissance": "1973-03-24",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Delphine_Batho"
   },
   {
    "id": "becht",
@@ -242,7 +266,10 @@
      "source": "https://fr.wikipedia.org/wiki/Olivier_Becht",
      "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "m",
+   "ne_a": "Strasbourg",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Olivier_Becht"
   },
   {
    "id": "bonnal",
@@ -260,7 +287,8 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/bonnal",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "bouamrane",
@@ -296,8 +324,14 @@
      "texte": "Il a été élu conseiller municipal à seulement 22 ans.",
      "source": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père était ouvrier du bâtiment.",
+     "source": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "branco",
@@ -332,8 +366,14 @@
      "texte": "Il a brièvement été enseignant-chercheur à l'université Yale, aux États-Unis.",
      "source": "https://fr.wikipedia.org/wiki/Juan_Branco",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père est un producteur de cinéma portugais, sa mère une psychanalyste espagnole.",
+     "source": "https://fr.wikipedia.org/wiki/Juan_Branco",
+     "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "delmur",
@@ -350,7 +390,8 @@
     "S"
    ],
    "fiche": "https://presitracker2027.fr/candidats/delmur",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "f"
   },
   {
    "id": "dubuisson",
@@ -380,7 +421,8 @@
      "source": "https://presitracker2027.fr/candidats/dubuisson",
      "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "dupont-aignan",
@@ -405,7 +447,18 @@
    ],
    "conflit": "Date d'annonce : 2025-03-08 selon presitracker, 2026-09-19 selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/dupontaignan",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m",
+   "naissance": "1961-03-07",
+   "ne_a": "Paris",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
+   "faits": [
+    {
+     "texte": "Son père était courtier en vin, et son grand-père aviateur.",
+     "source": "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "durif",
@@ -425,7 +478,8 @@
    ],
    "conflit": "Étiquette : « Sans étiquette » selon presitracker, « Elvita » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/durif",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "egger",
@@ -444,7 +498,15 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/egger",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "f",
+   "faits": [
+    {
+     "texte": "Elle a grandi en Ardèche.",
+     "source": "https://fr.wikipedia.org/wiki/Clara_Egger",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "glucksmann",
@@ -466,7 +528,18 @@
    ],
    "conflit": "Étiquette : « Place publique, avec le PS et la GRS » selon presitracker, « Place publique » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/glucksmann",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m",
+   "naissance": "1979-10-15",
+   "ne_a": "Boulogne-Billancourt",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Raphaël_Glucksmann",
+   "faits": [
+    {
+     "texte": "Son père était un philosophe et essayiste très connu.",
+     "source": "https://fr.wikipedia.org/wiki/Raphaël_Glucksmann",
+     "niveau": "facile"
+    }
+   ]
   },
   {
    "id": "herlin",
@@ -484,7 +557,8 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/herlin",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "kazib",
@@ -503,7 +577,18 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/kazib",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m",
+   "naissance": "1987-01-02",
+   "ne_a": "Sarcelles, dans le Val-d'Oise",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Anasse_Kazib",
+   "faits": [
+    {
+     "texte": "Son père était aiguilleur à la SNCF.",
+     "source": "https://fr.wikipedia.org/wiki/Anasse_Kazib",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "labib",
@@ -522,7 +607,8 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/labib",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "f"
   },
   {
    "id": "lalanne",
@@ -541,7 +627,18 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/lalanne",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m",
+   "naissance": "1958-08-08",
+   "ne_a": "Bayonne",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Francis_Lalanne",
+   "faits": [
+    {
+     "texte": "L'un de ses frères est réalisateur, un autre guitariste et compositeur.",
+     "source": "https://fr.wikipedia.org/wiki/Francis_Lalanne",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "le-pen",
@@ -566,7 +663,18 @@
    ],
    "conflit": "Éligibilité suspendue à une décision de justice ; Jordan Bardella cité comme possible remplaçant (C).",
    "fiche": "https://presitracker2027.fr/candidats/lepen",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "f",
+   "naissance": "1968-08-05",
+   "ne_a": "Neuilly-sur-Seine",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Marine_Le_Pen",
+   "faits": [
+    {
+     "texte": "Son père a fondé et longtemps présidé un parti politique.",
+     "source": "https://fr.wikipedia.org/wiki/Marine_Le_Pen",
+     "niveau": "facile"
+    }
+   ]
   },
   {
    "id": "legendre",
@@ -585,7 +693,8 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/legendre",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "lisnard",
@@ -621,8 +730,16 @@
      "texte": "Dans les années 1990, il a tenu des magasins de vêtements pour enfants.",
      "source": "https://fr.wikipedia.org/wiki/David_Lisnard",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père était footballeur professionnel, sa mère danseuse de ballet.",
+     "source": "https://fr.wikipedia.org/wiki/David_Lisnard",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1969-02-02",
+   "source_naissance": "https://fr.wikipedia.org/wiki/David_Lisnard"
   },
   {
    "id": "markovic",
@@ -641,7 +758,8 @@
     "F"
    ],
    "fiche": "https://presitracker2027.fr/candidats/markovic",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "f"
   },
   {
    "id": "mathieu",
@@ -672,7 +790,8 @@
      "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages",
      "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "melenchon",
@@ -713,8 +832,16 @@
      "texte": "Il a dessiné des caricatures pour un hebdomadaire jurassien sous le pseudonyme « Moz ».",
      "source": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
      "niveau": "dur"
+    },
+    {
+     "texte": "Son père était receveur des PTT et sa mère institutrice.",
+     "source": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1951-08-19",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon"
   },
   {
    "id": "mikolajczak",
@@ -740,7 +867,8 @@
      "source": "https://presitracker2027.fr/candidats/mikolajczak",
      "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "mlekuz",
@@ -771,7 +899,8 @@
      "source": "https://presitracker2027.fr/candidats/mlekuz",
      "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "philippe",
@@ -807,8 +936,17 @@
      "texte": "Il a passé son baccalauréat à Bonn, en Allemagne, où son père dirigeait le lycée français.",
      "source": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
      "niveau": "dur"
+    },
+    {
+     "texte": "Sa mère était professeure de français.",
+     "source": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1970-11-28",
+   "ne_a": "Rouen",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Édouard_Philippe"
   },
   {
    "id": "philippot",
@@ -843,8 +981,21 @@
      "texte": "Pour financer ses études, il a réalisé des enquêtes partout en France comme indépendant.",
      "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
      "niveau": "dur"
+    },
+    {
+     "texte": "Ses deux parents étaient enseignants dans le primaire.",
+     "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Son frère a dirigé les études politiques d'un grand institut de sondage.",
+     "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+     "niveau": "moyen"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1981-10-24",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Florian_Philippot"
   },
   {
    "id": "platret",
@@ -876,7 +1027,8 @@
      "source": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gilles-platret",
      "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m"
   },
   {
    "id": "polony",
@@ -911,8 +1063,17 @@
      "texte": "Elle a été professeure de lettres stagiaire dans un lycée d'Épinay-sur-Seine avant de quitter l'Éducation nationale.",
      "source": "https://fr.wikipedia.org/wiki/Natacha_Polony",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père était gastro-entérologue et sa mère ophtalmologue.",
+     "source": "https://fr.wikipedia.org/wiki/Natacha_Polony",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "f",
+   "naissance": "1975-04-15",
+   "ne_a": "Paris",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Natacha_Polony"
   },
   {
    "id": "retailleau",
@@ -949,8 +1110,17 @@
      "texte": "Cavalier depuis l'âge de 10 ans, il a mis en scène pendant vingt-deux ans la Cinéscénie du Puy du Fou.",
      "source": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père était négociant en grains.",
+     "source": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1960-11-20",
+   "ne_a": "Cholet, dans le Maine-et-Loire",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Bruno_Retailleau"
   },
   {
    "id": "revillon-dapreval",
@@ -967,7 +1137,8 @@
     "S"
    ],
    "fiche": "https://presitracker2027.fr/candidats/revillondapreval",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "riner",
@@ -1005,7 +1176,11 @@
      "source": "https://fr.wikipedia.org/wiki/Teddy_Riner",
      "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1989-04-07",
+   "ne_a": "Pointe-à-Pitre, en Guadeloupe",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Teddy_Riner"
   },
   {
    "id": "rohou",
@@ -1023,7 +1198,8 @@
     "R"
    ],
    "fiche": "https://presitracker2027.fr/candidats/rohou",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "roussel",
@@ -1061,8 +1237,16 @@
      "texte": "Il est né en 1969 à Béthune, dans le Pas-de-Calais.",
      "source": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père était journaliste, puis réalisateur de documentaires pour la télévision.",
+     "source": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1969-04-16",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Fabien_Roussel"
   },
   {
    "id": "ruffin",
@@ -1098,8 +1282,16 @@
      "texte": "Il est né à Calais mais a grandi à Amiens.",
      "source": "https://fr.wikipedia.org/wiki/François_Ruffin",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père était cadre chez un grand industriel des légumes en conserve.",
+     "source": "https://fr.wikipedia.org/wiki/François_Ruffin",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1975-10-18",
+   "source_naissance": "https://fr.wikipedia.org/wiki/François_Ruffin"
   },
   {
    "id": "saforcada",
@@ -1116,7 +1308,8 @@
     "S"
    ],
    "fiche": "https://presitracker2027.fr/candidats/saforcada",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "genre": "m"
   },
   {
    "id": "tondelier",
@@ -1153,8 +1346,16 @@
      "texte": "Après une classe préparatoire littéraire, elle a étudié à Sciences Po Lille.",
      "source": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père est médecin et sa mère dentiste.",
+     "source": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "f",
+   "naissance": "1986-08-08",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Marine_Tondelier"
   },
   {
    "id": "zemmour",
@@ -1192,8 +1393,16 @@
      "texte": "Il est né à Montreuil et a passé son enfance à Drancy puis à Stains.",
      "source": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
      "niveau": "moyen"
+    },
+    {
+     "texte": "Son père dirigeait une société d'ambulances.",
+     "source": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
+     "niveau": "dur"
     }
-   ]
+   ],
+   "genre": "m",
+   "naissance": "1958-08-31",
+   "source_naissance": "https://fr.wikipedia.org/wiki/Éric_Zemmour"
   }
  ],
  "a_verifier_hors_liste": [
