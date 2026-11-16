@@ -191,11 +191,15 @@ export function syncStats(user) {
   const s = store.get('qec-stats', {})
   // Le serveur ne remplace la série locale que s'il connaît au moins autant de parties :
   // un compte serveur vide (partie non enregistrée) ne doit pas remettre la série à 0.
-  const serveurAJour = (user.joues || 0) >= (s.joues || 0)
+  const serveurAJour = user.joues !== undefined && (user.joues || 0) >= (s.joues || 0)
   store.set('qec-stats', {
     ...s,
     ...(serveurAJour ? { serie: user.serie, dernier: user.dernier, joues: user.joues, gagnes: user.gagnes, meilleur: user.meilleur } : {}),
-    pseudo: user.pseudo || s.pseudo || null, code: user.code || s.code || null,
+    pseudo: user.pseudo !== undefined ? user.pseudo : s.pseudo || null, code: user.code || s.code || null,
+    num: user.num || s.num || null,
   })
+  try { window.dispatchEvent(new Event('b27-moi')) } catch { /* rien */ }
 }
+// Nom affiché dans les classements : le pseudo, sinon « Joueur 12345 » (attribué à la première partie)
+export const nomJoueur = (s) => s?.pseudo || (s?.num ? `Joueur ${s.num}` : null)
 export const fmt = (n) => new Intl.NumberFormat('fr-FR').format(n || 0)
