@@ -233,3 +233,14 @@ h2 { font-size: 20px; }
 .dacc-mark { position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; pointer-events: none; }
 .dacc-mark i { font-style: normal; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22px; background: #fff; color: #E1000F; box-shadow: 0 4px 10px rgba(0,0,0,.2); }
 .dacc-mark i + i { background: #146B3A; color: #fff; transform: translateY(14px); }
+
+/* Joueur de cet appareil */
+.home-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.moi-chip { display: inline-flex; align-items: center; gap: 6px; max-width: 170px; height: 34px; padding: 0 12px; border-radius: 999px; background: var(--ink, #15172B); color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; }
+.moi-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.moi-chip.vide { background: #fff; color: var(--ink, #15172B); border: 1.5px dashed currentColor; }
+.moi-ligne { font-size: 14px; background: var(--soft, #F1F1F6); border-radius: 10px; padding: 8px 10px; }
+.note { margin: 0; font-size: 13px; font-weight: 600; line-height: 1.4; border-radius: 10px; padding: 8px 10px; background: var(--soft, #F1F1F6); }
+.note.ok { background: #E3F4EA; color: #146B3A; }
+.note.ko { background: #FDE8EA; color: #A50D24; }
+.note svg { vertical-align: -3px; }

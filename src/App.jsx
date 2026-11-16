@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   CANDIDATS, SOURCES, META, FAMILLES, BLOCS, blocOf, blocId, dateFr, initiales,
   numeroDuJour, joursAvant, PREMIER_TOUR, mystere, plateau, indices, shuffle, store,
-  joueurId, api, syncStats, fmt,
+  joueurId, api, syncStats, fmt, nomJoueur,
 } from './lib.js'
 import THEMES from './data/themes.json'
 import COMPTES from './data/comptes.json'
@@ -31,10 +31,29 @@ function useRoute() {
   }, [])
   return r
 }
-function useStats(n) {
+function useStats(n, version = 0) {
   const [st, setSt] = useState(null)
-  useEffect(() => { let on = true; api(`/api/stats${n ? `?n=${n}` : ''}`).then((j) => { if (on && j && !j.erreur) setSt(j) }); return () => { on = false } }, [n])
+  useEffect(() => { let on = true; api(`/api/stats${n ? `?n=${n}` : ''}`).then((j) => { if (on && j && !j.erreur) setSt(j) }); return () => { on = false } }, [n, version])
   return st
+}
+// Le joueur de cet appareil (pseudo ou « Joueur N »), mis à jour dès qu'il change
+function useMoi() {
+  const [moi, setMoi] = useState(() => store.get('qec-stats', {}))
+  useEffect(() => {
+    const on = () => setMoi(store.get('qec-stats', {}))
+    window.addEventListener('b27-moi', on)
+    return () => window.removeEventListener('b27-moi', on)
+  }, [])
+  return moi
+}
+function MoiChip() {
+  const moi = useMoi()
+  const nom = nomJoueur(moi)
+  return (
+    <a className={nom ? 'moi-chip' : 'moi-chip vide'} href="#classement" aria-label={nom ? `Vous jouez en tant que ${nom}. Modifier` : 'Choisir un pseudo'}>
+      <Icon d={I.user} size={16} /><span>{nom || 'Choisir un pseudo'}</span>
+    </a>
+  )
 }
 const go = (r) => { window.location.hash = r === 'accueil' ? '' : r }
 
@@ -101,7 +120,7 @@ function Accueil() {
     <main className="screen">
       <header className="home-head">
         <div className="brand-col"><div className="brand"><b className="logo">MO<span>V</span>O</b><span className="pill-dark">2027</span></div><span className="muted tiny b">Mais où va-t-on ?</span></div>
-        <span className="muted small b">J-{joursAvant(PREMIER_TOUR)} avant le 1er tour</span>
+        <div className="home-right"><MoiChip /><span className="muted tiny b">J-{joursAvant(PREMIER_TOUR)} avant le 1er tour</span></div>
       </header>
       {st && (st.visiteurs > 0 || st.parties > 0) && (
         <div className="counter" aria-label="Compteurs publics">
@@ -1073,32 +1092,39 @@ const ONGLETS = {
 }
 
 function Classement() {
-  const st = useStats(numeroDuJour())
+  const [version, setVersion] = useState(0)
+  const st = useStats(numeroDuJour(), version)
   const [onglet, setOnglet] = useState('jour')
-  const [moi, setMoi] = useState(() => store.get('qec-stats', {}))
+  const moi = useMoi()
   const [pseudo, setPseudo] = useState(moi.pseudo || '')
   const [code, setCode] = useState('')
-  const [msg, setMsg] = useState('')
-  useEffect(() => { api('/api/compte', { action: 'moi', joueur: joueurId() }).then((j) => { if (j?.user) { syncStats(j.user); setMoi(store.get('qec-stats', {})); if (j.user.pseudo) setPseudo(j.user.pseudo) } }) }, [])
+  const [msgP, setMsgP] = useState(null) // { ok, texte } sous le formulaire du pseudo
+  const [msgC, setMsgC] = useState(null) // idem, sous le code de sauvegarde
+  useEffect(() => { api('/api/compte', { action: 'moi', joueur: joueurId() }).then((j) => { if (j?.user) { syncStats(j.user); if (j.user.pseudo) setPseudo(j.user.pseudo) } }) }, [])
   const enregistrerPseudo = async (e) => {
     e.preventDefault()
+    setMsgP({ ok: null, texte: 'Enregistrement…' })
     const j = await api('/api/compte', { action: 'pseudo', joueur: joueurId(), pseudo })
-    if (j?.ok) { syncStats({ ...moi, pseudo: j.pseudo, nom: j.pseudo }); setMoi(store.get('qec-stats', {})); setMsg('Pseudo enregistré. Il apparaît dans les classements dès votre prochaine partie.') }
-    else setMsg(j?.erreur === 'pris' ? 'Ce pseudo est déjà pris. Choisissez-en un autre.' : j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.')
+    if (j?.ok) { syncStats({ pseudo: j.pseudo }); setVersion((v) => v + 1); setMsgP({ ok: true, texte: `C'est fait : vous jouez maintenant sous le nom « ${j.pseudo} » sur cet appareil.` }) }
+    else setMsgP({ ok: false, pris: j?.erreur === 'pris', texte: j?.erreur === 'pris' ? `« ${pseudo.trim()} » est déjà utilisé par un autre appareil. Si c'est le vôtre (ordinateur, autre navigateur…), ouvrez-y cette page, touchez « Afficher mon code », puis entrez ce code ci-dessous : vous retrouverez votre pseudo et votre série ici.` : j?.erreur === 'pseudo' ? 'Pseudo refusé : 2 à 15 caractères, lettres, chiffres, espaces, et rien d\'injurieux.' : 'Connexion impossible, réessayez.' })
   }
   const monCode = async () => {
     const j = await api('/api/compte', { action: 'code', joueur: joueurId() })
-    if (j?.code) { syncStats({ ...moi, code: j.code }); setMoi(store.get('qec-stats', {})) } else setMsg('Connexion impossible, réessayez.')
+    if (j?.code) syncStats({ code: j.code }); else setMsgC({ ok: false, texte: 'Connexion impossible, réessayez.' })
   }
   const recup = async (e) => {
     e.preventDefault()
     const j = await api('/api/compte', { action: 'recuperer', code })
-    if (j?.joueur) { store.set('b27-joueur', j.joueur); syncStats(j.user); setMoi(store.get('qec-stats', {})); setPseudo(j.user.pseudo || ''); setMsg(`Série récupérée : ${j.user.serie} jour${j.user.serie > 1 ? 's' : ''}.`) }
-    else setMsg('Code inconnu. Vérifiez les 6 caractères.')
+    if (j?.joueur) {
+      store.set('b27-joueur', j.joueur); syncStats({ ...j.user, joues: Math.max(j.user.joues || 0, store.get('qec-stats', {}).joues || 0) })
+      setPseudo(j.user.pseudo || ''); setVersion((v) => v + 1); setMsgP(null)
+      setMsgC({ ok: true, texte: `Bienvenue ${j.user.nom || ''} ! Cet appareil joue maintenant avec votre compte (série : ${j.user.serie} jour${j.user.serie > 1 ? 's' : ''}).` })
+    } else setMsgC({ ok: false, texte: 'Code inconnu. Vérifiez les 6 caractères.' })
   }
+  const nom = nomJoueur(moi)
   return (
     <main className="screen">
-      <Header title="Classement" />
+      <Header title="Classement" right={<MoiChip />} />
       <div className="seg">
         {Object.entries(ONGLETS).map(([k, o]) => <button key={k} className={onglet === k ? 'on' : ''} onClick={() => setOnglet(k)}>{o.label}</button>)}
       </div>
@@ -1111,16 +1137,18 @@ function Classement() {
             : (st.classement || []).map((u) => ({ pseudo: u.pseudo, v: u.serie }))
           if (!rows.length) return <span className="muted small">{ONGLETS[onglet].vide}</span>
           return rows.map((u, i) => (
-            <div key={i} className={u.pseudo === (moi.nom || moi.pseudo) ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col"><b>{u.pseudo}</b>{u.sub && <span className="muted tiny">{u.sub}</span>}</span><span className="b">{u.v}</span></div>
+            <div key={i} className={nom && u.pseudo === nom ? 'lbrow me' : 'lbrow'}><span className="rank">{i + 1}</span><span className="col"><b>{u.pseudo}</b>{u.sub && <span className="muted tiny">{u.sub}</span>}</span><span className="b">{u.v}</span></div>
           ))
         })()}
         <span className="muted tiny">{ONGLETS[onglet].note}</span>
       </section>
 
       <form className="card-form" onSubmit={enregistrerPseudo}>
+        <span className="moi-ligne">Sur cet appareil, vous jouez en tant que <b>{nom || 'invité (pas encore de partie)'}</b> · série {moi.serie || 0}</span>
         <label htmlFor="pseudo" className="b">Votre pseudo (facultatif)</label>
-        <span className="muted tiny">Pas d'email, pas de compte. {moi.num && !moi.pseudo ? `Sans pseudo, vous apparaissez comme « Joueur ${moi.num} ». ` : ''}Votre série actuelle : {moi.serie || 0}.</span>
-        <div className="row6"><input id="pseudo" maxLength={15} value={pseudo} onChange={(e) => setPseudo(e.target.value)} placeholder="ex. Marianne75" /><button className="btn btn-dark" type="submit">OK</button></div>
+        <span className="muted tiny">Pas d'email, pas de compte. Le pseudo est lié à cet appareil et à ce navigateur.</span>
+        <div className="row6"><input id="pseudo" maxLength={15} value={pseudo} onChange={(e) => { setPseudo(e.target.value); setMsgP(null) }} placeholder="ex. Marianne75" /><button className="btn btn-dark" type="submit">OK</button></div>
+        {msgP && <p className={msgP.ok ? 'note ok' : msgP.ok === false ? 'note ko' : 'note'} role="status">{msgP.ok && <Icon d={I.check} size={16} />} {msgP.texte}</p>}
       </form>
 
       <section className="card-form">
@@ -1132,8 +1160,8 @@ function Classement() {
           <input id="code" value={code} onChange={(e) => setCode(e.target.value.toUpperCase())} maxLength={7} placeholder="J'ai déjà un code" autoComplete="off" />
           <button className="btn btn-outline" type="submit">Récupérer</button>
         </form>
+        {msgC && <p className={msgC.ok ? 'note ok' : 'note ko'} role="status">{msgC.ok && <Icon d={I.check} size={16} />} {msgC.texte}</p>}
       </section>
-      {msg && <p className="msg" role="status">{msg}</p>}
       <p className="muted tiny">Le jeu se joue dans votre navigateur : un joueur déterminé pourrait tricher. Le classement est là pour le plaisir.</p>
     </main>
   )
@@ -1160,6 +1188,7 @@ export default function App() {
   useEffect(() => {
     const d = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Paris' })
     if (store.get('b27-visite', '') !== d) { store.set('b27-visite', d); api('/api/compte', { action: 'visite', joueur: joueurId() }) }
+    api('/api/compte', { action: 'moi', joueur: joueurId() }).then((j) => { if (j?.user) syncStats(j.user) })
   }, [])
   const page = r.startsWith('fiche-') ? 'trombino' : r.startsWith('apercu-') ? r.slice(7) : r
   const arg = r.startsWith('fiche-') ? r.slice(6) : undefined
