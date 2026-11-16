@@ -4,7 +4,8 @@
   "regle_liste": "Liste fournie par l'équipe (14/11/2026, d'après presitracker2027.fr), croisée avec republique2027.fr et candidator.fr. Aucune candidature n'est officielle avant la liste du Conseil constitutionnel (attendue le 16 mars 2027).",
   "regle_couleur": "Famille politique telle que classée par la source ; remplacée par la nuance du ministère de l'Intérieur dès publication. Bleu = droite et extrême droite, rouge = gauche et extrême gauche, vert = écologistes, gris = centre et divers.",
   "regle_principaux": "BROUILLON À VALIDER : candidats testés dans les intentions de vote nationales récentes.",
-  "statut_donnees": "brouillon — chaque fiche doit être relue avant mise en ligne"
+  "statut_donnees": "brouillon — chaque fiche doit être relue avant mise en ligne",
+  "regle_faits": "Anecdotes de vie (KYESSE ?) : vérifiées le 16/11/2026 dans la source indiquée, sans santé, religion, vie privée ni affaire judiciaire. À relire."
  },
  "sources": {
   "R": {
@@ -71,7 +72,24 @@
     "H"
    ],
    "fiche": "https://presitracker2027.fr/candidats/arthaud",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Elle est née à Peyrins, un village de la Drôme, petite-fille d'agriculteurs et fille d'un garagiste.",
+     "source": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Elle est agrégée d'économie et de gestion.",
+     "source": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Elle a enseigné dans un lycée de Rillieux-la-Pape, près de Lyon, avant de rejoindre un lycée d'Aubervilliers.",
+     "source": "https://fr.wikipedia.org/wiki/Nathalie_Arthaud",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "asselineau",
@@ -94,7 +112,24 @@
    ],
    "conflit": "Date d'annonce : 2026-07-07 selon presitracker, 2023-08-31 selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/asselineau",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est diplômé d'HEC Paris en 1980.",
+     "source": "https://fr.wikipedia.org/wiki/François_Asselineau",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il est sorti deuxième de sa promotion de l'ENA en 1985, puis il est entré à l'Inspection générale des finances.",
+     "source": "https://fr.wikipedia.org/wiki/François_Asselineau",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Passionné par l'Asie et l'Océanie, il parle japonais.",
+     "source": "https://fr.wikipedia.org/wiki/François_Asselineau",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "attal",
@@ -114,7 +149,24 @@
     "P"
    ],
    "fiche": "https://presitracker2027.fr/candidats/attal",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a fait du théâtre pendant dix ans en parallèle de ses études.",
+     "source": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a été figurant dans un long-métrage de Christophe Honoré sorti en 2008, où il jouait un lycéen.",
+     "source": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Étudiant, il a effectué une mission auprès du directeur de la villa Médicis, à Rome.",
+     "source": "https://fr.wikipedia.org/wiki/Gabriel_Attal",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "batho",
@@ -134,7 +186,24 @@
     "T"
    ],
    "fiche": "https://presitracker2027.fr/candidats/batho",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Elle est née à Paris et ses deux parents étaient photographes.",
+     "source": "https://fr.wikipedia.org/wiki/Delphine_Batho",
+     "niveau": "dur"
+    },
+    {
+     "texte": "En 1990, elle a dirigé un syndicat lycéen et s'est fait remarquer lors d'un passage au journal télévisé de 20 heures.",
+     "source": "https://fr.wikipedia.org/wiki/Delphine_Batho",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Elle a passé son bac au lycée Henri-IV, puis elle a commencé des études d'histoire avant de les abandonner.",
+     "source": "https://fr.wikipedia.org/wiki/Delphine_Batho",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "becht",
@@ -156,7 +225,24 @@
    ],
    "conflit": "Étiquette : « Sans étiquette (« extrême centre ») » selon presitracker, « Apparenté Renaissance » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/becht",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Passionné de culture japonaise, il préside un centre européen d'études japonaises en Alsace.",
+     "source": "https://fr.wikipedia.org/wiki/Olivier_Becht",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a été juge administratif au tribunal administratif de Nancy.",
+     "source": "https://fr.wikipedia.org/wiki/Olivier_Becht",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Élu en 2008 à 31 ans, il est devenu le plus jeune maire d'Alsace.",
+     "source": "https://fr.wikipedia.org/wiki/Olivier_Becht",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "bonnal",
@@ -194,7 +280,24 @@
    ],
    "conflit": "Étiquette : « La France humaine et forte » selon presitracker, « Parti socialiste » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/bouamrane",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a fait carrière dans la sécurité informatique, comme directeur des ventes de plusieurs entreprises du secteur.",
+     "source": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Le New York Times lui a consacré un portrait en une en avril 2024.",
+     "source": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a été élu conseiller municipal à seulement 22 ans.",
+     "source": "https://fr.wikipedia.org/wiki/Karim_Bouamrane",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "branco",
@@ -213,7 +316,24 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/branco",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est né à Estepona, en Andalousie, et il y a passé une partie de son enfance.",
+     "source": "https://fr.wikipedia.org/wiki/Juan_Branco",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il est passé par l'École normale supérieure, où il a soutenu une thèse de droit en 2014.",
+     "source": "https://fr.wikipedia.org/wiki/Juan_Branco",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a brièvement été enseignant-chercheur à l'université Yale, aux États-Unis.",
+     "source": "https://fr.wikipedia.org/wiki/Juan_Branco",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "delmur",
@@ -248,7 +368,19 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/dubuisson",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a grandi dans le massif du Jura.",
+     "source": "https://presitracker2027.fr/candidats/dubuisson",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a travaillé dans des pays en crise sur des systèmes de contrôle du financement de la criminalité organisée.",
+     "source": "https://presitracker2027.fr/candidats/dubuisson",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "dupont-aignan",
@@ -473,7 +605,24 @@
     "P"
    ],
    "fiche": "https://presitracker2027.fr/candidats/lisnard",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est né à Limoges en 1969, avant de grandir sur la Côte d'Azur.",
+     "source": "https://fr.wikipedia.org/wiki/David_Lisnard",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Pour financer ses études, il a été déménageur puis boucher dans un hypermarché.",
+     "source": "https://fr.wikipedia.org/wiki/David_Lisnard",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Dans les années 1990, il a tenu des magasins de vêtements pour enfants.",
+     "source": "https://fr.wikipedia.org/wiki/David_Lisnard",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "markovic",
@@ -511,7 +660,19 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/mathieu",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a enseigné les sciences et les mathématiques.",
+     "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a entrepris un périple à vélo de plus de 12 000 km à travers tous les départements métropolitains.",
+     "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "melenchon",
@@ -536,7 +697,24 @@
     "H"
    ],
    "fiche": "https://presitracker2027.fr/candidats/melenchon",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est né à Tanger, au Maroc, alors zone internationale.",
+     "source": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a été correcteur dans une imprimerie puis brièvement ouvrier chez un horloger du Jura.",
+     "source": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a dessiné des caricatures pour un hebdomadaire jurassien sous le pseudonyme « Moz ».",
+     "source": "https://fr.wikipedia.org/wiki/Jean-Luc_Mélenchon",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "mikolajczak",
@@ -555,7 +733,14 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/mikolajczak",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a travaillé sur des projets énergétiques auprès d'élus locaux et d'agriculteurs.",
+     "source": "https://presitracker2027.fr/candidats/mikolajczak",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "mlekuz",
@@ -574,7 +759,19 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/mlekuz",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a grandi à Montreuil, en Seine-Saint-Denis.",
+     "source": "https://presitracker2027.fr/candidats/mlekuz",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a mis entre parenthèses ses études d'histoire pour se consacrer à sa campagne.",
+     "source": "https://presitracker2027.fr/candidats/mlekuz",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "philippe",
@@ -594,7 +791,24 @@
     "P"
    ],
    "fiche": "https://presitracker2027.fr/candidats/philippe",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il pratique régulièrement la boxe anglaise.",
+     "source": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a coécrit des romans, dont un thriller politique sur une élection présidentielle truquée.",
+     "source": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a passé son baccalauréat à Bonn, en Allemagne, où son père dirigeait le lycée français.",
+     "source": "https://fr.wikipedia.org/wiki/Édouard_Philippe",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "philippot",
@@ -613,7 +827,24 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/philippot",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est né à Croix, dans le Nord, et a grandi dans la banlieue lilloise.",
+     "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il est diplômé d'HEC et de l'ENA.",
+     "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Pour financer ses études, il a réalisé des enquêtes partout en France comme indépendant.",
+     "source": "https://fr.wikipedia.org/wiki/Florian_Philippot",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "platret",
@@ -633,7 +864,19 @@
    ],
    "conflit": "Étiquette : « Sans étiquette » selon presitracker, « Divers droite » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/platret",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est né en 1973 à Saint-Rémy, en Saône-et-Loire.",
+     "source": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gilles-platret",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a fait ses études supérieures à la Sorbonne et à Sciences Po Paris.",
+     "source": "https://www.sudradio.fr/la-biographie-et-le-cv-de-gilles-platret",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "polony",
@@ -652,7 +895,24 @@
     "C"
    ],
    "fiche": "https://presitracker2027.fr/candidats/polony",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Elle a consacré son DEA de littérature à la poésie contemporaine de langue française.",
+     "source": "https://fr.wikipedia.org/wiki/Natacha_Polony",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Elle a grandi à Montmorency, dans le Val-d'Oise.",
+     "source": "https://fr.wikipedia.org/wiki/Natacha_Polony",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Elle a été professeure de lettres stagiaire dans un lycée d'Épinay-sur-Seine avant de quitter l'Éducation nationale.",
+     "source": "https://fr.wikipedia.org/wiki/Natacha_Polony",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "retailleau",
@@ -673,7 +933,24 @@
    ],
    "conflit": "Date d'annonce : 2026-02-12 selon presitracker, 2026-04-19 selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/retailleau",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a grandi à Saint-Malô-du-Bois, village dont son grand-père puis son père ont été maires.",
+     "source": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+     "niveau": "dur"
+    },
+    {
+     "texte": "En 1985, il a été directeur général adjoint d'une radio locale vendéenne, Alouette.",
+     "source": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Cavalier depuis l'âge de 10 ans, il a mis en scène pendant vingt-deux ans la Cinéscénie du Puy du Fou.",
+     "source": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "revillon-dapreval",
@@ -711,7 +988,24 @@
    ],
    "conflit": "Étiquette : « Sans étiquette (« La France qu'on veut ») » selon presitracker, « Sans étiquette » selon republique2027.",
    "fiche": "https://presitracker2027.fr/candidats/riner",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il a obtenu en 2009 un baccalauréat professionnel en micro-informatique.",
+     "source": "https://fr.wikipedia.org/wiki/Teddy_Riner",
+     "niveau": "dur"
+    },
+    {
+     "texte": "De 2011 à 2015, il a suivi à Sciences Po un certificat réservé aux sportifs de haut niveau.",
+     "source": "https://fr.wikipedia.org/wiki/Teddy_Riner",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il a prêté sa voix au personnage de Cole dans le film d'animation Lego Ninjago, sorti en 2017.",
+     "source": "https://fr.wikipedia.org/wiki/Teddy_Riner",
+     "niveau": "dur"
+    }
+   ]
   },
   {
    "id": "rohou",
@@ -751,7 +1045,24 @@
     "H"
    ],
    "fiche": "https://presitracker2027.fr/candidats/roussel",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "À quatorze ans, il a passé deux années au Viêt Nam avec son père.",
+     "source": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a réalisé un reportage aux îles Kerguelen, diffusé dans l'émission Thalassa.",
+     "source": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il est né en 1969 à Béthune, dans le Pas-de-Calais.",
+     "source": "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "ruffin",
@@ -771,7 +1082,24 @@
     "P"
    ],
    "fiche": "https://presitracker2027.fr/candidats/ruffin",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Il est titulaire d'une maîtrise de lettres modernes et diplômé d'une école de journalisme.",
+     "source": "https://fr.wikipedia.org/wiki/François_Ruffin",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il a fondé en 1999 un journal local qu'il vendait à la criée devant les MJC de sa ville.",
+     "source": "https://fr.wikipedia.org/wiki/François_Ruffin",
+     "niveau": "moyen"
+    },
+    {
+     "texte": "Il est né à Calais mais a grandi à Amiens.",
+     "source": "https://fr.wikipedia.org/wiki/François_Ruffin",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "saforcada",
@@ -809,7 +1137,24 @@
    ],
    "conflit": "Candidature soumise à un référendum interne du 10 au 13 décembre 2026 (source E).",
    "fiche": "https://presitracker2027.fr/candidats/tondelier",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Elle est née en 1986 à Bois-Bernard, une petite commune du Pas-de-Calais.",
+     "source": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Elle est titulaire d'un master en gestion des établissements de santé.",
+     "source": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Après une classe préparatoire littéraire, elle a étudié à Sciences Po Lille.",
+     "source": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+     "niveau": "moyen"
+    }
+   ]
   },
   {
    "id": "zemmour",
@@ -831,7 +1176,24 @@
     "H"
    ],
    "fiche": "https://presitracker2027.fr/candidats/zemmour",
-   "portrait_ia": true
+   "portrait_ia": true,
+   "faits": [
+    {
+     "texte": "Adolescent, il a joué ailier gauche dans un club de football scolaire à Paris.",
+     "source": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Au début des années 1980, il a écrit des slogans pendant six mois pour une agence de publicité.",
+     "source": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
+     "niveau": "dur"
+    },
+    {
+     "texte": "Il est né à Montreuil et a passé son enfance à Drancy puis à Stains.",
+     "source": "https://fr.wikipedia.org/wiki/Éric_Zemmour",
+     "niveau": "moyen"
+    }
+   ]
   }
  ],
  "a_verifier_hors_liste": [

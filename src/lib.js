@@ -99,18 +99,43 @@ export function plateau(numero, reponse) {
   return [...autres, reponse].sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
 }
 
-export function indices(c) {
+// 6 indices, tirés à nouveau chaque jour (graine = numéro du jour), du plus dur au plus facile :
+// 1-2 : une anecdote de vie et/ou une citation de L'hebdo · 3-4 : ligne, expérience, date, anecdote plus connue
+// 5-6 : deux parmi famille politique, fonction et parti (le parti, le plus révélateur, toujours en dernier s'il sort).
+export function indices(c, n = 1, citations = []) {
+  const r = rng(n * 104729 + 17)
+  const pick = (arr) => arr.splice(Math.floor(r() * arr.length), 1)[0]
   const exp = c.candidatures.length
     ? `Déjà candidat·e à la présidentielle en ${c.candidatures.join(', ').replace(/, (\d+)$/, ' et $1')}.`
     : 'Jamais candidat·e à une présidentielle jusqu\'ici.'
-  return [
+  const fait = (f) => ({ type: 'Anecdote', texte: f.texte, source: f.source })
+  const faits = shuffle(c.faits || [], n * 31 + 7)
+  const durs = faits.filter((f) => f.niveau === 'dur').map(fait)
+  const moyens = [
+    ...faits.filter((f) => f.niveau !== 'dur').map(fait),
     { type: 'Date clé', texte: c.annonce ? `Candidature annoncée le ${dateFr(c.annonce)}.` : `${c.annonce_texte[0].toUpperCase()}${c.annonce_texte.slice(1)}.` },
     { type: 'Expérience', texte: exp },
     { type: 'Ligne', texte: c.ligne },
+  ]
+  const quotes = shuffle(citations, n * 13 + 5).map((q) => ({ type: 'Citation', texte: `« ${q.texte} »`, source: q.url, date: q.date }))
+  // 1-2 : une anecdote + une citation quand les deux existent, sinon ce qu'il y a de plus dur
+  const debut = []
+  if (durs.length && quotes.length) debut.push(pick(durs), quotes[0])
+  else while (debut.length < 2 && (durs.length || quotes.length)) debut.push(durs.length ? pick(durs) : quotes.shift())
+  if (r() < 0.5) debut.reverse()
+  while (debut.length < 2) debut.push(pick(moyens))
+  // 3-4 : deux indices moyens au hasard (les anecdotes « dures » restantes y ont leur chance)
+  const milieu = [...durs, ...moyens]
+  const faciles = [
     { type: 'Famille politique', texte: FAMILLES[c.famille].label, bloc: blocOf(c) },
     { type: 'Fonction', texte: c.fonction },
-    { type: 'Parti', texte: c.parti },
   ]
+  const m = [milieu.length ? pick(milieu) : pick(faciles), milieu.length ? pick(milieu) : pick(faciles)]
+  // 5-6 : le parti en dernier, sauf de temps en temps (famille + fonction)
+  const fin = faciles.length === 2
+    ? (r() < 0.35 ? [pick(faciles), faciles[0]] : [pick(faciles), { type: 'Parti', texte: c.parti }])
+    : [faciles[0] || { type: 'Parti', texte: c.parti }, ...(faciles[0] ? [{ type: 'Parti', texte: c.parti }] : [])]
+  return [...debut, ...m, ...fin]
 }
 
 /* ---------- Stockage local (best effort) ---------- */
