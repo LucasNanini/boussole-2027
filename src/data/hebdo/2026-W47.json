@@ -1,0 +1,2587 @@
+{
+ "semaine": "2026-W47",
+ "du": "2026-11-16",
+ "au": "2026-11-22",
+ "statut": "brouillon",
+ "suivis": [
+  "attal",
+  "glucksmann",
+  "le-pen",
+  "lisnard",
+  "melenchon",
+  "philippe",
+  "retailleau",
+  "roussel",
+  "tondelier",
+  "zemmour",
+  "riner",
+  "polony",
+  "arthaud",
+  "batho",
+  "bouamrane",
+  "branco",
+  "durif",
+  "kazib",
+  "philippot"
+ ],
+ "mots_campagne": [
+  {
+   "mot": "train",
+   "n": 11,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 10
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "logements",
+   "n": 9,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 8
+    },
+    {
+     "id": "retailleau",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "cher",
+   "n": 7,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 3
+    },
+    {
+     "id": "glucksmann",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "associations",
+   "n": 6,
+   "qui": [
+    {
+     "id": "glucksmann",
+     "n": 4
+    },
+    {
+     "id": "attal",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "coûte",
+   "n": 6,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "glucksmann",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "état",
+   "n": 6,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 5
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "euros",
+   "n": 5,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "réseau",
+   "n": 5,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 4
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "national",
+   "n": 4,
+   "qui": [
+    {
+     "id": "attal",
+     "n": 2
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "aide",
+   "n": 4,
+   "qui": [
+    {
+     "id": "attal",
+     "n": 1
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "retailleau",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "créer",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "urgence",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "crise",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "peuple",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "philippot",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "partir",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 3
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "arrêter",
+   "n": 4,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "mot": "réalité",
+   "n": 3,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 2
+    },
+    {
+     "id": "attal",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "communes",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "attal",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "publique",
+   "n": 3,
+   "qui": [
+    {
+     "id": "glucksmann",
+     "n": 1
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "investissement",
+   "n": 3,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 2
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "laisser",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "glucksmann",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "réparer",
+   "n": 3,
+   "qui": [
+    {
+     "id": "glucksmann",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "débat",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "retailleau",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "puissance",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "philippe",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "priorité",
+   "n": 3,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "point",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "zemmour",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "supplémentaire",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 1
+    },
+    {
+     "id": "philippot",
+     "n": 1
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "ressource",
+   "n": 3,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "capacité",
+   "n": 3,
+   "qui": [
+    {
+     "id": "polony",
+     "n": 2
+    },
+    {
+     "id": "melenchon",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "travail",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "garantie",
+   "n": 3,
+   "qui": [
+    {
+     "id": "melenchon",
+     "n": 2
+    },
+    {
+     "id": "polony",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "mot": "public",
+   "n": 3,
+   "qui": [
+    {
+     "id": "philippot",
+     "n": 2
+    },
+    {
+     "id": "zemmour",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "genere_le": "2026-11-23T05:52:12.477Z",
+ "candidats": {
+  "attal": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 100
+   },
+   "citations": [
+    {
+     "texte": "Le maire du Rassemblement national a coupé l'électricité et le gaz au secours populaire.",
+     "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df14T0YouR6/thumbnail.webp"
+    },
+    {
+     "texte": "Et c'est la justice qui a dû obliger la ville à remettre l'électricité et le gaz au secours populaire",
+     "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df14T0YouR6/thumbnail.webp"
+    },
+    {
+     "texte": "La mairie RN a supprimé du soutien à des associations d'aide aux devoirs.",
+     "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df14T0YouR6/thumbnail.webp"
+    },
+    {
+     "texte": "La réalité, c'est qu'il y aura les associations qui feront ce que demande le Rassemblement national, qui seront soutenues, et les autres, elles seront coupées.",
+     "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df14T0YouR6/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "rassemblement national",
+     "n": 2,
+     "score": 4.94,
+     "extraits": [
+      {
+       "texte": "Le maire du Rassemblement national a coupé l'électricité et le gaz au secours populaire.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La réalité, c'est qu'il y aura les associations qui feront ce que demande le Rassemblement national, qui seront soutenues, et les autres, elles seront coupées.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "électricité",
+     "n": 2,
+     "score": 4.94,
+     "extraits": [
+      {
+       "texte": "Le maire du Rassemblement national a coupé l'électricité et le gaz au secours populaire.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "secours populaire",
+     "n": 2,
+     "score": 4.94,
+     "extraits": [
+      {
+       "texte": "Le maire du Rassemblement national a coupé l'électricité et le gaz au secours populaire.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "ville",
+     "n": 2,
+     "score": 4.94,
+     "extraits": [
+      {
+       "texte": "Et c'est la justice qui a dû obliger la ville à remettre l'électricité et le gaz au secours populaire de la ville d'Aïange, à Bocquer.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "associations",
+     "n": 2,
+     "score": 2.74,
+     "extraits": [
+      {
+       "texte": "La mairie RN a supprimé du soutien à des associations d'aide aux devoirs.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La réalité, c'est qu'il y aura les associations qui feront ce que demande le Rassemblement national, qui seront soutenues, et les autres, elles seront coupées.",
+       "url": "https://www.instagram.com/reel/Df14T0YouR6/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "glucksmann": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 52.1,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 47.9
+   },
+   "citations": [
+    {
+     "texte": "Ce genre de titres-là, ce genre de campagne, relayée ensuite par les partis politiques qui font le taf dans les institutions pour saboter l'aide aux associations, c'est extrêmement dangereux.",
+     "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df0WR9TAs0e/thumbnail.webp"
+    },
+    {
+     "texte": "La solidarité, l'investissement dans la solidarité, c'est rentable, ça paie.",
+     "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df0WR9TAs0e/thumbnail.webp"
+    },
+    {
+     "texte": "Le non-investissement dans la solidarité, laisser les associations fermer, ça coûte extrêmement cher à la société parce qu'ensuite il faudra éteindre les feux.",
+     "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df0WR9TAs0e/thumbnail.webp"
+    },
+    {
+     "texte": "Ensuite il faudra réparer et ça coûte beaucoup plus cher de réparer que d'aider les associations.",
+     "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df0WR9TAs0e/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "solidarité",
+     "n": 3,
+     "score": 5.22,
+     "extraits": [
+      {
+       "texte": "La solidarité, l'investissement dans la solidarité, c'est rentable, ça paie.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "associations",
+     "n": 4,
+     "score": 3.86,
+     "extraits": [
+      {
+       "texte": "Les finances publiques, 60 milliards engloutis par les associations.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Le non-investissement dans la solidarité, laisser les associations fermer, ça coûte extrêmement cher à la société parce qu'ensuite il faudra éteindre les feux.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "réparer",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "Ensuite il faudra réparer et ça coûte beaucoup plus cher de réparer que d'aider les associations.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "coûte",
+     "n": 2,
+     "score": 2.69,
+     "extraits": [
+      {
+       "texte": "Le non-investissement dans la solidarité, laisser les associations fermer, ça coûte extrêmement cher à la société parce qu'ensuite il faudra éteindre les feux.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "cher",
+     "n": 2,
+     "score": 2.49,
+     "extraits": [
+      {
+       "texte": "Le non-investissement dans la solidarité, laisser les associations fermer, ça coûte extrêmement cher à la société parce qu'ensuite il faudra éteindre les feux.",
+       "url": "https://www.instagram.com/reel/Df0WR9TAs0e/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "melenchon": {
+   "nb_videos": 3,
+   "themes": {
+    "pouvoir-achat": 28,
+    "sante": 0,
+    "travail": 4.4,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 31.8,
+    "logement": 22.5,
+    "finances": 11,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 2.2
+   },
+   "citations": [
+    {
+     "texte": "Donc je veux créer un état d'urgence sociale, juridiquement, qui permettrait au pouvoir de prendre des mesures d'urgence en réduisant tous les délais qu'il y a autrement.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708872910840139040/thumbnail.webp"
+    },
+    {
+     "texte": "Le pouvoir de réquisition qui vient au préfet peut être utilisé pour réquisitionner les logements vides, ne pas laisser des gens dans leur voiture.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708882230793424161/thumbnail.webp"
+    },
+    {
+     "texte": "Alors, celui qui a accumulé ou celle qui a accumulé dans sa vie un capital qui excède 12 millions, 12 millions d'euros. Alors, au-delà de 12 millions, nous prenons tout.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708892965153836320/thumbnail.webp"
+    },
+    {
+     "texte": "Nous ne sommes pas là pour autre chose que pour essayer de mettre fin aux causes structurelles de la pauvreté.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708872910840139040/thumbnail.webp"
+    },
+    {
+     "texte": "Dans certaines communes, des gens décident qu'ils ne veulent pas de gens qui viennent du peuple, ils ne veulent pas de logements sociaux.",
+     "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708882230793424161/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "pauvreté",
+     "n": 9,
+     "score": 3.52,
+     "extraits": [
+      {
+       "texte": "Donc il y a au moins une chose qu'on n'entendra pas dire ce soir, c'est que la pauvreté c'est de la faute des pauvres.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Nous ne sommes pas là pour autre chose que pour essayer de mettre fin aux causes structurelles de la pauvreté.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "pauvre",
+     "n": 5,
+     "score": 2.97,
+     "extraits": [
+      {
+       "texte": "Maman Solo, 1 sur 3 est pauvre.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Donc il y a au moins une chose qu'on n'entendra pas dire ce soir, c'est que la pauvreté c'est de la faute des pauvres.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "logements",
+     "n": 8,
+     "score": 2.31,
+     "extraits": [
+      {
+       "texte": "La stratégie en gros sur la pauvreté c'est d'empêcher qu'elle s'étende, donc il faut prendre des mesures et vigoureuses, par exemple abolir la loi qui expulse les gens de leur logement plus […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On a dit qu'il y avait des logements vides.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "mange",
+     "n": 4,
+     "score": 2.77,
+     "extraits": [
+      {
+       "texte": "Parce que si nos gosses mangent mal, et quand on est pauvre, on mange mal, parce que c'est la malbouffe, parce qu'on mange moins, parce qu'on mange des produits moins sécures, eh […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Par exemple, là on s'est mangé je ne sais combien d'inflation, le carburant coûte plus cher que jamais, etc.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "enfants",
+     "n": 3,
+     "score": 2.52,
+     "extraits": [
+      {
+       "texte": "6 millions de personnes qui disent qu'elles se privent d'un repas pour leurs enfants.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Les enfants de l'un sont les enfants de tout le monde.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "argent",
+     "n": 3,
+     "score": 2.52,
+     "extraits": [
+      {
+       "texte": "Et je viens de vous dire comment on peut la régler sans créer aucune taxe supplémentaire, mais en utilisant l'argent qui existe déjà.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "tout ce que vous mettez dans le bonheur commun vous le paierez moins en malheur la charge de ce que vous mettrez pour sortir les pauvres de leur pauvreté vous rapportera de […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "allocation",
+     "n": 3,
+     "score": 2.52,
+     "extraits": [
+      {
+       "texte": "C'est la garantie, l'allocation d'autonomie.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Ça paye cette allocation complètement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "état",
+     "n": 5,
+     "score": 1.87,
+     "extraits": [
+      {
+       "texte": "Donc je veux créer un état d'urgence sociale, juridiquement, qui permettrait au pouvoir de prendre des mesures d'urgence en réduisant tous les délais qu'il y a autrement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Rotaillou et d'autres, c'est que le marché doit prendre la place de l'État, dont ils ont pour eux, c'est l'horreur, l'État.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "décisions",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc on est devant un problème qui est le résultat de décisions politiques et de l'organisation d'un système économique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Après, il y a les décisions qui peuvent être de nature politique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "économique",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc on est devant un problème qui est le résultat de décisions politiques et de l'organisation d'un système économique.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Je voudrais quand même rappeler à tout le monde que nous sommes censés être la 7ème puissance économique du monde.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "abolir",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "La stratégie en gros sur la pauvreté c'est d'empêcher qu'elle s'étende, donc il faut prendre des mesures et vigoureuses, par exemple abolir la loi qui expulse les gens de leur logement plus […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "ou abolir la loi qui prévoit que si à la fin du mois vous êtes à découvert, dorénavant, si vous êtes à découvert pour 200 euros, la banque doit donner son accord, […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "découvert",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "ou abolir la loi qui prévoit que si à la fin du mois vous êtes à découvert, dorénavant, si vous êtes à découvert pour 200 euros, la banque doit donner son accord, […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "gosses",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "D'abord, comme vous, priorité aux gosses.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "cantine gratuite",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc, la cantine gratuite.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "La cantine gratuite, vous savez comme moi ce que ça veut dire du point de vue de votre budget pour le mois.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "connaît",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Parce que si nos gosses mangent mal, et quand on est pauvre, on mange mal, parce que c'est la malbouffe, parce qu'on mange moins, parce qu'on mange des produits moins sécures, eh […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Sur la loi SRU, tout le monde connaît, c'est l'obligation pour tout le monde d'avoir une proportion de logements sociaux.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "suite",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Parce que si nos gosses mangent mal, et quand on est pauvre, on mange mal, parce que c'est la malbouffe, parce qu'on mange moins, parce qu'on mange des produits moins sécures, eh […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut que la puissance publique puisse tout de suite intervenir.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "sociale",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc je veux créer un état d'urgence sociale, juridiquement, qui permettrait au pouvoir de prendre des mesures d'urgence en réduisant tous les délais qu'il y a autrement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Sur la loi SRU, tout le monde connaît, c'est l'obligation pour tout le monde d'avoir une proportion de logements sociaux.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "autrement",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc je veux créer un état d'urgence sociale, juridiquement, qui permettrait au pouvoir de prendre des mesures d'urgence en réduisant tous les délais qu'il y a autrement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Bien sûr, on pourrait faire autrement et plus graduel, etc.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "agroalimentaire",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "exemple le blocage des marges de l'agroalimentaire que l'agroalimentaire ne vienne pas faire les malins parce que leurs bénéfices ont augmenté de 40% au cours des trois dernières années c'est à dire […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "marché",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Rotaillou et d'autres, c'est que le marché doit prendre la place de l'État, dont ils ont pour eux, c'est l'horreur, l'État.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "À partir de là, le problème du logement est un problème qui a été fabriqué pour créer de la rareté, en espérant que le marché viendra remplacer ce qui ne se fait […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "logements vides",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "La stratégie en gros sur la pauvreté c'est d'empêcher qu'elle s'étende, donc il faut prendre des mesures et vigoureuses, par exemple abolir la loi qui expulse les gens de leur logement plus […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On a dit qu'il y avait des logements vides.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "vivre",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "C'est comme ça qu'il faut voir la vie pour vivre comme un seul peuple.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "tout ce que vous mettez dans le bonheur commun vous le paierez moins en malheur la charge de ce que vous mettrez pour sortir les pauvres de leur pauvreté vous rapportera de […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "logements sociaux",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "La stratégie en gros sur la pauvreté c'est d'empêcher qu'elle s'étende, donc il faut prendre des mesures et vigoureuses, par exemple abolir la loi qui expulse les gens de leur logement plus […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On a dit qu'il y avait des logements vides.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "charge",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "tout ce que vous mettez dans le bonheur commun vous le paierez moins en malheur la charge de ce que vous mettrez pour sortir les pauvres de leur pauvreté vous rapportera de […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Il faut libérer toute cette jeunesse de cette charge en lui donnant les moyens de vivre, et comme je viens de le dire, tous à partir de l'âge de 16 ans, et […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "malades",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "tout ce que vous mettez dans le bonheur commun vous le paierez moins en malheur la charge de ce que vous mettrez pour sortir les pauvres de leur pauvreté vous rapportera de […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708882230793424161",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "perdu",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Parce qu'on en a perdu, hein !",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On a complètement perdu la raison en mettant un million d'apprentis.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "matière grise",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Nous n'avons rien d'autre que la matière grise.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "étudier",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Il faut que les étudiants étudient.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Tous ceux qui acceptent d'étudier et d'avoir évidemment des résultats de leurs études, on les aide et on paye.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "pris",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Donc toutes les mesures, je vais faire toute la liste, mais qui prennent à la gorge les gens et qui vous installent dans cette prison qu'est la pauvreté, premièrement, en effet, c'est […]",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708872910840139040",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Donc, moi, j'ai pris un engagement.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "accumulé",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Alors, celui qui a accumulé ou celle qui a accumulé dans sa vie un capital qui excède 12 millions, 12 millions d'euros.",
+       "url": "https://www.tiktok.com/@jlmelenchon/video/7708892965153836320",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "philippe": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 100,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Bizarre construction administrative et projet révolutionnaire, il faut bien le reconnaître, puisqu'il porte un renouveau complet dans la conception de ce que cela peut être que soigner.",
+     "url": "https://www.instagram.com/reel/Df1ZcxHOOVr/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df1ZcxHOOVr/thumbnail.webp"
+    },
+    {
+     "texte": "toutes les équipes qui se succèdent pour créer des maisons des femmes participent à une transformation absolument majeure de ce que c'est soigner.",
+     "url": "https://www.instagram.com/reel/Df1ZcxHOOVr/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df1ZcxHOOVr/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "complet",
+     "n": 2,
+     "score": 4.66,
+     "extraits": [
+      {
+       "texte": "Bizarre construction administrative et projet révolutionnaire, il faut bien le reconnaître, puisqu'il porte un renouveau complet dans la conception de ce que cela peut être que soigner.",
+       "url": "https://www.instagram.com/reel/Df1ZcxHOOVr/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "soigner",
+     "n": 2,
+     "score": 4.66,
+     "extraits": [
+      {
+       "texte": "Bizarre construction administrative et projet révolutionnaire, il faut bien le reconnaître, puisqu'il porte un renouveau complet dans la conception de ce que cela peut être que soigner.",
+       "url": "https://www.instagram.com/reel/Df1ZcxHOOVr/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Et je prétends que Rada Atem et toutes les équipes qui se succèdent pour créer des maisons des femmes participent à une transformation absolument majeure de ce que c'est soigner.",
+       "url": "https://www.instagram.com/reel/Df1ZcxHOOVr/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "philippot": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 81.2,
+    "democratie": 18.8,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Pas un soldat français en Ukraine. Retour de tous ceux qui y sont. Suppression de cette opération Volia.",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708725556887457057/thumbnail.webp"
+    },
+    {
+     "texte": "Car attention, nous avons ici franchi une étape qui est très dangereuse, qui fait de nous officiellement des co-belligérants dans cette guerre contre la Russie.",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708725556887457057/thumbnail.webp"
+    },
+    {
+     "texte": "Qu'attendent les parlementaires dits d'opposition pour exiger un débat public national sur ce sujet très important et un vote ?",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708725556887457057/thumbnail.webp"
+    },
+    {
+     "texte": "Et évidemment, pas un euro ni une arme française pour ce pays, pour la guerre et la corruption.",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708725556887457057/thumbnail.webp"
+    },
+    {
+     "texte": "La France doit jouer un rôle de médiateur, de paix, en toute indépendance. Hors de l'UE, hors de l'OTAN.",
+     "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708725556887457057/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "ukraine",
+     "n": 5,
+     "score": 4.58,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On savait depuis déjà longtemps qu'il y avait quelques militaires français présents en Ukraine, notamment pour des opérations soit d'espionnage, de soutien logistique ou de formation.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "militaire",
+     "n": 4,
+     "score": 4.38,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On savait depuis déjà longtemps qu'il y avait quelques militaires français présents en Ukraine, notamment pour des opérations soit d'espionnage, de soutien logistique ou de formation.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "opération volia",
+     "n": 3,
+     "score": 4.13,
+     "extraits": [
+      {
+       "texte": "Elle a même déjà un nom, l'opération Volia.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "On savait depuis déjà longtemps qu'il y avait quelques militaires français présents en Ukraine, notamment pour des opérations soit d'espionnage, de soutien logistique ou de formation.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "assumé",
+     "n": 3,
+     "score": 4.13,
+     "extraits": [
+      {
+       "texte": "Alors ça n'est absolument pas dit au peuple français, pas du tout assumé par le gouvernement, mais c'est le cas.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Mais c'était plus ou moins dit et souvent pas assumé par le pouvoir.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "révèle",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "à tel point que RFI révèle que cette opération Volia se dissimule derrière un déploiement militaire français qui lui est assumé et public, qui est en Pologne depuis février 2023, l'opération Gerfo.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "présence militaire",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Bon, quand est-ce qu'on a débattu de cette présence militaire active en Ukraine ?",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "rôle",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "La France doit jouer un rôle de médiateur, de paix, en toute indépendance.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "armée",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "C'est une véritable bombe que vient de révéler une grande enquête de RFI, Radio France Internationale, qui révèle qu'il y a désormais depuis l'été 2026 une présence militaire qui joue un rôle […]",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et évidemment, pas un euro ni une arme française pour ce pays, pour la guerre et la corruption.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "débattu",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "Bon, quand est-ce qu'on a débattu de cette présence militaire active en Ukraine ?",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "voté",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "Quand est-ce qu'on a voté pour cela ?",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "guerre",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "Car attention, nous avons ici franchi une étape qui est très dangereuse, qui fait de nous officiellement des co-belligérants dans cette guerre contre la Russie.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Et évidemment, pas un euro ni une arme française pour ce pays, pour la guerre et la corruption.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "hors",
+     "n": 2,
+     "score": 3.79,
+     "extraits": [
+      {
+       "texte": "Hors de l'UE, hors de l'OTAN.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "public",
+     "n": 2,
+     "score": 2.69,
+     "extraits": [
+      {
+       "texte": "à tel point que RFI révèle que cette opération Volia se dissimule derrière un déploiement militaire français qui lui est assumé et public, qui est en Pologne depuis février 2023, l'opération Gerfo.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Qu'attendent les parlementaires dits d'opposition pour exiger un débat public national sur ce sujet très important et un vote ?",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "peuple",
+     "n": 2,
+     "score": 2.18,
+     "extraits": [
+      {
+       "texte": "Alors ça n'est absolument pas dit au peuple français, pas du tout assumé par le gouvernement, mais c'est le cas.",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      },
+      {
+       "texte": "Pourquoi le peuple français n'est pas informé ?",
+       "url": "https://www.tiktok.com/@florianphilippot/video/7708725556887457057",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "polony": {
+   "nb_videos": 2,
+   "themes": {
+    "pouvoir-achat": 7.8,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 83.3,
+    "education": 0,
+    "logement": 0,
+    "finances": 4.8,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 4.2
+   },
+   "citations": [
+    {
+     "texte": "Avec cette ambition claire pour le fret, faire passer le rail de 9 à 25% des marchandises transportées",
+     "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df2DRnclOC2/thumbnail.webp"
+    },
+    {
+     "texte": "L'eau ne doit plus être une politique de crise, elle doit redevenir une infrastructure intégrée à notre souveraineté.",
+     "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+     "plateforme": "instagram",
+     "date": "2026-11-19",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df680HEgVo1/thumbnail.webp"
+    },
+    {
+     "texte": "Alors, bien entendu, l'idée n'est pas de supprimer le camion. L'idée, c'est de lui redonner sa juste place, le dernier kilomètre par la route, les longues distances par le rail.",
+     "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df2DRnclOC2/thumbnail.webp"
+    },
+    {
+     "texte": "Ma proposition, c'est une politique nationale de l'eau digne de ce nom, adaptée à chaque bassin versant, en réduisant les fuites et en protégeant la ressource.",
+     "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+     "plateforme": "instagram",
+     "date": "2026-11-19",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df680HEgVo1/thumbnail.webp"
+    },
+    {
+     "texte": "le train ne peut plus seulement traverser les territoires, le train doit de nouveau relier nos territoires.",
+     "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+     "plateforme": "instagram",
+     "date": "2026-11-17",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Df2DRnclOC2/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "train",
+     "n": 10,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Encore trop souvent pour les trajets nationaux voire européens, l'avion est beaucoup moins cher que le train.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Le train coûte trop cher, il n'est pas assez fiable et il ne fonctionne pas correctement où nous en avons le plus besoin.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "doléances",
+     "n": 5,
+     "score": 3.26,
+     "extraits": [
+      {
+       "texte": "Alors ce constat, c'est la doléance numéro 4124, rédigée dans le cahier de notre comité du Finistère.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "En fait, c'est toute l'utilité de ces cahiers de doléances.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "territoires",
+     "n": 5,
+     "score": 3.26,
+     "extraits": [
+      {
+       "texte": "Ce n'est pas de la dépense, c'est l'enrichissement des territoires et le retour de l'activité, puisque nous garantirons la priorité aux entreprises françaises dans la commande publique.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "le train ne peut plus seulement traverser les territoires, le train doit de nouveau relier nos territoires.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "infrastructures",
+     "n": 4,
+     "score": 3.06,
+     "extraits": [
+      {
+       "texte": "Avec cette ambition claire pour le fret, faire passer le rail de 9 à 25% des marchandises transportées et investir au moins 2 milliards d'euros supplémentaires dans les infrastructures et les terminaux.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Un grand plan d'infrastructure pour une politique de relance par l'investissement.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "cahiers",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Alors ce constat, c'est la doléance numéro 4124, rédigée dans le cahier de notre comité du Finistère.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "En fait, c'est toute l'utilité de ces cahiers de doléances.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "ferroviaire",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Elle fait écho à tout ce que je lis dans vos nombreuses doléances sur le ferroviaire.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Le prix des billets, mais surtout les retards, les suppressions de trains, l'abandon des petites lignes et des gares, mais aussi la faible part du frais de ferroviaire.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "lignes",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Le prix des billets, mais surtout les retards, les suppressions de trains, l'abandon des petites lignes et des gares, mais aussi la faible part du frais de ferroviaire.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vous exprimez face à cela une centaine de suggestions pour enrichir notre projet présidentiel, rouvrir des petites lignes, faire circuler les trains aux heures où les gens en ont le plus besoin, […]",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "rail",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Ce sont près de 9 tonnes kilomètres sur 10 qui passent par la route, contre seulement 9% par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "L'idée, c'est de lui redonner sa juste place, le dernier kilomètre par la route, les longues distances par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "potable",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Nous devons réserver l'eau potable aux usages qu'il exige, notamment en développant la récupération des eaux pluviales et la réutilisation des eaux traitées pour les toilettes, l'arrosage et certains nettoyages.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Est-ce que demain, partout en France, on aura encore simplement de l'eau potable au robinet ?",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "eaux",
+     "n": 3,
+     "score": 2.81,
+     "extraits": [
+      {
+       "texte": "Nous devons réserver l'eau potable aux usages qu'il exige, notamment en développant la récupération des eaux pluviales et la réutilisation des eaux traitées pour les toilettes, l'arrosage et certains nettoyages.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "La sécheresse, la qualité de l'eau, l'état de nos réseaux et la capacité à stocker la ressource.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "réseau",
+     "n": 4,
+     "score": 1.96,
+     "extraits": [
+      {
+       "texte": "Vous exprimez face à cela une centaine de suggestions pour enrichir notre projet présidentiel, rouvrir des petites lignes, faire circuler les trains aux heures où les gens en ont le plus besoin, […]",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ma proposition, reconstruire avant de contraindre, régénérer le réseau, développer les terminaux multimodaux, réserver de vraies capacités aux frettes et reconstruire les trains du quotidien.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "trajets",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Encore trop souvent pour les trajets nationaux voire européens, l'avion est beaucoup moins cher que le train.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ces trains qui traversent un village sans s'y arrêter, ces trajets régionaux qui coûtent deux fois ou trois fois plus cher qu'un voyage en bus.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "tarifs",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Si on veut promouvoir l'utilisation du train, il faut le rendre plus attractif, avec des tarifs plus compétitifs et une efficacité accrue.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Vous exprimez face à cela une centaine de suggestions pour enrichir notre projet présidentiel, rouvrir des petites lignes, faire circuler les trains aux heures où les gens en ont le plus besoin, […]",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "constat",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Alors ce constat, c'est la doléance numéro 4124, rédigée dans le cahier de notre comité du Finistère.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Alors plus spécifiquement, pour le transport des marchandises, Le constat est encore plus frappant.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "doléance numéro",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Alors ce constat, c'est la doléance numéro 4124, rédigée dans le cahier de notre comité du Finistère.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "En fait, c'est toute l'utilité de ces cahiers de doléances.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "retards",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Le prix des billets, mais surtout les retards, les suppressions de trains, l'abandon des petites lignes et des gares, mais aussi la faible part du frais de ferroviaire.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "gares",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Le prix des billets, mais surtout les retards, les suppressions de trains, l'abandon des petites lignes et des gares, mais aussi la faible part du frais de ferroviaire.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Je veux également garantir dans chaque bassin de vie un niveau minimal de transport collectif, avec des lignes et des gares pensées à partir des besoins des habitants.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "transport",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Alors plus spécifiquement, pour le transport des marchandises, Le constat est encore plus frappant.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Avec cette ambition claire pour le fret, faire passer le rail de 9 à 25% des marchandises transportées et investir au moins 2 milliards d'euros supplémentaires dans les infrastructures et les terminaux.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "marchandises",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Alors plus spécifiquement, pour le transport des marchandises, Le constat est encore plus frappant.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Avec cette ambition claire pour le fret, faire passer le rail de 9 à 25% des marchandises transportées et investir au moins 2 milliards d'euros supplémentaires dans les infrastructures et les terminaux.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "kilomètres",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ce sont près de 9 tonnes kilomètres sur 10 qui passent par la route, contre seulement 9% par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "L'idée, c'est de lui redonner sa juste place, le dernier kilomètre par la route, les longues distances par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "route",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ce sont près de 9 tonnes kilomètres sur 10 qui passent par la route, contre seulement 9% par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "L'idée, c'est de lui redonner sa juste place, le dernier kilomètre par la route, les longues distances par le rail.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "fret",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Nous sommes nettement moins bons que nos voisins, notamment la Suisse, où le fret ferroviaire représente 40% des mouvements.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ma proposition, reconstruire avant de contraindre, régénérer le réseau, développer les terminaux multimodaux, réserver de vraies capacités aux frettes et reconstruire les trains du quotidien.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "reconstruire",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ma proposition, reconstruire avant de contraindre, régénérer le réseau, développer les terminaux multimodaux, réserver de vraies capacités aux frettes et reconstruire les trains du quotidien.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "terminaux",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ma proposition, reconstruire avant de contraindre, régénérer le réseau, développer les terminaux multimodaux, réserver de vraies capacités aux frettes et reconstruire les trains du quotidien.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "réserver",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ma proposition, reconstruire avant de contraindre, régénérer le réseau, développer les terminaux multimodaux, réserver de vraies capacités aux frettes et reconstruire les trains du quotidien.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Nous devons réserver l'eau potable aux usages qu'il exige, notamment en développant la récupération des eaux pluviales et la réutilisation des eaux traitées pour les toilettes, l'arrosage et certains nettoyages.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "bassin",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Je veux également garantir dans chaque bassin de vie un niveau minimal de transport collectif, avec des lignes et des gares pensées à partir des besoins des habitants.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ma proposition, c'est une politique nationale de l'eau digne de ce nom, adaptée à chaque bassin versant, en réduisant les fuites et en protégeant la ressource.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "plan",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Un grand plan d'infrastructure pour une politique de relance par l'investissement.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "C'est exactement pour cela que je prévois un grand plan d'investissement dans nos infrastructures.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "traverser",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Ces trains qui traversent un village sans s'y arrêter, ces trajets régionaux qui coûtent deux fois ou trois fois plus cher qu'un voyage en bus.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "le train ne peut plus seulement traverser les territoires, le train doit de nouveau relier nos territoires.",
+       "url": "https://www.instagram.com/reel/Df2DRnclOC2/",
+       "date": "2026-11-17",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "réutilisation",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "Nous devons réserver l'eau potable aux usages qu'il exige, notamment en développant la récupération des eaux pluviales et la réutilisation des eaux traitées pour les toilettes, l'arrosage et certains nettoyages.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Ensuite, déployer une stratégie d'économie et de réutilisation de l'eau en la stockant lorsque c'est nécessaire.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "stocker",
+     "n": 2,
+     "score": 2.47,
+     "extraits": [
+      {
+       "texte": "La sécheresse, la qualité de l'eau, l'état de nos réseaux et la capacité à stocker la ressource.",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Réparer les fuites, protéger les nappes et les captages, récupérer l'eau de pluie, recréer des zones d'infiltration, réutiliser les eaux usées lorsque c'est possible et stocker davantage l'eau des périodes humides pour […]",
+       "url": "https://www.instagram.com/reel/Df680HEgVo1/",
+       "date": "2026-11-19",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  },
+  "retailleau": {
+   "nb_videos": 1,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 0,
+    "travail": 0,
+    "securite": 0,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 65,
+    "finances": 8.7,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 26.2
+   },
+   "citations": [
+    {
+     "texte": "Moi je pense qu'il faut au contraire expulser les squatteurs beaucoup plus vite.",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708877176287825184/thumbnail.webp"
+    },
+    {
+     "texte": "Ce n'est pas la propriété qui est du vol, c'est de squatter qui est du vol.",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708877176287825184/thumbnail.webp"
+    },
+    {
+     "texte": "Je ne suis pas venu dans ce débat, les poches pleines de fausses promesses.",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708877176287825184/thumbnail.webp"
+    },
+    {
+     "texte": "Il n'y a plus de sous dans les caisses.",
+     "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+     "plateforme": "tiktok",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/tiktok/7708877176287825184/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "expulser",
+     "n": 2,
+     "score": 5.17,
+     "extraits": [
+      {
+       "texte": "J'entends les aides en veux-tu en voilà, y compris d'ailleurs de ne pas expulser les squatteurs.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    },
+    {
+     "mot": "squatteurs",
+     "n": 2,
+     "score": 5.17,
+     "extraits": [
+      {
+       "texte": "J'entends les aides en veux-tu en voilà, y compris d'ailleurs de ne pas expulser les squatteurs.",
+       "url": "https://www.tiktok.com/@brunoretailleauoff/video/7708877176287825184",
+       "date": "2026-11-16",
+       "plateforme": "tiktok"
+      }
+     ]
+    }
+   ]
+  },
+  "zemmour": {
+   "nb_videos": 3,
+   "themes": {
+    "pouvoir-achat": 0,
+    "sante": 51.3,
+    "travail": 0,
+    "securite": 48.7,
+    "immigration": 0,
+    "ecologie": 0,
+    "education": 0,
+    "logement": 0,
+    "finances": 0,
+    "international": 0,
+    "democratie": 0,
+    "campagne": 0
+   },
+   "citations": [
+    {
+     "texte": "Mon problème c'est de protéger les honnêtes gens. Donc je préfère enfermer quelques dizaines de milliers de personnes pour que des millions de personnes se sentent enfin en sécurité.",
+     "url": "https://www.instagram.com/reel/DfzWVHBN0_q/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfzWVHBN0_q/thumbnail.webp"
+    },
+    {
+     "texte": "Aujourd'hui, c'est la France entière qui est devenue un désert médical.",
+     "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfzrLRxux-a/thumbnail.webp"
+    },
+    {
+     "texte": "Je veux que les magistrats deviennent responsables de leurs actes.",
+     "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfz5nbsRw9m/thumbnail.webp"
+    },
+    {
+     "texte": "Il n'y avait aucun désert médical et on n'attendait pas aux urgences. Aujourd'hui, on attend 4-5 heures aux urgences.",
+     "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/DfzrLRxux-a/thumbnail.webp"
+    },
+    {
+     "texte": "Les magistrats doivent être responsables comme les autres.",
+     "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+     "plateforme": "instagram",
+     "date": "2026-11-16",
+     "vignette": "https://social-catalog-static.oriane.xyz/oriane-contents/instagram/Dfz5nbsRw9m/thumbnail.webp"
+    }
+   ],
+   "mots": [
+    {
+     "mot": "états-unis",
+     "n": 3,
+     "score": 4.17,
+     "extraits": []
+    },
+    {
+     "mot": "magistrats",
+     "n": 3,
+     "score": 4.17,
+     "extraits": [
+      {
+       "texte": "Je veux que les magistrats deviennent responsables de leurs actes.",
+       "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Donc je veux absolument qu'on définisse mieux les causes de la responsabilité des magistrats et qu'on la mette en œuvre, qu'ils soient soit mis à pied, soit pour les choses les plus […]",
+       "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "déserts médicaux",
+     "n": 2,
+     "score": 3.83,
+     "extraits": [
+      {
+       "texte": "Il y a cinq ans, je disais qu'il y avait de nombreux déserts médicaux.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Et pourtant, moi j'ai connu une France où il n'y avait pas de déserts médicaux.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "désert médical",
+     "n": 2,
+     "score": 3.83,
+     "extraits": [
+      {
+       "texte": "Il y a cinq ans, je disais qu'il y avait de nombreux déserts médicaux.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Et pourtant, moi j'ai connu une France où il n'y avait pas de déserts médicaux.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "numerus apertus",
+     "n": 2,
+     "score": 3.83,
+     "extraits": [
+      {
+       "texte": "D'abord, pour le long terme, il faut absolument, et je sais qu'Emmanuel Macron dit qu'il l'a fait mais c'est faux, supprimer enfin cette restriction, le fameux numerus clausus, et surtout il n'a […]",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "médecins",
+     "n": 2,
+     "score": 3.83,
+     "extraits": [
+      {
+       "texte": "Il y a à peu près aujourd'hui 11 000 médecins qui sont reçus sur 50 000 candidats la première année.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "responsables",
+     "n": 2,
+     "score": 3.83,
+     "extraits": [
+      {
+       "texte": "Je veux que les magistrats deviennent responsables de leurs actes.",
+       "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      },
+      {
+       "texte": "Les magistrats doivent être responsables comme les autres.",
+       "url": "https://www.instagram.com/reel/Dfz5nbsRw9m/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    },
+    {
+     "mot": "urgence",
+     "n": 2,
+     "score": 2.22,
+     "extraits": [
+      {
+       "texte": "Il n'y avait aucun désert médical et on n'attendait pas aux urgences.",
+       "url": "https://www.instagram.com/reel/DfzrLRxux-a/",
+       "date": "2026-11-16",
+       "plateforme": "instagram"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
